@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Elements of Instance Matching Benchmarks: a Short Overview</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">Elements of Instance Matching Benchmarks: a Short Overview</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">Elements of Instance Matching Benchmarks: a Short Overview</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">Irini Fundulaki</strong> / on <strong class="text-dark">16 Jun 2015</strong></div>
+        
+        
+        
+        <div class="position-relative mb-5">
+          
+          
+        </div>
+        <div class="content">
+          <p>The number of datasets published in the Web of Data as part of the Linked Data Cloud is constantly increasing. The Linked Data paradigm is based on the unconstrained publication of information by different publishers, and the interlinking of web resources through “same-as” links which specify that two URIs correspond to the same real world object. In the vast number of data sources participating in the Linked Data Cloud, this information is not explicitly stated but is discovered using <strong>instance matching</strong> techniques and tools. Instance matching is also known as <strong>record linkage</strong> <a href="#references">[1]</a>, <strong>duplicate detection</strong> <a href="#references">[2]</a>, <strong>entity resolution</strong> <a href="#references">[3]</a> and <strong>object identification</strong> <a href="#references">[4]</a>.</p>
+<p>For instance, a search in Geonames (<a href="http://www.geonames.org/">http://www.geonames.org/</a>) for &ldquo;Athens&rdquo; would return a resource (i.e., URI) accompanied with a map of the area and information about the place; additional information for the city of Athens can be found in other datasets such as for instance DBpedia (<a href="http://dbpedia.org/">http://dbpedia.org/</a>) or Open Government Datasets. To exploit all obtain all necessary information about the city of Athens we need to establish that the retrieved resources refer to the same real world object.</p>
+<p>Web resources are published by &ldquo;autonomous agents&rdquo; who choose their preferred information representation or the one that best fits the application of interest. Furthermore, different representations of the same real world entity are due to data acquisition errors or different acquisition techniques used to process scientific data. Moreover, real world entities evolve and change over time, and sources need to keep track of these developments, a task that is very hard and often not possible. Finally, when integrating data from multiple sources, the process itself may add new erroneous data. Clearly, these reasons are not limited to problems that did arise in the era of Web Data, it is thus not surprising that instance matching systems have been around for several years <a href="#references">[2]</a><a href="#references">[5]</a>.</p>
+<p>It is though essential at this point to develop, along with instance and entity matching systems, <em>instance matching benchmarks to determine the weak and strong points of those systems, as well as their overall quality in order to support users in deciding the system to use for their needs</em>. Hence, well defined, and good quality benchmarks are important for comparing the performance of the available or under development instance matching systems. Benchmarks are used not only to inform users of the strengths and weaknesses of systems, but also to motivate developers, researchers and technology vendors to deal with the weak points of their systems and to ameliorate their performance and functionality. They are also useful for identifying the settings in which each of the systems has optimal performance. Benchmarking aims at providing an objective basis for such assessments.</p>
+<p>An instance matching benchmark for Linked Data consists of a <em>source</em> and <em>target dataset</em> implementing a set of <em>test-cases</em>, where each test case addresses a different kind of requirement regarding instance matching, a <em>ground truth</em> or <em>gold standard</em> and finally the <em>evaluation metrics</em> used to <em>assess the benchmark.</em></p>
+<p>Datasets are the raw material of a benchmark. A benchmark comprises of a <em>source</em> and <em>target</em> dataset and the objective of an instance matching system is to discover the matches of the two. Datasets are characterized by (a) their <em>nature</em> (<em>real</em> or <em>synthetic</em>), (b) the <em>schemas/ontologies</em> they use,  (c) their <em>domains</em>,  (d) the <em>languages</em> they are written in, and (e) the <em>variations/heterogeneities</em> of the datasets. Real datasets are widely used in benchmarks since they offer realistic conditions for heterogeneity problems and they have realistic distributions. <em>Synthetic datasets</em> are generated using automated data generators and  are useful because they offer fully controlled test conditions, have accurate gold standards and allow setting the focus on specific types of heterogeneity problems in a systematic manner</p>
+<p>Datasets (and benchmarks) may contain different <em>kinds of variations</em> that correspond to <em>different test cases</em>. According to Ferrara et.al. <a href="#references">[6]</a><a href="#references">[7]</a>, three kinds of variations exist for Linked Data, namely <em>data variations</em>, <em>structural variations</em> and <em>logical variations</em>. The first refers mainly to differences due to typographical errors, differences in the employed data formats, language etc. The second refers to the differences in the structure of the employed Linked Data schemas. Finally, the third  type derives from the use of semantically rich RDF and OWL constructs that enable one to define hierarchies and equivalence of classes and properties, (in)equality of instances, complex class definitions through union and intersection among others.</p>
+<p>The common case in real benchmarks is that the datasets to be matched contain different kinds (combinations) of variations. On the other hand, synthetic datasets may be purposefully designed to contain specific types (or combinations) of variations (e.g., only structural), or may be more general in an effort to illustrate all the common cases of discrepancies that appear in reality between individual descriptions.</p>
+<p>The <em>gold standard</em> is considered as the “correct answer sheet” of the benchmark, and is used to judge the completeness and soundness of the result sets of the benchmarked systems. For instance matching benchmarks employing synthetic datasets, the gold standard is always automatically generated, as the errors (variations) that are added into the datasets are known and systematically created. When it comes to real datasets, the gold standard can be either manually curated or (semi-) automatically generated. In the first case, domain experts manually mark the matches between the datasets, whereas in the second, supervised and crowdsourcing techniques aid the process of finding the matches, a process that is often time consuming and error prone.</p>
+<p>Last, an instance matching benchmark uses <em>evaluation metrics</em> to determine and assess the systems’ output quality and performance. For instance matching tools, performance is not a critical aspect.  On the other hand, an instance matching tool should return all and only the correct answers. So, what matters most is returning the relevant matches, rather than returning them quickly. For this reason, the evaluation metrics that are dominantly employed for instance matching benchmarks are the standard <em>precision</em>, <em>recall</em> and <em>f-measure</em> metrics.</p>
+<h4 id="references">References</h4>
+<p>[1] Li, C., Jin, L., and Mehrotra, S. (2006) Supporting efficient record linkage for large data sets using mapping techniques. WWW 2006.</p>
+<p>[2] Dragisic, Z., Eckert, K., Euzenat, J., Faria, D., Ferrara, A., Granada, R., Ivanova, V., Jimenez-Ruiz, E., Oskar Kempf, A., Lambrix, P., Montanelli, S., Paulheim, H., Ritze, D., Shvaiko, P., Solimando, A., Trojahn, C., Zamaza, O., and Cuenca Grau,  B. (2014) Results of the Ontology Alignment Evaluation Initiative 2014. Proc. 9th ISWC workshop on ontology matching (OM 2014).</p>
+<p>[3] Bhattacharya, I. and Getoor, L. (2006) Entity resolution in graphs. Mining Graph Data. Wiley and Sons 2006.</p>
+<p>[4] Noessner, J., Niepert, M., Meilicke, C., and Stuckenschmidt, H. (2010) Leveraging Terminological Structure for Object Reconciliation. In ESWC 2010.</p>
+<p>[5] Flouris, G., Manakanatas, D., Kondylakis, H., Plexousakis, D., Antoniou, G. Ontology Change: Classification and Survey (2008) Knowledge Engineering Review (KER 2008), pages 117-152.</p>
+<p>[6] Ferrara, A., Lorusso, D., Montanelli, S., and Varese, G. (2008) Towards a Benchmark for Instance Matching. Proc. 3th ISWC workshop on ontology matching (OM 2008).</p>
+<p>[7] Ferrara, A., Montanelli, S., Noessner, J., and Stuckenschmidt, H. (2011) Benchmarking Matching Applications on the Semantic Web. In ESWC, 2011.</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            <a href="/tags/instance-matching">INSTANCE MATCHING</a>
+            , <a href="/tags/spb">SPB</a>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest updates</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/eighteenth-tuc-meeting/">
+          <h5 class="mt-0">Eighteenth TUC Meeting</h5>
+        </a>
+        24 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/seventeenth-tuc-meeting/">
+          <h5 class="mt-0">Seventeenth TUC Meeting</h5>
+        </a>
+        18 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/post/record-breaking-snb-interactive-results-for-graphscope/">
+          <h5 class="mt-0">Record-Breaking SNB Interactive Results for GraphScope</h5>
+        </a>
+        26 May 2024
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4"></h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/amazon">AMAZON</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analytics">ANALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aws">AWS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmark">BENCHMARK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmarking">BENCHMARKING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bersys">BERSYS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bi">BI</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cfp">CFP</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/chile">CHILE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/database">DATABASE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/datagen">DATAGEN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/design">DESIGN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/developer">DEVELOPER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/driver">DRIVER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ec2">EC2</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/finbench">FINBENCH</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/flink">FLINK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/gql">GQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/grades">GRADES</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/graphalytics">GRAPHALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/guide">GUIDE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/industry">INDUSTRY</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/instance-matching">INSTANCE-MATCHING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interactive">INTERACTIVE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ldbc">LDBC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rdf">RDF</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/santiago">SANTIAGO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sesame">SESAME</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sigmod">SIGMOD</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/snb">SNB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/social-network">SOCIAL-NETWORK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sparql">SPARQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/spb">SPB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/test-run">TEST-RUN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc">TPC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc-c">TPC-C</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tu-delft">TU-DELFT</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tuc-meeting">TUC-MEETING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tutorial">TUTORIAL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/virtuoso">VIRTUOSO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/workshop">WORKSHOP</a></li>
+    </ul>
+  </div>
+  
+  
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

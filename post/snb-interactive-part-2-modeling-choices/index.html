@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>SNB Interactive Part 2: Modeling Choices</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">SNB Interactive Part 2: Modeling Choices</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">SNB Interactive Part 2: Modeling Choices</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">Orri Erling</strong> / on <strong class="text-dark">26 May 2015</strong></div>
+        
+        
+          <i>Note: this post is a continuation of &#34;SNB Interactive Part 1: What is SNB Interactive Really About?&#34; post by Orri Erling.</i>
+        
+        
+        <div class="position-relative mb-5">
+          
+          
+        </div>
+        <div class="content">
+          <p><a href="/benchmarks/snb">​SNB Interactive</a> is the wild frontier, with very few rules. This is necessary, among other reasons, because there is no standard property graph data model, and because the contestants support a broad mix of programming models, ranging from in-process APIs to declarative query.</p>
+<p>In the case of <a href="http://dbpedia.org/resource/Virtuoso_Universal_Server">Virtuoso</a>, we have played with <a href="http://dbpedia.org/resource/SQL">SQL</a> and <a href="http://dbpedia.org/resource/SPARQL">SPARQL</a> implementations. For a fixed schema and well known workload, SQL will always win. The reason for this is that this allows to materialize multi-part indices and data orderings that make sense for the application. In other words, there is transparency into physical design. An RDF application may also have physical design by means ofstructure-aware storage but this is more complex and here we are just concerned with speed and having things work precisely as we intend.</p>
+<h3 id="schema-design">Schema Design</h3>
+<p>SNB has a regular schema described by a <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">UML</a> diagram. This has a number of relationships of which some have attributes. There are no heterogenous sets, e.g. no need for run-time typed attributes or graph edges with the same label but heterogeneous end points. Translation into SQL or RDF is straightforward. Edges with attributes, e.g. the knows relation between people would end up represented as a subject with the end points and the date since as properties. The relational implementation has a two-part primary key and the date since as a dependent column. A native property graph database would use an edge with an extra property for this, as such are typically supported.</p>
+<p>The only table-level choice has to do with whether <code>posts</code> and <code>comments</code> are kept in the same or different data structures. The Virtuoso schema has a single table for both, with nullable columns for the properties that occur only in one. This makes the queries more concise. There are cases where only non-reply posts of a given author are accessed. This is supported by having two author foreign key columns each with its own index. There is a single nullable foreign key from the reply to the post/comment being replied to.</p>
+<p>The workload has some frequent access paths that need to be supported by index. Some queries reward placing extra columns in indices. For example, a common pattern is accessing the most recent posts of an author or group of authors. There, having a composite key <code>of ps_creatorid</code>, <code>ps_creationdate</code>, <code>ps_postid</code> pays off since the top-k on <code>creationdate</code> can be pushed down into the index without needing a reference to the table.</p>
+<p>The implementation is free to choose data types for attributes, specifically datetimes. The Virtuoso implementation adopts the practice of the <a href="http://dbpedia.org/resource/DEX_(Graph_database)">Sparksee</a> and <a href="http://dbpedia.org/resource/Neo4j">Neo4J</a> implementations and represents this is a count of milliseconds since epoch. This is less confusing, faster to compare and more compact than a native datetime datatype that may or may not have timezones etc. Using a built-in datetime seems to be nearly always a bad idea. A dimension table or a number for a time dimension avoids the ambiguities of a calendar or at least makes these explicit.</p>
+<p>The benchmark allows procedurally maintaining materializations of intermediate results for use by queries as long as these are maintained transaction by transaction. For example, each person could have the 20 newest posts by immediate contacts precomputed. This would reduce Q2 &ldquo;top of the wall&rdquo; to a single lookup. This dows not however appear to be worthwhile. The Virtuoso implementation does do one such materialization for Q14: A connection weight is calculated for every pair of persons that know each other. This is related to the count of replies by one or the other to content generated by the other. If there does not exist a single reply in either direction, the weight is taken to be 0. This weight is precomputed after bulk load and subsequently maintained each time a reply is added. The table for this is the only row-wise structure in the schema and represents a half matrix of connected people, i.e. <code>person1</code>, <code>person2</code> -&gt; <code>weight</code>. <code>Person1</code> is by convention the one with the smaller <code>p_personid</code>. Note that comparing id&rsquo;s in this way is useful but not normally supported by RDF systems. RDF would end up comparing strings of URI&rsquo;s with disastrous performance implications unless an implementation specific trick were used.</p>
+<p>In the next installment we will analyze an actual run.</p>
+<h3 id="snb-interactive-series">SNB Interactive Series</h3>
+<ul>
+<li><a href="/post/snb-interactive-part-1-what-is-snb-interactive-really-about">SNB Interactive, Part 1: What is SNB Interactive Really About?</a></li>
+<li><a href="/post/snb-interactive-part-2-modeling-choices">SNB Interactive, Part 2: Modeling Choices</a></li>
+<li><a href="/post/snb-interactive-part-3-choke-points-and-initial-run-on-virtuoso/">SNB Interactive, Part 3: Choke Points and Initial Run on Virtuoso</a></li>
+</ul>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            <a href="/tags/snb">SNB</a>
+            , <a href="/tags/virtuoso">VIRTUOSO</a>
+            , <a href="/tags/interactive">INTERACTIVE</a>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest updates</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/eighteenth-tuc-meeting/">
+          <h5 class="mt-0">Eighteenth TUC Meeting</h5>
+        </a>
+        24 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/seventeenth-tuc-meeting/">
+          <h5 class="mt-0">Seventeenth TUC Meeting</h5>
+        </a>
+        18 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/post/record-breaking-snb-interactive-results-for-graphscope/">
+          <h5 class="mt-0">Record-Breaking SNB Interactive Results for GraphScope</h5>
+        </a>
+        26 May 2024
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4"></h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/amazon">AMAZON</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analytics">ANALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aws">AWS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmark">BENCHMARK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmarking">BENCHMARKING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bersys">BERSYS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bi">BI</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cfp">CFP</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/chile">CHILE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/database">DATABASE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/datagen">DATAGEN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/design">DESIGN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/developer">DEVELOPER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/driver">DRIVER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ec2">EC2</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/finbench">FINBENCH</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/flink">FLINK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/gql">GQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/grades">GRADES</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/graphalytics">GRAPHALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/guide">GUIDE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/industry">INDUSTRY</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/instance-matching">INSTANCE-MATCHING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interactive">INTERACTIVE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ldbc">LDBC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rdf">RDF</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/santiago">SANTIAGO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sesame">SESAME</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sigmod">SIGMOD</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/snb">SNB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/social-network">SOCIAL-NETWORK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sparql">SPARQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/spb">SPB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/test-run">TEST-RUN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc">TPC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc-c">TPC-C</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tu-delft">TU-DELFT</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tuc-meeting">TUC-MEETING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tutorial">TUTORIAL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/virtuoso">VIRTUOSO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/workshop">WORKSHOP</a></li>
+    </ul>
+  </div>
+  
+  
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

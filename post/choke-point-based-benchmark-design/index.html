@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Choke Point Based Benchmark Design</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">Choke Point Based Benchmark Design</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">Choke Point Based Benchmark Design</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">Peter Boncz</strong> / on <strong class="text-dark">14 Oct 2014</strong></div>
+        
+        
+        
+        <div class="position-relative mb-5">
+          
+          
+        </div>
+        <div class="content">
+          <p>The <em>Linked Data Benchmark Council</em> (LDBC) mission is to design and maintain benchmarks for graph data management systems, and establish and enforce standards in running these benchmarks, and publish and arbitrate around the official benchmark results. The council and its <a href="https://ldbcouncil.org">https://ldbcouncil.org</a> website just launched, and in its first 1.5 year of existence, most effort at LDBC has gone into investigating the needs of the field through interaction with the LDBC Technical User Community (<a href="/event/fifth-tuc-meeting">next TUC meeting</a> will be on October 5 in Athens) and indeed in <em>designing benchmarks</em>.</p>
+<p>So, what makes a good benchmark design? Many talented people have paved our way in addressing this question and for relational database systems specifically the benchmarks produced by <a href="http://www.tpc.org/">TPC</a> have been very helpful in maturing relational database technology, and making it successful. Good benchmarks are <em>relevant</em> and <em>representative</em> (address important challenges encountered in practice), <em>understandable</em> , <em>economical</em> (implementable on simple hardware), <em>fair</em> (such as not to favor a particular product or approach), <em>scalable</em>, <em>accepted</em> by the community  and <em>public</em> (e.g. all of its software is available in open source). This list stems from Jim Gray&rsquo;s <a href="http://research.microsoft.com/en-us/um/people/gray/BenchmarkHandbook/TOC.htm">Benchmark Handbook</a>. In this blogpost, I will share some thoughts on each of these aspects of good benchmark design.</p>
+<p>A very important aspect of benchmark development is making sure that the community <em>accepts</em> a certain benchmark, and starts using it. A benchmark without published results and therefore opportunity to compare results, remains irrelevant. A European FP7 project is a good place to start gathering a critical mass of support (and consensus, in the process) for a new benchmark from the core group of benchmark designers in the joint work performed by the consortium. Since in LDBC multiple commercial graph and RDF vendors are on the table (Neo Technologies, Openlink, Ontotext and Sparsity) a minimal consensus on <strong>fairness</strong> had to be established immediately. The Linked Data Benchmark Council itself is a noncommercial, neutral, entity which releases all its benchmark specifications, software, as well as many materials created during the design.  LDBC has spent a lot of time engaging interested parties (mainly through its <a href="/tags/tuc-meeting/">Technical User Community gatherings</a>) as well as lining up additional organizations as members of the Linked Data Benchmark Council. There is, in other words, a strong non-technical, human factor in getting benchmarks accepted.</p>
+<p>The need for <em>understandability</em> for me means that a database benchmark should consist of a limited number of queries and result metrics. Hence I find TPC-H with its 22 queries more understandable than TPC-DS with its 99, because after (quite some) study and experience it is possible to understand the underlying challnges of all queries in TPC-H. It may also be possible for TPC-DS but the amount of effort is just much larger. Understandable also means for me that a particular query should behave similarly, regardless of the query parameters. Often, a particular query needs to be executed many times, and in order not to play into the hands of simple query caching and also enlarge the access footprint of the workload, different query parameters should be used. However, parameters can strongly change the nature of a query but this is not desirable for the understandability of the workload. For instance, we know that TPC-H Q01 tests raw computation power, as its selection predicate eliminates almost nothing from the main fact table (LINEITEM), that it scans and aggregates into a small 4-tuple result. Using a selection parameter that would select only 0.1% of the data instead, would seriously change the nature of Q01, e.g. making it amendable to indexing. This stability of parameter bindings is an interesting challenge for the <a href="/benchmarks/snb">Social Network Benchmark</a> (SNB) of LDBC which is not as uniform and uncorrelated as TPC-H. Addressing the challenge of obtaining parameter bindings that have similar execution characteristics will be the topic of a future blog post.</p>
+<p>The <em>economical</em> aspect of benchmarking means that while rewarding high-end benchmark runs with higher scores, it is valuable if a meaningful run can also be done with small hardware. For this reason, it is good practice to use a performance-per-EURO (or $) metric, so small installations despite a lower absolute score can still do well on that metric. The economical aspect is right now hurting the (still) leading relational OLTP benchmark TPC-C. Its implementation rules are such that for higher reported rates of throughput, a higher number of warehouses (i.e. larger data size) is needed. In the current day and age of JIT-compiled machinecode SQL procedures and CPU-cache optimized main memory databases, the OLTP throughput numbers now obtainable on modern transactional systems like Hyper on even a single server (it reaches more than 100.000 transactions per second) are so high that they lead to petabyte storage requirements. Not only does this make TPC-C very expensive to run, just by the sheer amount of hardware needed according to the rules, but it also undermines it representativity, since OLTP data sizes encountered in the field are much smaller than OLAP data sizes and do not run in the petabytes.</p>
+<p><em>Representative</em> benchmarks can be designed by studying or even directly using real workload information, e.g. query logs. A rigorous example of this is the <a href="http://aksw.org/Projects/DBPSB.html">DBpedia benchmark</a> whose workload is based on the query logs of dbpedia.org. However, this SPARQL endpoint is a single public Virtuoso instance that has been configured to interrupt all long running queries, such as to ensure the service remains responsive to as many users as possible. As a result, it is only practical to run small lookup queries on this database service, so the query log only contained solely such light queries. As a consequence, the DBpedia benchmark only tests small SPARQL queries that stress simple B-tree lookups only (and not joins, aggregations, path expressions or inference) and poses almost no technical challenges for either query optimization or execution. The lesson, thus, is to balance representativity with relevance (see later).</p>
+<p>The fact that a benchmark can be <em>scaled</em> in size favors the use of synthetic data (i.e. created by a data generator) because data generators can produce any desired quantity of data. I hereby note that in this day and age,  data generators should be parallel. Single-threaded single-machine data generation just becomes unbearable even at terabyte scales. A criticism of synthetic data is that it may not be representative of real data, which e.g. tends to contain highly correlated data with skewed distributions. This may be addressed to a certain extent by injecting specific skew and correlations into synthetic data as well (but: which skew and which correlations?). An alternative is to use real data and somehow blow up or contract the data. This is the approach in the mentioned DBpedia benchmark, though such scaling will distort the original distributions and correlations. Scaling a benchmark is very useful to investigate the effect of data size on the metric, on individual queries, or even in micro-benchmark tests that are not part of the official query set. Typically OLTP database benchmarks have queries whose complexity is O(log(N)) of the data size N, whereas OLAP benchmarks have queries which are linear, O(N) or at most O(N.log(N))  &ndash; otherwise executing the benchmark on large instances is infeasible. OLTP queries thus typically touch little data, in the order of log(N) tuples. In order not to measure fully cold query performance, OLTP benchmarks for that reason need a warmup phase with O(N/log(N)) queries in order to get the system into a representative state.</p>
+<p>Now, what makes a benchmark <em>relevant</em>? In LDBC we think that benchmarks should be designed such that crucial areas of functionality are highlighted, and in turn system architects are stimulated to innovate. Either to catch up with competitors and bring the performance and functionality in line with the state-of-the-art but even to innovate and address technical challenges for which until now no good solutions exist, but which can give a decisive performance advantage in the benchmark. Inversely stated, benchmark design can thus be a powerful tool to influence the industry, as a benchmark design may set the agendas for multiple commercial design teams and database architects around the globe. To structure this design process, LDBC introduces the notion of <em>&ldquo;choke points&rdquo;</em>: by which we mean problems that challenge current technology. These choke points are collected and described early in the LDBC design process, and the workloads developed later are scored in terms of their coverage of relevant choke points. In case of graph data querying, one of the choke points that is unique to the area is recursive Top-N query handling (e.g. shortest path queries). Another choke point that arises is the impact of correlations between attribute value of graph nodes (e.g. both employed by TUM) and the connectivity degree between nodes (the probability to be friends). The notion observed in practice is that people who are direct colleagues, often are in each others friend network. A query that selects people in a social graph that work for the same company, and then does a friendship traversal, may get a bad intermediate result size estimates and therefore suboptimal query plan, if optimizers remain unaware of value/structure correlations. So this is an area of functionality that the Social Network Benchmark (SNB) by LDBC will test.</p>
+<p>To illustrate what choke points are in more depth, we wrote a <a href="/docs/papers/tpc-h-analyzed-choke-points-tpctc2013.pdf">paper in the TPCTC 2013</a> conference that performs a post-mortem analysis of TPC-H and identified 28 such choke points. <em><a href="chokepoints.png">This table</a></em> lists them all, grouped into six Choke Point (CP) areas (CP1 Agregation, CP2 Join, CP3 Locality, CP4 Calculations, CP5 Subqueries and CP6 Parallelism). The classification also shows CP coverage over each of the 22 TPC-H queries (black is high impact, white is no impact):</p>
+<p>I would recommend reading this paper to anyone who is interested in improving the TPC-H score of a relational database system, since this paper contains the collected experience of three database architects who have worked with TPC-H at length: Orri Erling (of Virtuoso), Thomas Neumann (Hyper,RDF-3X), and me (MonetDB,Vectorwise).  Recently Orri Erling showed that this paper is not complete as he discovered one more choke-point area for TPC-H:  Top-N pushdown. In a detailed blog entry, Orri showed how this technique can trivialize Q18; and this optimization can single handedly improve the overall TPC-score by 10-15%. This is also a lesson for LDBC: even though we design benchmarks with choke points in mind, the queries themselves may bring to light unforeseen opportunities and choke-points that may give rise to yet unknown innovations.</p>
+<p>LDBC has just published two benchmarks as Public Drafts, which essentially means that you are cordially invited to download and try out the RDF-focused Semantic Publishing Benchmark <a href="/developer/spb">(SPB)</a> and the more graph-focused Social Network Benchmark (<a href="/developer/snb">SNB</a>),  and <a href="https://groups.google.com/forum/#!forum/ldbcouncil">tell us what you think</a>. Stay tuned for the coming detailed blog posts about these benchmarks, which will explain the graph and RDF processing choke-points that they test.</p>
+<p><em>(for more posts from Peter Boncz, see also <a href="https://databasearchitects.blogspot.com">Database Architects</a>, a blog about data management challenges and techniques written by people who design and implement database systems)</em></p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            <a href="/tags/database">DATABASE</a>
+            , <a href="/tags/benchmark">BENCHMARK</a>
+            , <a href="/tags/design">DESIGN</a>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest updates</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/eighteenth-tuc-meeting/">
+          <h5 class="mt-0">Eighteenth TUC Meeting</h5>
+        </a>
+        24 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/seventeenth-tuc-meeting/">
+          <h5 class="mt-0">Seventeenth TUC Meeting</h5>
+        </a>
+        18 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/post/record-breaking-snb-interactive-results-for-graphscope/">
+          <h5 class="mt-0">Record-Breaking SNB Interactive Results for GraphScope</h5>
+        </a>
+        26 May 2024
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4"></h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/amazon">AMAZON</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analytics">ANALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aws">AWS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmark">BENCHMARK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmarking">BENCHMARKING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bersys">BERSYS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bi">BI</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cfp">CFP</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/chile">CHILE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/database">DATABASE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/datagen">DATAGEN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/design">DESIGN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/developer">DEVELOPER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/driver">DRIVER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ec2">EC2</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/finbench">FINBENCH</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/flink">FLINK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/gql">GQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/grades">GRADES</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/graphalytics">GRAPHALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/guide">GUIDE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/industry">INDUSTRY</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/instance-matching">INSTANCE-MATCHING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interactive">INTERACTIVE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ldbc">LDBC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rdf">RDF</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/santiago">SANTIAGO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sesame">SESAME</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sigmod">SIGMOD</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/snb">SNB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/social-network">SOCIAL-NETWORK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sparql">SPARQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/spb">SPB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/test-run">TEST-RUN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc">TPC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc-c">TPC-C</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tu-delft">TU-DELFT</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tuc-meeting">TUC-MEETING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tutorial">TUTORIAL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/virtuoso">VIRTUOSO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/workshop">WORKSHOP</a></li>
+    </ul>
+  </div>
+  
+  
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

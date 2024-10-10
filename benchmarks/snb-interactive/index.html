@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>LDBC SNB Interactive workload</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+
+
+
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">LDBC SNB Interactive workload</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">LDBC SNB Interactive workload</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+
+<!-- members -->
+<section class="section">
+  
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="content">
+                <div><p>The <strong><a href="/benchmarks/snb">LDBC SNB</a> Interactive workload</strong> captures transactional graph processing scenario with complex read queries that access the neighbourhood of a given node in the graph and update operations that continuously insert new data in the graph. Its data sets are available in the <a href="https://hdl.handle.net/11112/e6e00558-a2c3-9214-473e-04a16de09bf8">CWI/SURF data repository</a>.</p>
+<p>The workload produces the throughput metric to characterize the performance at the given scale. The full disclosure reports (FDRs) further detail the performance of the system under test by listing the data loading time and single query execution times.</p>
+<p>For an overview of the workload, see the <a href="/docs/papers/ldbc-snb-interactive-sigmod-2015.pdf">SIGMOD 2015 paper</a> and the <a href="/docs/presentations/ldbc-snb-interactive-v1-2024.pdf">2024 presentation</a> by Gábor Szárnyas. For a detailed specification, see the <a href="https://arxiv.org/pdf/2001.02299">LDBC Social Network Benchmark specification</a>.</p>
+<p>The tables below contain audited results. Note that the system cost indicates the 3-year TCO (total cost of ownership), which is the sum of the license, hardware, and maintenance costs (where maintenance means 24/7 support with a response time of less than 4 hours).</p>
+</div>
+
+                
+                <h3>Audited results using a declarative query language</h3>
+                <table>
+                    <thead style="font-weight: bold; text-align: center">
+                    <tr>
+                        <th style="width: 22%">Benchmark setup</th>
+                        <th>SF</th>
+                        <th>Hardware</th>
+                        <th>Performance</th>
+                        <th>Performance<br> (price-adj.)</th>
+                        <th style="width: 20%">Documents</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li>System: <a href="https://www.huaweicloud.com/intl/en-us/product/ges"><b>Graph Engine Service 3.0.0</b></a></li>
+                                <li>Test sponsor: <a href="https://www.huaweicloud.com/"><b>Huawei Cloud</b></a></li>
+                                <li>Date: <time style="white-space: nowrap"><b>2024-09-16</b></time></li>
+                                
+                                
+                                <li>Query language: <b>Cypher</b></li>
+                                <li>System cost: <b>3,105,819&nbsp;RMB</b> (437,840.04 USD)</li>
+                            </ul>
+                        </td>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>Huawei Cloud ac8.48xlarge.4<br/>96×AMD 2.4GHz vCPUs, 768GiB RAM<br/></td>
+                        <td style="text-align: right!important">37,775.91&nbsp;ops/s</td>
+                        <td style="text-align: right!important">86.278</td>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20240916_SF30-100-300_huawei.pdf">Full disclosure report</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20240916_SF30-100-300_huawei-executive_summary.pdf">Executive summary</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20240916_SF30-100-300_huawei-signatures.pdf">Signatures</a></li>
+                                <li><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/audits/LDBC_SNB_I_20240916_SF30-100-300_huawei-attachments.tar.gz">Supplementary package</a></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">100</td>
+                        <td>Huawei Cloud ac8.48xlarge.4<br/>96×AMD 2.4GHz vCPUs, 768GiB RAM<br/></td>
+                        <td style="text-align: right!important">45,432.22&nbsp;ops/s</td>
+                        <td style="text-align: right!important">103.764</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">300</td>
+                        <td>Huawei Cloud ac8.48xlarge.4<br/>96×AMD 2.4GHz vCPUs, 768GiB RAM<br/></td>
+                        <td style="text-align: right!important">40,347.04&nbsp;ops/s</td>
+                        <td style="text-align: right!important">92.15</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li>System: <a href="https://graphdb.ontotext.com/"><b>GraphDB 10.1.1</b></a></li>
+                                <li>Test sponsor: <a href="https://www.ontotext.com/"><b>Ontotext</b></a></li>
+                                <li>Date: <time style="white-space: nowrap"><b>2023-01-31</b></time></li>
+                                
+                                
+                                <li>Query language: <b>SPARQL</b></li>
+                                <li>System cost: <b>216,222&nbsp;USD</b> </li>
+                            </ul>
+                        </td>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>AWS r6id.8xlarge<br/>32×Intel Xeon Platinum 8375C vCPUs,<br/>256GiB RAM, 1R/1W thread<br/></td>
+                        <td style="text-align: right!important">3.04&nbsp;ops/s</td>
+                        <td style="text-align: right!important">0.014</td>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20230131_SF30_graphdb.pdf">Full disclosure report</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20230131_SF30_graphdb-executive_summary.pdf">Executive summary</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20230131_SF30_graphdb-signatures.pdf">Signatures</a></li>
+                                <li><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/audits/LDBC_SNB_I_20230131_SF30_graphdb-attachments.tar.gz">Supplementary package</a></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>AWS r6id.8xlarge<br/>32×Intel Xeon Platinum 8375C vCPUs,<br/>256GiB RAM, 2R/2W threads<br/></td>
+                        <td style="text-align: right!important">6.76&nbsp;ops/s</td>
+                        <td style="text-align: right!important">0.031</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>AWS r6id.8xlarge<br/>32×Intel Xeon Platinum 8375C vCPUs,<br/>256GiB RAM, 4R/4W threads<br/></td>
+                        <td style="text-align: right!important">12.16&nbsp;ops/s</td>
+                        <td style="text-align: right!important">0.056</td>
+                        
+                    </tr>
+                    
+                    
+                    </tbody>
+                </table>
+                
+
+                
+                <h3>Audited results using an imperative language</h3>
+                <table>
+                    <thead style="font-weight: bold; text-align: center">
+                    <tr>
+                        <th style="width: 25%">Benchmark setup</th>
+                        <th>SF</th>
+                        <th>Hardware</th>
+                        <th>Performance</th>
+                        <th>Performance<br> (price-adj.)</th>
+                        <th style="width: 20%">Documents</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li>System: <a href="https://github.com/alibaba/GraphScope"><b>GraphScope Flex 0.26.1</b></a></li>
+                                <li>Test sponsor: <a href="https://www.alibabacloud.com/"><b>Alibaba Cloud</b></a></li>
+                                <li>Date: <time style="white-space: nowrap"><b>2024-05-14</b></time></li>
+                                
+                                
+                                <li>Queries implemented in: <b>C&#43;&#43;</b></li>
+                                <li>System cost: <b>738,724&nbsp;RMB</b> (102,128.22 USD)</li>
+                            </ul>
+                        </td>
+                        
+                        <td style="text-align: right!important">100</td>
+                        <td>Alibaba Cloud ecs.r8a.16xlarge<br/>64×AMD EPYC 9T24 @ 3.7GHz vCPUs, 512GiB RAM<br/></td>
+                        <td style="text-align: right!important">130,098.36&nbsp;ops/s</td>
+                        <td style="text-align: right!important">1,273.873</td>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20240514_SF100-300-1000_graphscope.pdf">Full disclosure report</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20240514_SF100-300-1000_graphscope-executive_summary.pdf">Executive summary</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20240514_SF100-300-1000_graphscope-signatures.pdf">Signatures</a></li>
+                                <li><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/audits/LDBC_SNB_I_20240514_SF100-300-1000_graphscope-attachments.tar.gz">Supplementary package</a></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">300</td>
+                        <td>Alibaba Cloud ecs.r8a.16xlarge<br/>64×AMD EPYC 9T24 @ 3.7GHz vCPUs, 512GiB RAM<br/></td>
+                        <td style="text-align: right!important">131,263.87&nbsp;ops/s</td>
+                        <td style="text-align: right!important">1,285.285</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">1000</td>
+                        <td>Alibaba Cloud ecs.r8a.16xlarge<br/>64×AMD EPYC 9T24 @ 3.7GHz vCPUs, 512GiB RAM<br/></td>
+                        <td style="text-align: right!important">127,784.51&nbsp;ops/s</td>
+                        <td style="text-align: right!important">1,251.216</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li>System: <a href="https://atlasgraph.io/"><b>AtlasGraph 3.0.0</b></a></li>
+                                <li>Test sponsor: <a href="https://www.stargraph.cn/"><b>StarGraph</b></a></li>
+                                <li>Date: <time style="white-space: nowrap"><b>2023-12-25</b></time></li>
+                                
+                                
+                                <li>Queries implemented in: <b>Rust</b></li>
+                                <li>System cost: <b>2,032,461&nbsp;RMB</b> (284,797.99 USD)</li>
+                            </ul>
+                        </td>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8259CL vCPUs, 384GiB RAM<br/></td>
+                        <td style="text-align: right!important">37,631.25&nbsp;ops/s</td>
+                        <td style="text-align: right!important">132.133</td>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20231225_SF30-100-300_AtlasGraph.pdf">Full disclosure report</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20231225_SF30-100-300_AtlasGraph-executive_summary.pdf">Executive summary</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20231225_SF30-100-300_AtlasGraph-signatures.pdf">Signatures</a></li>
+                                <li><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/audits/LDBC_SNB_I_20231225_SF30-100-300_AtlasGraph-attachments.tar.gz">Supplementary package</a></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">100</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8259CL vCPUs, 384GiB RAM<br/></td>
+                        <td style="text-align: right!important">48,764.08&nbsp;ops/s</td>
+                        <td style="text-align: right!important">171.223</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">300</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8259CL vCPUs, 384GiB RAM<br/></td>
+                        <td style="text-align: right!important">48,311.63&nbsp;ops/s</td>
+                        <td style="text-align: right!important">169.635</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li>System: <a href="https://github.com/alibaba/GraphScope"><b>GraphScope Flex 0.23.0</b></a></li>
+                                <li>Test sponsor: <a href="https://damo.alibaba.com/"><b>Alibaba DAMO Academy</b></a></li>
+                                <li>Date: <time style="white-space: nowrap"><b>2023-07-13</b></time></li>
+                                
+                                
+                                <li>Queries implemented in: <b>C&#43;&#43;</b></li>
+                                <li>System cost: <b>99,236&nbsp;USD</b> </li>
+                            </ul>
+                        </td>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8175M vCPUs, 384GiB RAM<br/></td>
+                        <td style="text-align: right!important">33,180.87&nbsp;ops/s</td>
+                        <td style="text-align: right!important">334.363</td>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20230713_SF30-100-300_GraphScopeFlex.pdf">Full disclosure report</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20230713_SF30-100-300_GraphScopeFlex-executive_summary.pdf">Executive summary</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20230713_SF30-100-300_GraphScopeFlex-signatures.pdf">Signatures</a></li>
+                                <li><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/audits/LDBC_SNB_I_20230713_SF30-100-300_GraphscopeFlex-attachments.tar.gz">Supplementary package</a></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">100</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8175M vCPUs, 384GiB RAM<br/></td>
+                        <td style="text-align: right!important">33,625.36&nbsp;ops/s</td>
+                        <td style="text-align: right!important">338.842</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">300</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8175M vCPUs, 384GiB RAM<br/></td>
+                        <td style="text-align: right!important">33,261.38&nbsp;ops/s</td>
+                        <td style="text-align: right!important">335.175</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li>System: <a href="https://github.com/tugraph-db/tugraph-db"><b>TuGraph 3.3.4</b></a></li>
+                                <li>Test sponsor: <a href="https://www.antgroup.com/en"><b>Ant Group</b></a></li>
+                                <li>Date: <time style="white-space: nowrap"><b>2023-01-28</b></time></li>
+                                
+                                
+                                <li>Queries implemented in: <b>C&#43;&#43;</b></li>
+                                <li>System cost: <b>277,542&nbsp;RMB</b> (40,908.33 USD)</li>
+                            </ul>
+                        </td>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>Alibaba Cloud ecs.g8y.16xlarge<br/>64×Arm-based YiTian 710 vCPUs, 256GiB RAM<br/></td>
+                        <td style="text-align: right!important">16,133.08&nbsp;ops/s</td>
+                        <td style="text-align: right!important">394.372</td>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20230128_SF30-100-300_tugraph.pdf">Full disclosure report</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20230128_SF30-100-300_tugraph-executive_summary.pdf">Executive summary</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20230128_SF30-100-300_tugraph-signatures.pdf">Signatures</a></li>
+                                <li><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/audits/LDBC_SNB_I_20230128_SF30-100-300_tugraph-attachments.tar.gz">Supplementary package</a></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">100</td>
+                        <td>Alibaba Cloud ecs.g8y.16xlarge<br/>64×Arm-based YiTian 710 vCPUs, 256GiB RAM<br/></td>
+                        <td style="text-align: right!important">16,966.26&nbsp;ops/s</td>
+                        <td style="text-align: right!important">414.739</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">300</td>
+                        <td>Alibaba Cloud ecs.g8y.16xlarge<br/>64×Arm-based YiTian 710 vCPUs, 256GiB RAM<br/></td>
+                        <td style="text-align: right!important">13,532.62&nbsp;ops/s</td>
+                        <td style="text-align: right!important">330.804</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li>System: <a href="https://tech.antfin.com/products/TuGraph"><b>TuGraph 3.2.0</b></a></li>
+                                <li>Test sponsor: <a href="https://www.antgroup.com/en"><b>Ant Group</b></a></li>
+                                <li>Date: <time style="white-space: nowrap"><b>2022-08-16</b></time></li>
+                                
+                                
+                                <li>Queries implemented in: <b>C&#43;&#43;</b></li>
+                                <li>System cost: <b>291,176&nbsp;USD</b> </li>
+                            </ul>
+                        </td>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8259CL vCPUs, 384GiB RAM<br/></td>
+                        <td style="text-align: right!important">12,252.50&nbsp;ops/s</td>
+                        <td style="text-align: right!important">42.079</td>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20220816_SF30-100-300_tugraph.pdf">Full disclosure report</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20220816_SF30-100-300_tugraph-executive_summary.pdf">Executive summary</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20220816_SF30-100-300_tugraph-signatures.pdf">Signatures</a></li>
+                                <li><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/audits/LDBC_SNB_I_20200726_SF30-100-300_tugraph-attachments.tar.gz">Supplementary package</a></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">100</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8259CL vCPUs, 384GiB RAM<br/></td>
+                        <td style="text-align: right!important">12,934.61&nbsp;ops/s</td>
+                        <td style="text-align: right!important">44.422</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">300</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8259CL vCPUs, 384GiB RAM<br/></td>
+                        <td style="text-align: right!important">12,721.24&nbsp;ops/s</td>
+                        <td style="text-align: right!important">43.689</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li>System: <a href="https://galaxybase.com/"><b>Galaxybase 3.3.0</b></a></li>
+                                <li>Test sponsor: <a href="https://galaxybase.com/"><b>CreateLink</b></a></li>
+                                <li>Date: <time style="white-space: nowrap"><b>2022-05-16</b></time></li>
+                                
+                                
+                                <li>Queries implemented in: <b>Java</b></li>
+                                <li>System cost: <b>263,282&nbsp;USD</b> </li>
+                            </ul>
+                        </td>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8259CL vCPUs, 372GB RAM<br/></td>
+                        <td style="text-align: right!important">9,285.86&nbsp;ops/s</td>
+                        <td style="text-align: right!important">35.27</td>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20220516_SF30-100-300_galaxybase.pdf">Full disclosure report</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20220516_SF30-100-300_galaxybase-executive_summary.pdf">Executive summary</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20220516_SF30-100-300_galaxybase-signatures.pdf">Signatures</a></li>
+                                <li><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/audits/LDBC_SNB_I_20220516_SF30-100-300_galaxybase-attachments.tar.gz">Supplementary package</a></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">100</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8259CL vCPUs, 372GB RAM<br/></td>
+                        <td style="text-align: right!important">8,501.21&nbsp;ops/s</td>
+                        <td style="text-align: right!important">32.289</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">300</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8259CL vCPUs, 372GB RAM<br/></td>
+                        <td style="text-align: right!important">8,370.52&nbsp;ops/s</td>
+                        <td style="text-align: right!important">31.793</td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li>System: <a href="https://fma-ai.cn/"><b>TuGraph 1.1</b></a></li>
+                                <li>Test sponsor: <a href="https://fma-ai.cn/"><b>FMA</b></a></li>
+                                <li>Date: <time style="white-space: nowrap"><b>2020-07-26</b></time></li>
+                                
+                                
+                                <li>Queries implemented in: <b>C&#43;&#43;</b></li>
+                                <li>System cost: <b>280,650&nbsp;USD</b> </li>
+                            </ul>
+                        </td>
+                        
+                        <td style="text-align: right!important">30</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8175M vCPUs, 374GB RAM<br/></td>
+                        <td style="text-align: right!important">5,436.47&nbsp;ops/s</td>
+                        <td style="text-align: right!important">19.37</td>
+                        
+                        <td rowspan="3">
+                            <ul>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20200726_SF30-100-300_tugraph.pdf">Full disclosure report</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20200726_SF30-100-300_tugraph-executive_summary.pdf">Executive summary</a></li>
+                                <li><a href="/benchmarks/snb/LDBC_SNB_I_20200726_SF30-100-300_tugraph-signatures.pdf">Signatures</a></li>
+                                <li><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/audits/LDBC_SNB_I_20220816_SF30-100-300_tugraph-attachments.tar.gz">Supplementary package</a></li>
+                            </ul>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">100</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8175M vCPUs, 374GB RAM<br/></td>
+                        <td style="text-align: right!important">5,010.77&nbsp;ops/s</td>
+                        <td style="text-align: right!important">17.854</td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="text-align: right!important">300</td>
+                        <td>AWS r5d.12xlarge<br/>48×Intel Xeon Platinum 8175M vCPUs, 374GB RAM<br/></td>
+                        <td style="text-align: right!important">4,855.52&nbsp;ops/s</td>
+                        <td style="text-align: right!important">17.301</td>
+                        
+                    </tr>
+                    
+                    
+                    </tbody>
+                </table>
+                
+
+                <h3 id="results-as-a-csv-file">Results as a CSV file</h3>
+<p>The audited LDBC SNB Interactive results displayed above are available as <a href="/data/snb_interactive.csv">a CSV file</a>.</p>
+<h3 id="ldbc-certified-auditors">LDBC-certified auditors</h3>
+<p>SNB Interactive audits can be commissioned from the following LDBC-certified auditors:</p>
+<ul>
+<li>Márton Búr</li>
+<li>Arnau Prat-Pérez</li>
+<li>David Püroja</li>
+</ul>
+<h3 id="legacy-audited-results">Legacy audited results</h3>
+<p><a href="/benchmarks/snb/audited-results-v0.2.2">Social Network Benchmark Interactive, version 0.2.2</a></p>
+<h3 id="future-workloads">Future workloads</h3>
+<p>The LDBC SNB Interactive v2 workload is currently under development. See the TPCTC 2023 paper <a href="https://ldbcouncil.org/docs/papers/ldbc-snb-interactive-v2-tpctc2023-preprint.pdf">&ldquo;The LDBC Social Network Benchmark Interactive Workload v2: A Transactional Graph Query Benchmark with Deep Delete Operations&rdquo;</a> and its <a href="https://ldbcouncil.org/docs/presentations/tpctc-2023-ldbc-snb-interactive-v2.pdf">slide deck</a> for details.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</section>
+<!-- /members -->
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

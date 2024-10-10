@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Making Semantic Publishing Execution Rules</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">Making Semantic Publishing Execution Rules</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">Making Semantic Publishing Execution Rules</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">Orri Erling</strong> / on <strong class="text-dark">18 Nov 2014</strong></div>
+        
+        
+        
+        <div class="position-relative mb-5">
+          
+          
+        </div>
+        <div class="content">
+          <p><a href="https://ldbcouncil.org/">LDBC</a> <a href="/benchmarks/spb">SPB (Semantic Publishing Benchmark)</a> is based on the BBC linked data platform use case. Thus the data modelling and transaction mix reflects the BBC&rsquo;s actual utilization of RDF. But a benchmark is not only a condensation of current best practices. The BBC linked data platform is an <a href="https://www.ontotext.com/">Ontotext Graph DB</a> deployment. Graph DB was formerly known as OWLIM.</p>
+<p>So, in SPB we wanted to address substantially more complex queries than the lookups that the BBC linked data platform primarily serves. Diverse dataset summaries, timelines and faceted search qualified by keywords and/or geography are examples of online user experience that SPB needs to cover.</p>
+<p>SPB is not per se an analytical workload but we still find that the queries fall broadly in two categories:</p>
+<ul>
+<li>
+<p>Some queries are centred on a particular search or entity. The data touched by the query size does not grow at the same rate as the dataset.</p>
+</li>
+<li>
+<p>Some queries cover whole cross sections of the dataset, e.g. find the most popular tags across the whole database.</p>
+</li>
+</ul>
+<p>These different classes of questions need to be separated in a metric, otherwise the short lookup dominates at small scales and the large query at large scales.</p>
+<p>Another guiding factor of SPB was the BBC&rsquo;s and others&rsquo; express wish to cover operational aspects such as online backups, replication and fail-over in a benchmark. True, most online installations have to deal with these things, which are yet as good as absent from present benchmark practice. We will look at these aspects in a different article, for now, I will just discuss the matter of workload mix and metric.</p>
+<p>Normally the lookup and analytics workloads are divided into different benchmarks. Here we will try something different. There are three things the benchmark does:</p>
+<ul>
+<li>
+<p>Updates - These sometimes insert a graph, sometimes delete and re-insert the same graph, sometimes just delete a graph. These are logarithmic to data size.</p>
+</li>
+<li>
+<p>Short queries - These are lookups that most often touch on recent data and can drive page impressions. These are roughly logarithmic to data scale.</p>
+</li>
+<li>
+<p>Analytics - These cover a large fraction of the dataset and are roughly linear to data size.</p>
+</li>
+</ul>
+<p>A test sponsor can decide on the query mix within certain bounds. A qualifying run must sustain a minimum, scale-dependent update throughput and must execute a scale-dependent number of analytical query mixes or run for a scale-dependent duration. The minimum update rate, the minimum number of analytics mixes and the minimum duration all grow logarithmically to data size. Within these limits, the test sponsor can decide how to mix the workloads. Publishing several results, emphasizing different aspects is also possible. A given system may be specially good at one aspect, leading the test sponsor to accentuate this.</p>
+<p>The benchmark has been developed and tested at small scales, between 50 and 150M triples. Next we need to see how it actually scales. There we expect to see how the two query sets behave differently. One effect that we see right away when loading data is that creating the full text index on the literals is in fact the longest running part. For a SF 32 ( 1.6 billion triples) SPB database we have the following space consumption figures:</p>
+<ul>
+<li>
+<p>46886 MB of RDF literal text</p>
+</li>
+<li>
+<p>23924 MB of full text index for RDF literals</p>
+</li>
+<li>
+<p>23598 MB of URI strings</p>
+</li>
+<li>
+<p>21981 MB of quads, stored column-wise with default index scheme</p>
+</li>
+</ul>
+<p>Clearly, applying column-wise compression to the strings is the best move for increasing scalability. The literals are individually short, so literal per literal compression will do little or nothing but applying this by the column is known to get a 2x size reduction with Google Snappy. The full text index does not get much from column store techniques, as it already consists of words followed by space efficient lists of word positions. The above numbers are measured with Virtuoso column store, with quads column wise and the rest row-wise. Each number includes the table(s) and any extra indices associated to them.</p>
+<p>Let&rsquo;s now look at a full run at unit scale, i.e. 50M triples.</p>
+<p>The run rules stipulate a minimum of 7 updates per second. The updates are comparatively fast, so we set the update rate to 70 updates per second. This is seen not to take too much CPU. We run 2 threads of updates, 20 of short queries and 2 of long queries. The minimum run time for the unit scale is 10 minutes, so we do 10 analytical mixes, as this is expected to take 10 a little over 10 minutes. The run stops by itself when the last of the analytical mixes finishes.</p>
+<p>The interactive driver reports:</p>
+<pre tabindex="0"><code>Seconds run : 2144
+    Editorial:
+        2 agents
+
+        68164 inserts (avg : 46      ms, min : 5       ms, max : 3002    ms)
+        8440  updates (avg : 72      ms, min : 15      ms, max : 2471    ms)
+        8539  deletes (avg : 37      ms, min : 4       ms, max : 2531    ms)
+
+        85143 operations (68164 CW Inserts (98 errors), 8440 CW Updates (0 errors), 8539 CW Deletions (0 errors))
+        39.7122 average operations per second
+
+    Aggregation:
+        20 agents
+
+        4120  Q1   queries (avg : 789     ms, min : 197     ms, max : 6767    ms, 0 errors)
+        4121  Q2   queries (avg : 85      ms, min : 26      ms, max : 3058    ms, 0 errors)
+        4124  Q3   queries (avg : 67      ms, min : 5       ms, max : 3031    ms, 0 errors)
+        4118  Q5   queries (avg : 354     ms, min : 3       ms, max : 8172    ms, 0 errors)
+        4117  Q8   queries (avg : 975     ms, min : 25      ms, max : 7368    ms, 0 errors)
+        4119  Q11  queries (avg : 221     ms, min : 75      ms, max : 3129    ms, 0 errors)
+        4122  Q12  queries (avg : 131     ms, min : 45      ms, max : 1130    ms, 0 errors)
+        4115  Q17  queries (avg : 5321    ms, min : 35      ms, max : 13144   ms, 0 errors)
+        4119  Q18  queries (avg : 987     ms, min : 138     ms, max : 6738    ms, 0 errors)
+        4121  Q24  queries (avg : 917     ms, min : 33      ms, max : 3653    ms, 0 errors)
+        4122  Q25  queries (avg : 451     ms, min : 70      ms, max : 3695    ms, 0 errors)
+
+        22.5239 average queries per second. Pool 0, queries [ Q1 Q2 Q3 Q5 Q8 Q11 Q12 Q17 Q18 Q24 Q25 ]
+
+        45318 total retrieval queries (0 timed-out)
+        22.5239 average queries per second
+</code></pre><p>The analytical driver reports:</p>
+<pre tabindex="0"><code>Aggregation:
+        2 agents
+
+        14    Q4   queries (avg : 9984    ms, min : 4832    ms, max : 17957   ms, 0 errors)
+        12    Q6   queries (avg : 4173    ms, min : 46      ms, max : 7843    ms, 0 errors)
+        13    Q7   queries (avg : 1855    ms, min : 1295    ms, max : 2415    ms, 0 errors)
+        13    Q9   queries (avg : 561     ms, min : 446     ms, max : 662     ms, 0 errors)
+        14    Q10  queries (avg : 2641    ms, min : 1652    ms, max : 4238    ms, 0 errors)
+        12    Q13  queries (avg : 595     ms, min : 373     ms, max : 1167    ms, 0 errors)
+        12    Q14  queries (avg : 65362   ms, min : 6127    ms, max : 136346  ms, 2 errors)
+        13    Q15  queries (avg : 45737   ms, min : 12698   ms, max : 59935   ms, 0 errors)
+        13    Q16  queries (avg : 30939   ms, min : 10224   ms, max : 38161   ms, 0 errors)
+        13    Q19  queries (avg : 310     ms, min : 26      ms, max : 1733    ms, 0 errors)
+        12    Q20  queries (avg : 13821   ms, min : 11092   ms, max : 15435   ms, 0 errors)
+        13    Q21  queries (avg : 36611   ms, min : 14164   ms, max : 70954   ms, 0 errors)
+        13    Q22  queries (avg : 42048   ms, min : 7106    ms, max : 74296   ms, 0 errors)
+        13    Q23  queries (avg : 48474   ms, min : 18574   ms, max : 93656   ms, 0 errors)
+        0.0862 average queries per second. Pool 0, queries [ Q4 Q6 Q7 Q9 Q10 Q13 Q14 Q15 Q16 Q19 Q20 Q21 Q22 Q23 ]
+
+        180 total retrieval queries (2 timed-out)
+        0.0862 average queries per second
+</code></pre><p>The metric would be 22.52 qi/s, 310 qa/h, 39.7 u/s @ 50Mt (SF 1)</p>
+<p>The SUT is dual Xeon E5-2630, all in memory. The platform utilization is steadily above 2000% CPU (over 20/24 hardware threads busy on the DBMS). The DBMS is Virtuoso open source, (<a href="https://github.com/v7fasttrack/virtuoso-opensource/">v7fasttrack at github.com</a>, <a href="https://github.com/v7fasttrack/virtuoso-opensource/tree/feature/analytics">feature/analytics</a>).</p>
+<p>The minimum update rate of 7/s was sustained but fell short of the target of 70./s. In this run, most demand was put on the interactive queries. Different thread allocations would give different ratios of the metric components. The analytics mix is for example about 3x faster without other concurrent activity.</p>
+<p>Is this good or bad? I would say that this is possible but better can certainly be accomplished.</p>
+<p>The initial observation is that Q17 is the worst of the interactive lot. 3x better is easily accomplished by avoiding a basic stupidity. The query does the evil deed of checking for a substring in a URI. This is done in the wrong place and accounts for most of the time. The query is meant to test geo retrieval but ends up doing something quite different. Optimizing this right would almost double the interactive score. There are some timeouts in the analytical run, which as such disqualifies the run. This is not a fully compliant result but is close enough to give an idea of the dynamics. So we see that the experiment is definitely feasible, is reasonably defined and that the dynamics seen make sense.</p>
+<p>As an initial comment of the workload mix, I&rsquo;d say that interactive should have a few more very short point lookups to stress compilation times and give a higher absolute score of queries per second.</p>
+<p>Adjustments to the mix will depend on what we find out about scaling. As with SNB, it is likely that the workload will shift a little, so this result might not be comparable with future ones.</p>
+<p>In the next SPB article, we will look closer at performance dynamics and choke points and will have an initial impression on scaling the workload.</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            <a href="/tags/spb">SPB</a>
+            , <a href="/tags/test-run">TEST RUN</a>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest updates</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/eighteenth-tuc-meeting/">
+          <h5 class="mt-0">Eighteenth TUC Meeting</h5>
+        </a>
+        24 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/seventeenth-tuc-meeting/">
+          <h5 class="mt-0">Seventeenth TUC Meeting</h5>
+        </a>
+        18 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/post/record-breaking-snb-interactive-results-for-graphscope/">
+          <h5 class="mt-0">Record-Breaking SNB Interactive Results for GraphScope</h5>
+        </a>
+        26 May 2024
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4"></h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/amazon">AMAZON</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analytics">ANALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aws">AWS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmark">BENCHMARK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmarking">BENCHMARKING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bersys">BERSYS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bi">BI</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cfp">CFP</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/chile">CHILE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/database">DATABASE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/datagen">DATAGEN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/design">DESIGN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/developer">DEVELOPER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/driver">DRIVER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ec2">EC2</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/finbench">FINBENCH</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/flink">FLINK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/gql">GQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/grades">GRADES</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/graphalytics">GRAPHALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/guide">GUIDE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/industry">INDUSTRY</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/instance-matching">INSTANCE-MATCHING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interactive">INTERACTIVE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ldbc">LDBC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rdf">RDF</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/santiago">SANTIAGO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sesame">SESAME</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sigmod">SIGMOD</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/snb">SNB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/social-network">SOCIAL-NETWORK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sparql">SPARQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/spb">SPB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/test-run">TEST-RUN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc">TPC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc-c">TPC-C</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tu-delft">TU-DELFT</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tuc-meeting">TUC-MEETING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tutorial">TUTORIAL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/virtuoso">VIRTUOSO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/workshop">WORKSHOP</a></li>
+    </ul>
+  </div>
+  
+  
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

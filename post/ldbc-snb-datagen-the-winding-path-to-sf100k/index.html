@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>LDBC SNB Datagen – The winding path to SF100K</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">LDBC SNB Datagen – The winding path to SF100K</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">LDBC SNB Datagen – The winding path to SF100K</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-color"><a href="https://www.linkedin.com/in/dszakallas/">Dávid Szakállas</a></strong> / on <strong class="text-dark">13 Sep 2022</strong></div>
+        
+        
+          <i>Guest post.</i>
+        
+        
+        <div class="position-relative mb-5">
+          
+          
+        </div>
+        <div class="content">
+          <p>LDBC SNB provides a data generator, which produces synthetic datasets, mimicking a social network’s activity during a period of time. Datagen is defined by the charasteristics of realism, scalability, determinism and usability. More than two years have elapsed since my <a href="https://ldbcouncil.org/post/speeding-up-ldbc-snb-datagen/">last technical update</a> on LDBC SNB Datagen, in which I discussed the reasons for moving the code to Apache Spark from the MapReduce-based Apache Hadoop implementation and the challenges I faced during the migration. Since then, we reached several goals such as we refactored the serializers to use Spark&rsquo;s high-level writers to support the popular Parquet data format and to enable running on spot nodes; brought back factor generation; implemented support for the novel BI benchmark; and optimized the runtime to generate SF30K on 20 i3.4xlarge machines on AWS.</p>
+<h1 id="moving-to-sparksql">Moving to SparkSQL</h1>
+<p>We planned to move parts of the code to SparkSQL, an optimized runtime framework for tabular data. We hypothesized that this would benefit us on multiple fronts: SparkSQL offers an efficient batch analytics runtime, with higher level abstractions that are simpler to understand and work with, and we could easily add support for serializing to Parquet based on SparkSQL&rsquo;s capabilites.</p>
+<blockquote>
+<p>Spark SQL is a Spark module for structured data processing. It provides a programming abstraction called DataFrames and can also act as a distributed SQL query engine. Spark SQL includes a cost-based optimizer, columnar storage, and code generation to make queries fast.</p>
+</blockquote>
+<p>Dealing with the dataset generator proved quite tricky, because it samples from various hand-written distributions and dictionaries, and contains complex domain logic, for which SparkSQL unsuitable. We assessed that the best thing we could do is wrap entire entity generation procedures in UDFs (user defined SQL functions). However, several of these generators return entity trees<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, which are spread across multiple tables by the serializer, and these would have needed to be split up. Further complicating matters, we would have also had to find a way to coordinate the inner random generators&rsquo; state between the UDFs to ensure deterministic execution. Weighing these and that we could not find much benefit in SparkSQL, we ultimately decided to leave entity generation as it is. We limited the SparkSQL refactor to the following areas:</p>
+<ol>
+<li>table manipulations related to shaping the output into the supported layouts and data types as set forth in the specification;</li>
+<li>deriving the Interactive and BI datasets;</li>
+<li>and generating the factor tables, which contain analytic information, such as population per country, number of friendships between city pairs, number of messages per day, etc., used by the substitution parameter generator to ensure predictable query runtimes.</li>
+</ol>
+<p>We refer to points (1.) and (2.) collectively as dataset transformation, while (3.) as factor generation. Initially, these had been part of the generator, extracted as part of this refactor, which resulted in cleaner, more maintainable design.</p>
+<p><img src="datagen_df_0.png" alt="Datagen stages"></p>
+<p>The diagram above shows the components on a high level. The generator outputs a dataset called IR (intermediate representation), which is immediately written to disk. Then, the IR is input to the dataset transformation and factor generation stages, which respectively generate the final dataset and the factor tables. We are aware that spitting out the IR adds considerable runtime overhead and doubles the disk requirements in the worst-case scenario, however, we found that there&rsquo;s no simple way to avoid<br>
+it, as the generator produces entity trees, which are incompatible with the flat, tabular, column oriented layout of SparkSQL. On the positive side, this design enables us to reuse the generator output for multiple transformations and add new factor tables without regenerating the data.</p>
+<p>I&rsquo;ll skip describing the social network graph dataset generator (i.e. stage 1) in any more detail, apart from its serializer, as that was the only part involved in the current refactor. If you are interested in more details, you may look up the <a href="https://ldbcouncil.org/post/speeding-up-ldbc-snb-datagen/">previous blogpost in the series</a> or the <a href="https://arxiv.org/abs/2001.02299">Interactive benchmark specification</a>.</p>
+<h1 id="transformation-pipeline">Transformation pipeline</h1>
+<p>The dataset transformation stage sets off where generation finished, and applies an array of pluggable transformations:</p>
+<ul>
+<li>explodes edges and / or attributes into separate tables,</li>
+<li>subsets the snapshot part and creates insert / delete batches for the BI workload,</li>
+<li>subsets the snapshot part for the Interactive workload,</li>
+<li>applies formatting related options such as date time representation,</li>
+<li>serializes the data to a Spark supported format (CSV, Parquet),</li>
+</ul>
+<p>We utilize a flexible data pipeline that operates on the graph.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> <span style="color:#a6e22e">Transform</span><span style="color:#f92672">[</span><span style="color:#66d9ef">M1</span> <span style="color:#66d9ef">&lt;:</span> <span style="color:#66d9ef">Mode</span>, <span style="color:#66d9ef">M2</span> <span style="color:#66d9ef">&lt;:</span> <span style="color:#66d9ef">Mode</span><span style="color:#f92672">]</span> <span style="color:#a6e22e">extends</span> <span style="color:#f92672">(</span><span style="color:#a6e22e">Graph</span><span style="color:#f92672">[</span><span style="color:#66d9ef">M1</span><span style="color:#f92672">]</span> <span style="color:#66d9ef">=&gt;</span> <span style="color:#a6e22e">Graph</span><span style="color:#f92672">[</span><span style="color:#66d9ef">M2</span><span style="color:#f92672">])</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">type</span> <span style="color:#66d9ef">In</span>  <span style="color:#f92672">=</span> <span style="color:#a6e22e">Graph</span><span style="color:#f92672">[</span><span style="color:#66d9ef">M1</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Out</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Graph</span><span style="color:#f92672">[</span><span style="color:#66d9ef">M2</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> transform<span style="color:#f92672">(</span>input<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">In</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Out</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">def</span> apply<span style="color:#f92672">(</span>v<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Graph</span><span style="color:#f92672">[</span><span style="color:#66d9ef">M1</span><span style="color:#f92672">])</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Graph</span><span style="color:#f92672">[</span><span style="color:#66d9ef">M2</span><span style="color:#f92672">]</span> <span style="color:#66d9ef">=</span> transform<span style="color:#f92672">(</span>v<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>The <code>Transform</code> trait encodes a pure (side effect-free) function polymorphic over graphs, so that transformation pipelines can be expressed with ordinary function composition in a type safe manner. Let&rsquo;s see some of the transformations we have.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RawToBiTransform</span><span style="color:#f92672">(</span>mode<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">BI</span><span style="color:#f92672">,</span> simulationStart<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Long</span><span style="color:#f92672">,</span> simulationEnd<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Long</span><span style="color:#f92672">,</span> keepImplicitDeletes<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Boolean</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Transform</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span>, <span style="color:#66d9ef">Mode.BI</span><span style="color:#f92672">]</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">def</span> transform<span style="color:#f92672">(</span>input<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">In</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Out</span> <span style="color:#f92672">=</span> <span style="color:#f92672">???</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RawToInteractiveTransform</span><span style="color:#f92672">(</span>mode<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Mode.Interactive</span><span style="color:#f92672">,</span> simulationStart<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Long</span><span style="color:#f92672">,</span> simulationEnd<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Long</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Transform</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span>, <span style="color:#66d9ef">Mode.Interactive</span><span style="color:#f92672">]</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">def</span> transform<span style="color:#f92672">(</span>input<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">In</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Out</span> <span style="color:#f92672">=</span> <span style="color:#f92672">???</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">ExplodeEdges</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Transform</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span>, <span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span><span style="color:#f92672">]</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">def</span> transform<span style="color:#f92672">(</span>input<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">In</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Out</span> <span style="color:#f92672">=</span> <span style="color:#f92672">???</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">ExplodeAttrs</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Transform</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span>, <span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span><span style="color:#f92672">]</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">def</span> transform<span style="color:#f92672">(</span>input<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">In</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Out</span> <span style="color:#f92672">=</span> <span style="color:#f92672">???</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Therefore, a transformation pipeline may look like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> transform <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">ExplodeAttrs</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">.</span>andThen<span style="color:#f92672">(</span><span style="color:#a6e22e">ExplodeEdges</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">.</span>andThen<span style="color:#f92672">(</span><span style="color:#a6e22e">RawToInteractiveTransform</span><span style="color:#f92672">(</span>params<span style="color:#f92672">,</span> start<span style="color:#f92672">,</span> end<span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> outputGraph <span style="color:#66d9ef">=</span> transform<span style="color:#f92672">(</span>inputGraph<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>The <code>Graph</code> record has a <code>definition</code> field containing graph-global metadata, whereas <code>entities</code> holds the datasets keyed by their entity type. There are 3 graph <em>modes</em> currently: <code>Raw</code>, <code>Interactive</code> and <code>BI</code>. The BI dataset has different layout than the rest, as it contains incremental inserts and deletes for the entities additionally to the bulk snapshot. This is captured in the <code>Layout</code> dependent type, over which the entities are polymorphic.</p>
+<p>It&rsquo;s important to understand that <code>Graph</code> holds <code>DataFrame</code>s, and these are lazily computed by Spark. So, <code>Graph</code> is merely a description of transformations used to derive the comprising datasets, which makes them subject to all the SparkSQL fanciness such as query optimization, whole stage code generation, and so on. Processing is delayed until an action (such as a disk write) forces it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">GraphDef</span><span style="color:#f92672">[</span><span style="color:#66d9ef">+M</span> <span style="color:#66d9ef">&lt;:</span> <span style="color:#66d9ef">Mode</span><span style="color:#f92672">](</span>
+</span></span><span style="display:flex;"><span>    isAttrExploded<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Boolean</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    isEdgesExploded<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Boolean</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    useTimestamp<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Boolean</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    mode<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">M</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>    entities<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Map</span><span style="color:#f92672">[</span><span style="color:#66d9ef">EntityType</span>, <span style="color:#66d9ef">Option</span><span style="color:#f92672">[</span><span style="color:#66d9ef">String</span><span style="color:#f92672">]]</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Graph</span><span style="color:#f92672">[</span><span style="color:#66d9ef">+M</span> <span style="color:#66d9ef">&lt;:</span> <span style="color:#66d9ef">Mode</span><span style="color:#f92672">](</span>
+</span></span><span style="display:flex;"><span>    definition<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">GraphDef</span><span style="color:#f92672">[</span><span style="color:#66d9ef">M</span><span style="color:#f92672">],</span>
+</span></span><span style="display:flex;"><span>    entities<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Map</span><span style="color:#f92672">[</span><span style="color:#66d9ef">EntityType</span>, <span style="color:#66d9ef">M</span><span style="color:#66d9ef">#</span><span style="color:#66d9ef">Layout</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">sealed</span> <span style="color:#66d9ef">trait</span> <span style="color:#a6e22e">Mode</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Layout</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* ... */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">Mode</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">object</span> <span style="color:#a6e22e">Raw</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Mode</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Layout</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">DataFrame</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* ... */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Interactive</span><span style="color:#f92672">(</span>bulkLoadPortion<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Double</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Mode</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Layout</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">DataFrame</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* ... */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">final</span> <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BI</span><span style="color:#f92672">(</span>bulkloadPortion<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Double</span><span style="color:#f92672">,</span> batchPeriod<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">String</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Mode</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Layout</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">BatchedEntity</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/* ... */</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>You may notice that <code>Transform</code> is statically typed w.r.t. <code>Mode</code>, however other properties, like <code>isAttrExploded</code>, or <code>isEdgesExploded</code> are not captured in the type, and remain merely dynamic. This makes some nonsensical transformation pipelines (i.e. that explodes edges twice in a row) syntactically valid. This trade-off in compile-time safety was made to prevent overcomplicating the types.</p>
+<p>As we already mentioned, <code>Graph</code> is essentially a persistent container of <code>EntityType -&gt; DataFrame</code> mappings. <code>EntityType</code> can be <code>Node</code>, <code>Edge</code> and <code>Attr</code>, and is used to identify the entity and embellish with static metadata, such a descriptive name and primary key, whether it is static or dynamic (as per the specification), and in case of edges, the source and destination type and cardinality. This makes it very simple to create transformation rules on static entity properties with pattern matching.</p>
+<p>Usually, a graph transformation involves matching entities based on their <code>EntityType</code>, and modifying the mapping (and if required, other metadata). Take, for example, the <code>ExplodeAttrs</code> transformation, which explodes into separate tables the values of two columns of <code>Person</code> stored as arrays:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">ExplodeAttrs</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Transform</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span>, <span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span><span style="color:#f92672">]</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">def</span> transform<span style="color:#f92672">(</span>input<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">In</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Out</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>input<span style="color:#f92672">.</span>definition<span style="color:#f92672">.</span>isAttrExploded<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>                              <span style="color:#75715e">// assert at runtime that the transformation hasn&#39;t been applied yet
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AssertionError</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Attributes already exploded in the input graph&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> explodedAttr<span style="color:#f92672">(</span>attr<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Attr</span><span style="color:#f92672">,</span> node<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">DataFrame</span><span style="color:#f92672">,</span> column<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Column</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">=</span>
+</span></span><span style="display:flex;"><span>      attr <span style="color:#f92672">-&gt;</span> node<span style="color:#f92672">.</span>select<span style="color:#f92672">(</span>withRawColumns<span style="color:#f92672">(</span>attr<span style="color:#f92672">,</span> $<span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">.</span>as<span style="color:#f92672">(</span><span style="color:#e6db74">s&#34;</span><span style="color:#e6db74">${</span>attr<span style="color:#f92672">.</span>parent<span style="color:#e6db74">}</span><span style="color:#e6db74">Id&#34;</span><span style="color:#f92672">),</span> explode<span style="color:#f92672">(</span>split<span style="color:#f92672">(</span>column<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;;&#34;</span><span style="color:#f92672">)).</span>as<span style="color:#f92672">(</span><span style="color:#e6db74">s&#34;</span><span style="color:#e6db74">${</span>attr<span style="color:#f92672">.</span>attribute<span style="color:#e6db74">}</span><span style="color:#e6db74">Id&#34;</span><span style="color:#f92672">)))</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> modifiedEntities <span style="color:#66d9ef">=</span> input<span style="color:#f92672">.</span>entities
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">.</span>collect <span style="color:#f92672">{</span> <span style="color:#66d9ef">case</span> <span style="color:#f92672">(</span>k <span style="color:#66d9ef">@</span> <span style="color:#a6e22e">Node</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Person&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">),</span> df<span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span>                <span style="color:#75715e">// match the Person node. This is the only one ExplodeAttrs should modify
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">Map</span><span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>          explodedAttr<span style="color:#f92672">(</span><span style="color:#a6e22e">Attr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Email&#34;</span><span style="color:#f92672">,</span> k<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;EmailAddress&#34;</span><span style="color:#f92672">),</span> df<span style="color:#f92672">,</span> $<span style="color:#e6db74">&#34;email&#34;</span><span style="color:#f92672">),</span> <span style="color:#75715e">// add a new &#34;PersonEmailEmailAddress&#34; entity derived by exploding the email column of Person
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          explodedAttr<span style="color:#f92672">(</span><span style="color:#a6e22e">Attr</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Speaks&#34;</span><span style="color:#f92672">,</span> k<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Language&#34;</span><span style="color:#f92672">),</span> df<span style="color:#f92672">,</span> $<span style="color:#e6db74">&#34;language&#34;</span><span style="color:#f92672">),</span> <span style="color:#75715e">// add a new &#34;PersonSpeaksLanguage&#34; entity derived by exploding the language column of Person
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          k <span style="color:#f92672">-&gt;</span> df<span style="color:#f92672">.</span>drop<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;email&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;language&#34;</span><span style="color:#f92672">)</span>                             <span style="color:#75715e">// drop the exploded columns from person
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> updatedEntities <span style="color:#66d9ef">=</span> modifiedEntities
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">.</span>foldLeft<span style="color:#f92672">(</span>input<span style="color:#f92672">.</span>entities<span style="color:#f92672">)(</span><span style="color:#66d9ef">_</span> <span style="color:#f92672">++</span> <span style="color:#66d9ef">_</span><span style="color:#f92672">)</span>                                 <span style="color:#75715e">// merge-replace the modified entities in the graph
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> updatedEntityDefinitions <span style="color:#66d9ef">=</span> modifiedEntities
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">.</span>foldLeft<span style="color:#f92672">(</span>input<span style="color:#f92672">.</span>definition<span style="color:#f92672">.</span>entities<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#f92672">(</span>e<span style="color:#f92672">,</span> v<span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span>
+</span></span><span style="display:flex;"><span>        e <span style="color:#f92672">++</span> v<span style="color:#f92672">.</span>map<span style="color:#f92672">{</span> <span style="color:#66d9ef">case</span> <span style="color:#f92672">(</span>k<span style="color:#f92672">,</span> v<span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span> k <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">Some</span><span style="color:#f92672">(</span>v<span style="color:#f92672">.</span>schema<span style="color:#f92672">.</span>toDDL<span style="color:#f92672">)</span> <span style="color:#f92672">}</span>          <span style="color:#75715e">// update the entity definition schema to reflect the modifications
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> l <span style="color:#66d9ef">=</span> lens<span style="color:#f92672">[</span><span style="color:#66d9ef">In</span><span style="color:#f92672">]</span>                                                    <span style="color:#75715e">// lenses provide a terse syntax for modifying nested fields
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">(</span>l<span style="color:#f92672">.</span>definition<span style="color:#f92672">.</span>isAttrExploded <span style="color:#f92672">~</span> l<span style="color:#f92672">.</span>definition<span style="color:#f92672">.</span>entities <span style="color:#f92672">~</span> l<span style="color:#f92672">.</span>entities<span style="color:#f92672">).</span>set<span style="color:#f92672">(</span>input<span style="color:#f92672">)((</span><span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> updatedEntityDefinitions<span style="color:#f92672">,</span> updatedEntities<span style="color:#f92672">))</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Note that <code>EntityType</code> does not hold the dataset&rsquo;s full SQL schema currently, as it&rsquo;s not useful for pattern matching, but can be accessed directly from <code>DataFrame</code> if needed.</p>
+<h1 id="inputoutput">Input/output</h1>
+<p>The <code>Reader</code> and <code>Writer</code> typeclasses are used to read from a <code>Source</code> and write to a <code>Sink</code> respectively, terminating a graph transformation pipeline<br>
+on both ends.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> <span style="color:#a6e22e">Reader</span><span style="color:#f92672">[</span><span style="color:#66d9ef">T</span><span style="color:#f92672">]</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Ret</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> read<span style="color:#f92672">(</span>self<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">T</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Ret</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> exists<span style="color:#f92672">(</span>self<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">T</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Boolean</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">trait</span> <span style="color:#a6e22e">Writer</span><span style="color:#f92672">[</span><span style="color:#66d9ef">S</span><span style="color:#f92672">]</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">type</span> <span style="color:#66d9ef">Data</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> write<span style="color:#f92672">(</span>self<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Data</span><span style="color:#f92672">,</span> sink<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">S</span><span style="color:#f92672">)</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Unit</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>There are implementations under <code>ldbc.datagen.io.instances</code> that read a graph from a <code>GraphSource</code> and write to a <code>GraphSink</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.model
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.model.Mode
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.io.graphs.<span style="color:#f92672">{</span><span style="color:#a6e22e">GraphSource</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">GraphSink</span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.io.instances._
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// read
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> inputPath <span style="color:#66d9ef">=</span> <span style="color:#e6db74">&#34;path/to/input/graph&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> inputFormat <span style="color:#66d9ef">=</span> <span style="color:#e6db74">&#34;parquet&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> source <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">GraphSource</span><span style="color:#f92672">(</span>model<span style="color:#f92672">.</span>graphs<span style="color:#f92672">.</span><span style="color:#a6e22e">Raw</span><span style="color:#f92672">.</span>graphDef<span style="color:#f92672">,</span> inputPath<span style="color:#f92672">,</span> inputFormat<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> graph <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">Reader</span><span style="color:#f92672">[</span><span style="color:#66d9ef">GraphSource</span>, <span style="color:#66d9ef">Graph</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span><span style="color:#f92672">]].</span>read<span style="color:#f92672">(</span>source<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// transform
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> transform <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">ExplodeAttrs</span><span style="color:#f92672">.</span>andThen<span style="color:#f92672">(</span><span style="color:#a6e22e">ExplodeEdges</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> transformedGraph <span style="color:#66d9ef">=</span> transform<span style="color:#f92672">(</span>graph<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// write
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> outputPath <span style="color:#66d9ef">=</span> <span style="color:#e6db74">&#34;path/to/output/graph&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> outputFormat <span style="color:#66d9ef">=</span> <span style="color:#e6db74">&#34;csv&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> sink <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">GraphSink</span><span style="color:#f92672">(</span>outputPath<span style="color:#f92672">,</span> outputFormat<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Writer</span><span style="color:#f92672">[</span><span style="color:#66d9ef">GraphSink</span>, <span style="color:#66d9ef">Graph</span><span style="color:#f92672">[</span><span style="color:#66d9ef">Mode.Raw.</span><span style="color:#66d9ef">type</span><span style="color:#f92672">]].</span>write<span style="color:#f92672">(</span>transformedGraph<span style="color:#f92672">,</span> sink<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>We provide <a href="https://github.com/typelevel/simulacrum">Ops syntax</a> to make it shorter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.model
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.model.Mode
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.io.graphs.<span style="color:#f92672">{</span><span style="color:#a6e22e">GraphSource</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">GraphSink</span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.io.instances._
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.io.Reader.ops._
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> ldbc.snb.datagen.io.Writer.ops._
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// read
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> inputPath <span style="color:#66d9ef">=</span> <span style="color:#e6db74">&#34;path/to/input/graph&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> inputFormat <span style="color:#66d9ef">=</span> <span style="color:#e6db74">&#34;parquet&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> graph <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">GraphSource</span><span style="color:#f92672">(</span>model<span style="color:#f92672">.</span>graphs<span style="color:#f92672">.</span><span style="color:#a6e22e">Raw</span><span style="color:#f92672">.</span>graphDef<span style="color:#f92672">,</span> inputPath<span style="color:#f92672">,</span> inputFormat<span style="color:#f92672">).</span>read
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// transform
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> transformedGraph <span style="color:#66d9ef">=</span> <span style="color:#f92672">???</span> <span style="color:#75715e">/* ... */</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// write
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">val</span> outputPath <span style="color:#66d9ef">=</span> <span style="color:#e6db74">&#34;path/to/output/graph&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">val</span> outputFormat <span style="color:#66d9ef">=</span> <span style="color:#e6db74">&#34;csv&#34;</span>
+</span></span><span style="display:flex;"><span>transformedGraph<span style="color:#f92672">.</span>write<span style="color:#f92672">(</span><span style="color:#a6e22e">GraphSink</span><span style="color:#f92672">(</span>outputPath<span style="color:#f92672">,</span> outputFormat<span style="color:#f92672">))</span>
+</span></span></code></pre></div><p>The reader/writer architecture is layered, the graph reader/writer uses dataframe readers/writers for each of its entities. One interesting aspect of implementing the reader was dealing with the input schema. Parquet is self-describing, however as we also support the CSV format, we had to provide a way for correct schema detection and column parsing.</p>
+<p>Spark has a facility to derive SparkSQL schema from case classes automatically<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. We created case classes for each entity in the <code>Raw</code> dataset.  We also created a typeclass <code>EntityTraits</code> associating these classes with their <code>EntityType</code>, so we can summon them (and consequently their SparkSQL schema) in the reader.</p>
+<p>The case classes are used during the serialization of the generated dataset too, but more about that later.</p>
+<h1 id="factor-generation">Factor generation</h1>
+<p>As we already mentioned, factor generation was originally part of the data generator, i.e. factor tables were calculated on the fly and emitted as side outputs. This design had some problems. Auxiliary data structures had to be maintained and interleaved with generation, which violated separation of concerns, consequently hurting readability and maintainability. Also, anything more complicated than entity local aggregates where impossible to express in the original MapReduce framework. To keep the preceding Spark rewrite at a managable scope, the original factor generation code had been removed.</p>
+<p>We decided it&rsquo;s best to reintroduce factor generation as a post-processing step that operates on the generated data. This makes it possible to express more complex analytical queries, requires no prior knowledge about the generator, can be done in SparkSQL (making it much simpler), and removes the impact on the generator&rsquo;s performance, so that we can optimize them separately. Since this refactor, we almost tripled the number factor tables (up to 31 to cover both SNB workloads, BI and Interactive). The queries computing of certain factor tables even use <a href="https://spark.apache.org/graphx/">GraphX</a>, which was unimaginable with the previous design.</p>
+<p>Factor tables are added by extending a map with a <code>name -&gt; Factor</code> pair. <code>Factor</code> declares is input entities, and accepts a function that receives input <code>DataFrames</code>, and returns a single <code>DataFrame</code> as output.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> factors <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">Map</span> <span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;personDisjointEmployerPairs&#34;</span> <span style="color:#f92672">-&gt;</span> <span style="color:#a6e22e">Factor</span><span style="color:#f92672">(</span><span style="color:#a6e22e">PersonType</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">PersonKnowsPersonType</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">OrganisationType</span><span style="color:#f92672">,</span> <span style="color:#a6e22e">PersonWorkAtCompanyType</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">Seq</span><span style="color:#f92672">(</span>person<span style="color:#f92672">,</span> personKnowsPerson<span style="color:#f92672">,</span> organisation<span style="color:#f92672">,</span> workAt<span style="color:#f92672">)</span> <span style="color:#66d9ef">=&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">val</span> knows <span style="color:#66d9ef">=</span> undirectedKnows<span style="color:#f92672">(</span>personKnowsPerson<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">val</span> company <span style="color:#66d9ef">=</span> organisation<span style="color:#f92672">.</span>where<span style="color:#f92672">(</span>$<span style="color:#e6db74">&#34;Type&#34;</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#34;Company&#34;</span><span style="color:#f92672">).</span>cache<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">val</span> personSample <span style="color:#66d9ef">=</span> person
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>orderBy<span style="color:#f92672">(</span>$<span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>limit<span style="color:#f92672">(</span><span style="color:#ae81ff">20</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      personSample
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>as<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Person2&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>join<span style="color:#f92672">(</span>knows<span style="color:#f92672">.</span>as<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;knows&#34;</span><span style="color:#f92672">),</span> $<span style="color:#e6db74">&#34;knows.person2Id&#34;</span> <span style="color:#f92672">===</span> $<span style="color:#e6db74">&#34;Person2.id&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>join<span style="color:#f92672">(</span>workAt<span style="color:#f92672">.</span>as<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;workAt&#34;</span><span style="color:#f92672">),</span> $<span style="color:#e6db74">&#34;workAt.PersonId&#34;</span> <span style="color:#f92672">===</span> $<span style="color:#e6db74">&#34;knows.Person1id&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>join<span style="color:#f92672">(</span>company<span style="color:#f92672">.</span>as<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Company&#34;</span><span style="color:#f92672">),</span> $<span style="color:#e6db74">&#34;Company.id&#34;</span> <span style="color:#f92672">===</span> $<span style="color:#e6db74">&#34;workAt.CompanyId&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>select<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>          $<span style="color:#e6db74">&#34;Person2.id&#34;</span><span style="color:#f92672">.</span>alias<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;person2id&#34;</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>          $<span style="color:#e6db74">&#34;Company.name&#34;</span><span style="color:#f92672">.</span>alias<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;companyName&#34;</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>          $<span style="color:#e6db74">&#34;Company.id&#34;</span><span style="color:#f92672">.</span>alias<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;companyId&#34;</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>          $<span style="color:#e6db74">&#34;Person2.creationDate&#34;</span><span style="color:#f92672">.</span>alias<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;person2creationDate&#34;</span><span style="color:#f92672">),</span>
+</span></span><span style="display:flex;"><span>          $<span style="color:#e6db74">&#34;Person2.deletionDate&#34;</span><span style="color:#f92672">.</span>alias<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;person2deletionDate&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">.</span>distinct<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">},</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">/* more factors */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>As you can see, it&rsquo;s not much complicated than using plain SQL, with the added benefit of being able to extract recurring subqueries to functions (e.g. <code>undirectedKnows</code>). Currently, there&rsquo;s no parallelization between different factor tables (although each of them is parallelized internally by Spark). The Factor table writer uses the same componentized architecture as the graph writer, i.e. it uses the dataframe writer under the hood.</p>
+<h1 id="revamping-the-data-generators-serializer">Revamping the data generator&rsquo;s serializer</h1>
+<p>At this point, both the transformation pipeline and factor generator was ready, however the data generator was still chugging with the old serializer, emitting the IR in CSV. We wanted to move this to Parquet to improve performance and reduce its size, but there was a problem: due to the generator&rsquo;s custom data representation, SparkSQL (and its DataSource API) was off-limits. So we&rsquo;ve bitten the bullet, and rewritten the existing serializer to emit Parquet.</p>
+<blockquote>
+<p><a href="https://parquet.apache.org/">Parquet</a> is an open source data format that evolved to be the de facto standard for Big Data batch pipelines. It offers a column-oriented, compressed, schemaful representation that is space-efficient and suited for analytic queries. The file format leverages a record shredding and assembly model, which originated at Google. This results in a file that is optimized for query performance and minimizing I/O.</p>
+</blockquote>
+<p>The new serialization framework is heavily influenced by the design of Java <code>OutputStreams</code>, in the sense that stateful objects are composed to form a pipeline. For example, in case of <em>activities</em>, the input is an activity tree, and the output is a set of rows in multiple files (eg. forum, forumHasTag, post, postHasTag, etc.). The components that take part in activity serialization are shown on the diagram below. The activity tree is iterated (1st component) and the corresponding entity serializer is called (2nd component), which is fed into a component that splits the records (3rd one) among several output streams writing individual files (last).</p>
+<p><img src="activity.png" alt="Activity serialization pipeline"></p>
+<p>The benefit of this architecture is that only the last component needs to change when we add support for a new output format.</p>
+<p>To support Parquet, we made use of row-level serializers available in Hadoop&rsquo;s Parquet library (bundled with SparkSQL), and internal classes in SparkSQL to derive Parquet schema for our entities. Remember how we used case classes for the <code>Raw</code> entities to derive the input schema in the graph reader during dataset transformation? Here we use the same classes (e.g. <code>Forum</code>) and Spark&rsquo;s <code>Encoder</code> framework to encode the entities in Parquet, which means that the generated output remains consistent with <code>DataFrame</code>-based reader, and we spare a lot of code duplication.</p>
+<h1 id="optimizations">Optimizations</h1>
+<p>After these refactors, we were able to generate the BI dataset with scale factor 10K on 300 i3.4xlarge machines in one hour. Decreasing the number of machines resulted in out of memory errors in the generator. We realized partition sizes (and thus the number of partitions) should be determined based on available memory. Our experiments showed that a machine with 128GB of memory is capable of generating SF3K (scale factor 3000) reliably with 3 blocks<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> per partition given ample disk size to allow for spills (tested with 3.8TB); while less partitions (subsequently, larger block/partition ratio) would introduce OOM errors. Furthermore, we split the data generator output after a certain number of rows written, to fend against the skew between different kinds of entities possibly causing problems during transformation<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>. These optimizations enabled us to run SF10K reliably on 4 i3.4xlarge machines in 11 hours (which is still more than 6x reduction in cost). We weren&rsquo;t able to run SF30K run on 10 machines (1 machine / SF3K), even 15 ran out of disk. This non-linear disk use should be investigated further as it complicates calculating cluster sizes for larger scale factors.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./tools/emr/submit_datagen_job.py sf3k_bi <span style="color:#ae81ff">3000</span> parquet bi <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --sf-per-executor <span style="color:#ae81ff">3000</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --partitions <span style="color:#ae81ff">330</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --jar $JAR_NAME <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --instance-type i3.4xlarge <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --bucket $BUCKET_NAME <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -- --explode-edges --explode-attrs
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./tools/emr/submit_datagen_job.py sf10k_bi <span style="color:#ae81ff">10000</span> parquet bi <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --sf-per-executor <span style="color:#ae81ff">3000</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --partitions <span style="color:#ae81ff">1000</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --jar $JAR_NAME <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --instance-type i3.4xlarge <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  --bucket $BUCKET_NAME <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -- --explode-edges --explode-attrs
+</span></span></code></pre></div><p>The above examples working configurations for generating the 3K and 10K BI datasets. The <code>--sf-per-executor</code> option controls the number of worker nodes allocated, in this case 1 node per every 3000 SF, i.e. 1 and 4 nodes correspondingly. The <code>--partitions</code> option controls the total number of partitions, and was calculated based on the number of persons using the formula <code>partitions = ceil(number_of_persons / block_size / 3)</code> to get a maximum of 3 blocks per partition.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>These improvements made LDBC SNB datagen more modular, maintainable and efficient, costing under a cent per scale factor to generate the BI dataset, which enables us to generate datasets beyond SF 100K.</p>
+<h1 id="footnotes">Footnotes</h1>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>The generator produces hierarchies, such as forum wall with a random number of posts, that have comments, etc. This tree is iterated, and different entities are written to separate files.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Shameless plug: You can learn more on this from <a href="https://www.dataversity.net/case-study-deriving-spark-encoders-and-schemas-using-implicits/">another blogpost of mine</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>The datagenerator produces blocks of 10,000 persons and their related entities. Entities from different blocks are unrelated (isolated).&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>The maximum row count per file is currently 10M, however, this can be modified with a command line option. We also had an alternative design in mind where this number would have been determined based on the average row size of each entity, however, we stayed with the first version for simplicity.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            <a href="/tags/datagen">DATAGEN</a>
+            , <a href="/tags/snb">SNB</a>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest updates</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/eighteenth-tuc-meeting/">
+          <h5 class="mt-0">Eighteenth TUC Meeting</h5>
+        </a>
+        24 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/seventeenth-tuc-meeting/">
+          <h5 class="mt-0">Seventeenth TUC Meeting</h5>
+        </a>
+        18 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/post/record-breaking-snb-interactive-results-for-graphscope/">
+          <h5 class="mt-0">Record-Breaking SNB Interactive Results for GraphScope</h5>
+        </a>
+        26 May 2024
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4"></h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/amazon">AMAZON</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analytics">ANALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aws">AWS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmark">BENCHMARK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmarking">BENCHMARKING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bersys">BERSYS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bi">BI</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cfp">CFP</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/chile">CHILE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/database">DATABASE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/datagen">DATAGEN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/design">DESIGN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/developer">DEVELOPER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/driver">DRIVER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ec2">EC2</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/finbench">FINBENCH</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/flink">FLINK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/gql">GQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/grades">GRADES</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/graphalytics">GRAPHALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/guide">GUIDE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/industry">INDUSTRY</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/instance-matching">INSTANCE-MATCHING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interactive">INTERACTIVE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ldbc">LDBC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rdf">RDF</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/santiago">SANTIAGO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sesame">SESAME</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sigmod">SIGMOD</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/snb">SNB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/social-network">SOCIAL-NETWORK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sparql">SPARQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/spb">SPB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/test-run">TEST-RUN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc">TPC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc-c">TPC-C</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tu-delft">TU-DELFT</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tuc-meeting">TUC-MEETING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tutorial">TUTORIAL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/virtuoso">VIRTUOSO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/workshop">WORKSHOP</a></li>
+    </ul>
+  </div>
+  
+  
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

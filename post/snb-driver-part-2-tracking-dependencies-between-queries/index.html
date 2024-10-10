@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>SNB Driver   Part 2: Tracking Dependencies Between Queries</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">SNB Driver - Part 2: Tracking Dependencies Between Queries</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">SNB Driver - Part 2: Tracking Dependencies Between Queries</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">Alex Averbuch</strong> / on <strong class="text-dark">23 Jan 2015</strong></div>
+        
+        
+        
+        <div class="position-relative mb-5">
+          
+          
+        </div>
+        <div class="content">
+          <p>The <a href="/post/snb-driver-part-1">SNB Driver part 1</a> post introduced, broadly, the challenges faced when developing a workload driver for the LDBC SNB benchmark. In this blog we&rsquo;ll drill down deeper into the details of what it means to execute &ldquo;dependent queries&rdquo; during benchmark execution, and how this is handled in the driver. First of all, as many driver-specific terms will be used, below is a listing of their definitions. There is no need to read them in detail, it is just there to serve as a point of reference.</p>
+<h3 id="definitions">Definitions</h3>
+<ul>
+<li>
+<p><em>Simulation Time (ST)</em>: notion of time created by data generator. All time stamps in the generated data set are in simulation time</p>
+</li>
+<li>
+<p><em>Real Time (RT)</em>: wall clock time</p>
+</li>
+<li>
+<p><em>Time Compression Ratio</em>: function that maps simulation time to real time, e.g., an offset in combination with a compression ratio. It is a static value, set in driver configuration. Real Time Ratio is reported along with benchmark results, allowing others to recreate the same benchmark</p>
+</li>
+<li>
+<p><em>Operation</em>: read and/or write</p>
+</li>
+<li>
+<p><em>Dependencies</em>: operations in this set introduce dependencies in the workload. That is, for every operation in this set there exists at least one other operation (in Dependents) that can not be executed until this operation has been processed</p>
+</li>
+<li>
+<p><em>Dependents</em>: operations in this set are dependent on at least one other operation (in Dependencies) in the workload</p>
+</li>
+<li>
+<p><em>Due Time (DueT)</em>: point in simulation time at which the execution of an operation should be initiated.</p>
+</li>
+<li>
+<p><em>Dependent Time (DepT)</em>: in addition to Due Time, every operation in Dependents also has a Dependent Time, which corresponds to the Due Time of the operation that it depends on. Dependent Time is always before Due Time. For operations with multiple dependencies Dependent Time is the maximum Due Time of all the operations it depends on.</p>
+</li>
+<li>
+<p><em>Safe Time (SafeT)</em>: time duration.</p>
+<ul>
+<li>
+<p>when two operations have a necessary order in time (i.e., dependency) there is at least a SafeT interval between them</p>
+</li>
+<li>
+<p>SafeT is the minimum duration between the Dependency Time and Due Time of any operations in Dependents</p>
+</li>
+</ul>
+</li>
+<li>
+<p>​<em>Operation Stream</em>: sequence of operations ordered by Due Time (dependent operations must separated by at least SafeT)</p>
+</li>
+<li>
+<p><em>Initiated Operations</em>: operations that have started executing but not yet finished</p>
+</li>
+<li>
+<p><em>Local Completion Time (per driver)</em>: point in simulation time behind which there are no uncompleted operationsLocal Completion Time = min(min(Initiated Operations), max(Completed Operations))</p>
+</li>
+<li>
+<p><em>Global Completion Time (GCT)</em>: minimum completion time of all drivers. Once GCT has advanced to the Dependent Time of some operation that operation is safe to execute, i.e., the operations it depends on have all completed executing. Global Completion Time = min(Local Completion Time)​</p>
+</li>
+<li>
+<p><em>Execution Window (Window)</em>: a timespan within which all operations can be safely executed</p>
+<ul>
+<li>
+<p>All operations satisfying window.startTime &lt;= operation.DueT &lt; window.endTime may be executed</p>
+</li>
+<li>
+<p>Within a window no restrictions on operation ordering or operation execution time are enforced, driver has a freedom of choosing an arbitrary scheduling strategy inside the window</p>
+</li>
+<li>
+<p>To ensure that execution order respects dependencies between operations, window size is bounded by SafeT, such that: 0 &lt; window.duration &lt;= SafeT</p>
+</li>
+<li>
+<p>Window duration is fixed, per operation stream; this is to simplify scheduling and make benchmark runs repeatable</p>
+</li>
+<li>
+<p>Before any operations within a window can start executing it is required that: GCT &gt;= window.startTime - (SafeT - window.duration)</p>
+</li>
+<li>
+<p>All operations within a window must initiate and complete between window start and end times: window.startTime &lt;= operation.initiate &lt; window.endTime and window.startTime &lt;= operation.complete &lt; window.endTime</p>
+</li>
+</ul>
+</li>
+<li>
+<p><em>Dependency Mode</em>: defines dependencies, constraints on operation execution order</p>
+</li>
+<li>
+<p><em>Execution Mode</em>: defines how the runtime should execute operations of a given type</p>
+</li>
+</ul>
+<h3 id="tracking-dependencies">Tracking Dependencies</h3>
+<p>Now, the fun part, making sure dependent operations are executed in the correct order.</p>
+<p>Consider that every operation in a workload belongs to none, one, or both of the following sets: Dependencies and Dependents. As mentioned, the driver uses operation time stamps (Due Times) to ensure that dependencies are maintained. It keeps track of the latest point in time behind which every operation has completed. That is, every operation (i.e., dependency) with a Due Time lower or equal to this time is guaranteed to have completed execution. It does this by maintaining a monotonically increasing variable called Global Completion Time (GCT).</p>
+<p>Logically, every time the driver (via a database connector) begins execution of an operation from Dependencies that operation is added to Initiated Operations:</p>
+<ul>
+<li>the set of operations that have started executing but not yet finished.</li>
+</ul>
+<p>Then, upon completion, the operation is removed from Initiated Operations and added to Completed Operations:</p>
+<ul>
+<li>the set of operations that have started and finished executing.</li>
+</ul>
+<p>Using these sets, each driver process maintains its own view of GCT in the following way. Local progress is monitored and managed using a variable called Local Completion Time (LCT):</p>
+<ul>
+<li>the point in time behind which there are no uncompleted operations. No operation in Initiated Operations has a lower or equal Due Time and no operation in Completed Operations has an equal or higher Due Time.</li>
+</ul>
+<p>LCT is periodically sent to all other driver processes, which all then (locally) set their view of GCT to the minimum LCT of all driver processes. At this point the driver has two, of the necessary three (third covered shortly), pieces of information required for knowing when to execute an operation:</p>
+<ul>
+<li>
+<p><em>Due Time</em>: point in time at which an operation should be executed, assuming all preconditions (e.g., dependencies) have been fulfilled</p>
+</li>
+<li>
+<p><em>GCT</em>: every operation (from Dependencies) with a Due Time before this point in time has completed execution</p>
+</li>
+</ul>
+<p>However, with only GCT to track dependencies the driver has no way of knowing when it is safe to execute any particular dependent operation. What GCT communicates is that all dependencies up to some point in time have completed, but whether or not the dependencies for any particular operation are within these completed operations is unknown. The driver would have to wait until GCT has passed the Due Time (because Dependency Time is always lower) of an operation before that operation could be safely executed, which would result in the undesirable outcome of every operation missing its Due Time. The required information is which particular operation in Dependencies does any operation in Dependents depend on. More specifically, the Due Time of this operation. This is referred to as Dependent Time:</p>
+<ul>
+<li>in addition to Due Time, every operation in Dependents also has (read: must have) a Dependent Time, which corresponds to the latest Due Time of all the operations it depends on. Once GCT has advanced beyond the Dependent Time of an operation that operation is safe to execute.</li>
+</ul>
+<p>Using these three mechanisms (Due Time, GCT, and Dependent Time) the driver is able to execute operations, while ensuring their dependencies are satisfied beforehand.</p>
+<h3 id="scalable-execution-in-the-presence-of-dependencies">Scalable execution in the Presence of Dependencies</h3>
+<p>The mechanisms introduced in part 1 guarantee that dependency constraints are not violated, but in doing so they unavoidably introduce overhead of communication/synchronization between driver threads/processes. To minimize the negative effects that synchronization has on scalability an additional Execution Mode was introduced (more about Execution Modes will be discussed shortly): Windowed Execution. Windowed Execution has two design goals:</p>
+<p>a) make the generated load less &lsquo;bursty&rsquo;</p>
+<p>b) allow the driver to &lsquo;scale&rsquo;, so when the driver is given more resources (CPUs, servers, etc.) it is able to generate more load.</p>
+<p>In the context of Windowed Execution, operations are executed in groups (Windows), where operations are grouped according to their Due Time. Every Window has a Start Time, a Duration, and an End Time, and Windows contain only those operations that have a Due Time between Window.startTime and Window.endTime. Logically, all operations within a Window are executed at the same time, some time within the Window. No guaranty is made regarding exactly when, or in what order, an operation will execute within its Window.</p>
+<p>The reasons this approach is correct are as follows:</p>
+<ul>
+<li>
+<p>Operations belonging to the Dependencies set are never executed in this manner - the Due Times of Dependencies operations are never modified as this would affect how dependencies are tracked</p>
+</li>
+<li>
+<p>The minimum duration between the Dependency Time and Due Time of any operation in Dependents is known (can be calculated by scanning through workload once), this duration is referred to as Safe Time (SafeT)</p>
+</li>
+<li>
+<p>A window does not start executing until the dependencies of all its operations have been fulfilled. This is ensured by enforcing that window execution does not start until</p>
+<p>GCT &gt;= window.startTime - (SafeT - window.duration) = window.endTime - SafeT; that is, the duration between GCT and the end of the window is no longer than SafeT</p>
+</li>
+</ul>
+<p>The advantages of such an execution mode are as follows:</p>
+<ul>
+<li>
+<p>As no guarantees are made regarding time or order of operation execution within a Window, GCT no longer needs to be read before the execution of every operation, only before the execution of every window</p>
+</li>
+<li>
+<p>Then, as GCT is read less frequently, it follows that it does not need to be communicated between driver processes as frequently. There is no need or benefit to communicating GCT protocol message more frequently than approximately Window.duration, the side effect of which is reduced network traffic</p>
+</li>
+<li>
+<p>Further, by making no guarantees regarding the order of execution the driver is free to reschedule operations (within Window bounds). The advantage being that operations can be rearranged in such a way as to reduce unwanted bursts of load during execution, which could otherwise occur while synchronizing GCT during demanding workloads. For example, a uniform scheduler may modify operation Due Times to be uniformly distributed across the Window timespan, to &lsquo;smoothen&rsquo; the load within a Window.</p>
+</li>
+</ul>
+<p>As with any system, there are trade-offs to this design, particularly regarding Window.duration. The main trade-off is that between &lsquo;workload resolution&rsquo; and scalability. Increasing Window.duration reduces synchronization but also reduces the resolution at which the workload definition is followed. That is, the generated workload becomes less like the workload definition. However, as this is both bounded and configurable, it is not a major concern. This issue is illustrated in Figure 1, where the same stream of events is split into two different workloads based on different size of the Window. The workload with Window size 5 (on the right) has better resolution, especially for the &lsquo;bursty&rsquo; part of the event stream.</p>
+<p><img src="window-scheduling.png" alt="image"><br>
+Figure 1. Window scheduling</p>
+<p>This design also trades a small amount of repeatability for scalability: as there are no timing or ordering guarantees within a window, two executions of the same window are not guaranteed to be equivalent - &lsquo;what happens in the window stays in the window&rsquo;. Despite sacrificing this repeatability, the results of operations do not change. No dependency-altering operations occur during the execution of a Window, therefore results for all queries should be equivalent between two executions of the same workload, there is no effect on the expected result for any given operation.</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            <a href="/tags/snb">SNB</a>
+            , <a href="/tags/driver">DRIVER</a>
+            , <a href="/tags/interactive">INTERACTIVE</a>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest updates</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/eighteenth-tuc-meeting/">
+          <h5 class="mt-0">Eighteenth TUC Meeting</h5>
+        </a>
+        24 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/seventeenth-tuc-meeting/">
+          <h5 class="mt-0">Seventeenth TUC Meeting</h5>
+        </a>
+        18 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/post/record-breaking-snb-interactive-results-for-graphscope/">
+          <h5 class="mt-0">Record-Breaking SNB Interactive Results for GraphScope</h5>
+        </a>
+        26 May 2024
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4"></h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/amazon">AMAZON</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analytics">ANALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aws">AWS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmark">BENCHMARK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmarking">BENCHMARKING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bersys">BERSYS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bi">BI</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cfp">CFP</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/chile">CHILE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/database">DATABASE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/datagen">DATAGEN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/design">DESIGN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/developer">DEVELOPER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/driver">DRIVER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ec2">EC2</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/finbench">FINBENCH</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/flink">FLINK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/gql">GQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/grades">GRADES</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/graphalytics">GRAPHALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/guide">GUIDE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/industry">INDUSTRY</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/instance-matching">INSTANCE-MATCHING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interactive">INTERACTIVE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ldbc">LDBC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rdf">RDF</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/santiago">SANTIAGO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sesame">SESAME</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sigmod">SIGMOD</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/snb">SNB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/social-network">SOCIAL-NETWORK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sparql">SPARQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/spb">SPB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/test-run">TEST-RUN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc">TPC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc-c">TPC-C</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tu-delft">TU-DELFT</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tuc-meeting">TUC-MEETING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tutorial">TUTORIAL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/virtuoso">VIRTUOSO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/workshop">WORKSHOP</a></li>
+    </ul>
+  </div>
+  
+  
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

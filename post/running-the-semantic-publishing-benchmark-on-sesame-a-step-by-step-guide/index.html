@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Running the Semantic Publishing Benchmark on Sesame, a Step by Step Guide</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">Running the Semantic Publishing Benchmark on Sesame, a Step by Step Guide</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">Running the Semantic Publishing Benchmark on Sesame, a Step by Step Guide</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">Iliya Enchev</strong> / on <strong class="text-dark">13 Jan 2015</strong></div>
+        
+        
+        
+        <div class="position-relative mb-5">
+          
+          
+        </div>
+        <div class="content">
+          <p>Until now we have discussed several aspects of the <a href="/benchmarks/spb">Semantic Publishing Benchmark (SPB)</a> such as the <a href="/post/sizing-aws-instances-for-the-semantic-publishing-benchmark">difference in performance between virtual and real servers configuration</a>, how to choose an <a href="/post/making-semantic-publishing-execution-rules">appropriate query mix</a> for a benchmark run and our experience with using SPB in the development process of GraphDB for <a href="/post/using-ldbc-spb-to-find-owlim-performance-issues">finding performance issues</a>.</p>
+<p>In this post we provide a step-by-step guide on how to run SPB using the <a href="http://rdf4j.org/">Sesame</a> RDF data store on a fresh install of <a href="http://releases.ubuntu.com/14.04.1/">Ubuntu Server 14.04.1</a>. The scenario is easy to adapt to other RDF triple stores which support the Sesame Framework used for querying and analyzing RDF data.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>We start with a fresh server installation, but before proceeding with setup of the Sesame Data Store and SPB benchmark we need the following pieces of software up and running:</p>
+<ul>
+<li>Git</li>
+<li>Apache Ant 1.8 or higher</li>
+<li>OpenJDK 6 or Oracle JDK 6 or higher</li>
+<li>Apache Tomcat 7 or higher</li>
+</ul>
+<p>If you already have these components installed on your machine you can directly proceed to the next section: <em>Installing Sesame</em></p>
+<p>Following are sample commands which can be used to install the required software components:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install git
+</span></span><span style="display:flex;"><span>sudo apt-get install ant
+</span></span><span style="display:flex;"><span>sudo apt-get install default-jdk
+</span></span><span style="display:flex;"><span>sudo apt-get install tomcat7
+</span></span></code></pre></div><p>Optionally Apache Tomcat Server can be downloaded as a zipped file and extracted in a location of choice.</p>
+<p>After a successful installation of Apache Tomcat you should be able to get the default splash page <em>“It works”</em> when you open your web browser and enter the following address:  http://&lt;your_ip_address&gt;:8080</p>
+<h3 id="installing-sesame">Installing Sesame</h3>
+<p>We will use current Sesame version 2.7.14. You can download it <a href="http://sourceforge.net/projects/sesame/files/Sesame%202/">here</a> or run following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget <span style="color:#ae81ff">\\</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;http://sourceforge.net/projects/sesame/files/Sesame%202/2.7.14/openrdf-sesame-2.7.14-sdk.tar.gz/download&#34;</span> <span style="color:#ae81ff">\\</span>
+</span></span><span style="display:flex;"><span>  -O openrdf-sesame-2.7.14-sdk.tar.gz
+</span></span></code></pre></div><p>Then extract the Sesame tarball:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>tar -xvzf openrdf-sesame-2.7.14-sdk.tar.gz
+</span></span></code></pre></div><p>To deploy sesame you have to copy the two war files that are in <em>openrdf-sesame-2.7.14/war</em> to <em>/var/lib/tomcat7/webapps</em></p>
+<p>From <em>openrdf-sesame-2.7.14/war</em> you can do it with command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp openrdf-*.war &lt;tomcat_install&gt;/webapps
+</span></span></code></pre></div><p>Sesame applications write and store configuration files in a single directory and the tomcat server needs permissions for it.</p>
+<p>By default the configuration directory is: <em>/usr/share/tomcat7/.aduna</em></p>
+<p>Create the directory:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo mkdir /usr/share/tomcat7/.aduna
+</span></span></code></pre></div><p>Then change the ownership:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown tomcat7 /usr/share/tomcat7/.aduna
+</span></span></code></pre></div><p>And finally you should give the necessary permissions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chmod o+rwx /usr/share/tomcat7/.aduna
+</span></span></code></pre></div><p>Now when you go to: http://&lt;your_ip_address&gt;:8080/openrdf-workbench/repositories</p>
+<p>You should get a screen like this:</p>
+<p><img src="01-Sesame-repo-list.png" alt="image"></p>
+<h3 id="setup-spb">Setup SPB</h3>
+<p>You can download the SPB code and find brief documentation on GitHub:</p>
+<p><a href="https://github.com/ldbc/ldbc_spb_bm">https://github.com/ldbc/ldbc_spb_bm</a></p>
+<p>A detailed documentation is located here:</p>
+<p><a href="https://github.com/ldbc/ldbc_spb_bm/blob/master/doc/LDBC_SPB_v0.3.pdf">https://github.com/ldbc/ldbc_spb_bm/blob/master/doc/LDBC_SPB_v0.3.pdf</a></p>
+<p>SPB offers many configuration options which control various features of the benchmark e.g.:</p>
+<ul>
+<li>query mixes</li>
+<li>dataset size</li>
+<li>loading datasets</li>
+<li>number of agents</li>
+<li>validating results</li>
+<li>test conformance to OWL2-RL ruleset</li>
+<li>update rate of agents</li>
+</ul>
+<p>Here we demonstrate how to generate a dataset and execute a simple test<br>
+run with it.</p>
+<p>First download the SPB source code from the repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git clone https://github.com/ldbc/ldbc_spb_bm.git
+</span></span></code></pre></div><p>Then in the ldbc_spb_bm directory build the project:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ant build-basic-querymix
+</span></span></code></pre></div><p>If you simply execute the command:</p>
+<pre tabindex="0"><code>ant
+</code></pre><p>you’ll get a list of all available build configurations for the SPB test driver, but for the purpose of this step-by-step guide, configuration shown above is sufficient.</p>
+<p>Depending on generated dataset size a bigger java heap size may be required for the Sesame Store. You can change it by adding following arguments to Tomcat&rsquo;s startup files e.g. in <em>catalina.sh</em>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export JAVA_OPTS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;-d64 -Xmx4G&#34;</span>
+</span></span></code></pre></div><p>To run the Benchmark you need to create a repository in the Sesame Data Store, similar to the following screenshot:</p>
+<p><img src="02-Sesame-create-repo.png" alt="image"></p>
+<p>Then we need to point the benchmark test driver to the SPARQL endpoint of that repository. This is done in <em>ldbc_spb_bm/dist/test.properties</em> file.</p>
+<p>The default value of <em>datasetSize</em> in the properties is set to be 10M, but for the purpose of this guide we will decrease it to 1M.</p>
+<p>You need to change</p>
+<pre tabindex="0"><code>datasetSize=1000000
+</code></pre><p>Also the URLs of the SPARQL endpoint for the repository</p>
+<pre tabindex="0"><code>endpointURL=http://localhost:8080/openrdf-sesame/repositories/ldbc1
+endpointUpdateURL=http://localhost:8080/openrdf-sesame/repositories/ldbc1/statements
+</code></pre><p>First step, before measuring the performance of a triple store, is to load the reference-knowledge data, generate a 1M dataset, load it into the repository and finally generate query substitution parameters.</p>
+<p>These are the settings to do that, following parameters will &lsquo;instruct&rsquo; the SPB test driver to perform all the actions described above:</p>
+<pre tabindex="0"><code>#Benchmark Operational Phases
+loadOntologies=true
+loadReferenceDatasets=true
+generateCreativeWorks=true
+loadCreativeWorks=true
+generateQuerySubstitutionParameters=true
+validateQueryResults=false
+warmUp=false
+runBenchmark=false
+runBenchmarkOnlineReplicationAndBackup=false
+checkConformance=false
+</code></pre><p>To run the benchmark execute the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>java -jar semantic_publishing_benchmark-basic-standard.jar
+</span></span><span style="display:flex;"><span>test.properties
+</span></span></code></pre></div><p>When the initial run has finished, we should have a 1M dataset loaded into the repository and a set of files with query substitution parameters.</p>
+<p>Next we will measure the performance of Sesame Data Store by changing some configuration properties:</p>
+<pre tabindex="0"><code>#Benchmark Configuration Parameters
+warmupPeriodSeconds=60
+benchmarkRunPeriodSeconds=300
+...
+#Benchmark Operational Phases
+loadOntologies=false
+loadReferenceDatasets=false
+generateCreativeWorks=false
+loadCreativeWorks=false
+generateQuerySubstitutionParameters=false
+validateQueryResults=false
+warmUp=true
+runBenchmark=true
+runBenchmarkOnlineReplicationAndBackup=false
+checkConformance=false
+</code></pre><p>After the benchmark test run has finished result files are saved in folder: <em>dist/logs</em></p>
+<p>There you will find three types of results: the result summary of the benchmark run (<em>semantic_publishing_benchmark_results.log),</em> brief results and detailed results.</p>
+<p>In <em>semantic_publishing_benchmark_results.log</em> you will find the results distributed per seconds. They should be similar to the listing bellow:</p>
+<p>Benchmark Results for the 300-th second</p>
+<pre tabindex="0"><code>Seconds : 300 (completed query mixes : 0)
+    Editorial:
+        2 agents
+
+        9     inserts (avg : 22484   ms, min : 115     ms, max : 81389   ms)
+        0     updates (avg : 0       ms, min : 0       ms, max : 0       ms)
+        0     deletes (avg : 0       ms, min : 0       ms, max : 0       ms)
+
+        9 operations (9 CW Inserts (0 errors), 0 CW Updates (1 errors), 0 CW Deletions (2 errors))
+        0.0300 average operations per second
+
+    Aggregation:
+        8 agents
+
+        2     Q1   queries (avg : 319     ms, min : 188     ms, max : 451     ms, 0 errors)
+        3     Q2   queries (avg : 550     ms, min : 256     ms, max : 937     ms, 0 errors)
+        1     Q3   queries (avg : 58380   ms, min : 58380   ms, max : 58380   ms, 0 errors)
+        2     Q4   queries (avg : 65250   ms, min : 40024   ms, max : 90476   ms, 0 errors)
+        1     Q5   queries (avg : 84220   ms, min : 84220   ms, max : 84220   ms, 0 errors)
+        2     Q6   queries (avg : 34620   ms, min : 24499   ms, max : 44741   ms, 0 errors)
+        3     Q7   queries (avg : 5892    ms, min : 4410    ms, max : 8528    ms, 0 errors)
+        2     Q8   queries (avg : 3537    ms, min : 546     ms, max : 6528    ms, 0 errors)
+        4     Q9   queries (avg : 148573  ms, min : 139078  ms, max : 169559  ms, 0 errors)
+</code></pre><p>This step-by-step guide gave an introduction on how to setup and run the SPB on a Sesame Data Store. Further details can be found in the reference documentation listed above.</p>
+<p>If you have any troubles running the benchmark, don&rsquo;t hesitate to comment or use our social media channels.</p>
+<p>In a future post we will go through some of the parameters of SPB and check their performance implications.</p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            <a href="/tags/spb">SPB</a>
+            , <a href="/tags/sesame">SESAME</a>
+            , <a href="/tags/rdf">RDF</a>
+            , <a href="/tags/tutorial">TUTORIAL</a>
+            , <a href="/tags/guide">GUIDE</a>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest updates</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/eighteenth-tuc-meeting/">
+          <h5 class="mt-0">Eighteenth TUC Meeting</h5>
+        </a>
+        24 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/seventeenth-tuc-meeting/">
+          <h5 class="mt-0">Seventeenth TUC Meeting</h5>
+        </a>
+        18 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/post/record-breaking-snb-interactive-results-for-graphscope/">
+          <h5 class="mt-0">Record-Breaking SNB Interactive Results for GraphScope</h5>
+        </a>
+        26 May 2024
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4"></h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/amazon">AMAZON</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analytics">ANALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aws">AWS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmark">BENCHMARK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmarking">BENCHMARKING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bersys">BERSYS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bi">BI</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cfp">CFP</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/chile">CHILE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/database">DATABASE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/datagen">DATAGEN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/design">DESIGN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/developer">DEVELOPER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/driver">DRIVER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ec2">EC2</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/finbench">FINBENCH</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/flink">FLINK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/gql">GQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/grades">GRADES</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/graphalytics">GRAPHALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/guide">GUIDE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/industry">INDUSTRY</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/instance-matching">INSTANCE-MATCHING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interactive">INTERACTIVE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ldbc">LDBC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rdf">RDF</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/santiago">SANTIAGO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sesame">SESAME</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sigmod">SIGMOD</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/snb">SNB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/social-network">SOCIAL-NETWORK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sparql">SPARQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/spb">SPB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/test-run">TEST-RUN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc">TPC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc-c">TPC-C</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tu-delft">TU-DELFT</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tuc-meeting">TUC-MEETING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tutorial">TUTORIAL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/virtuoso">VIRTUOSO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/workshop">WORKSHOP</a></li>
+    </ul>
+  </div>
+  
+  
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

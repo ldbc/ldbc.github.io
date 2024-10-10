@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>LDBC Graphalytics Benchmark (LDBC Graphalytics)</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">LDBC Graphalytics Benchmark (LDBC Graphalytics)</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">LDBC Graphalytics Benchmark (LDBC Graphalytics)</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+
+<!-- Generic page details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="content">
+          <p>The Graphalytics benchmark is an industrial-grade benchmark for <strong>graph analysis platforms</strong> such as Giraph, Spark GraphX, and GraphBLAS. It consists of six core algorithms, standard data sets, and reference outputs, enabling the objective comparison of graph analysis platforms.</p>
+<p>The benchmark harness consists of a core component, which is extendable by a driver for each different platform implementation. The benchmark includes the following algorithms:</p>
+<ol>
+<li>breadth-first search (BFS)</li>
+<li>PageRank (PR)</li>
+<li>weakly connected components (WCC)</li>
+<li>community detection using label propagation (CDLP)</li>
+<li>local clustering coefficient (LCC)</li>
+<li>single-source shortest paths (SSSP)</li>
+</ol>
+<p>The choice of these algorithms was carefully motivated, using the LDBC TUC and extensive literature surveys to ensure good coverage of scenarios. The standard data sets include both real and synthetic data sets, which are classified into intuitive “T-shirt” sizes (S, M, L, etc.).</p>
+<p>Each experiment set in Graphalytics consists of <strong>multiple platform runs</strong> (a platform executes an algorithm on a data set), and diverse set of experiments are carried out to evaluate different performance characteristics of a system-under-test.</p>
+<p>All completed benchmarks must go through a strict <strong>validation process</strong> to ensure the integrity of the performance results.</p>
+<p>The development of Graphalytics is supported by many active vendors in the field of large-scale graph analytics. Currently, Graphalytics already facilitates benchmarks for a large number of graph analytics platforms, such as GraphBLAS, Giraph, GraphX, and PGX.D, allowing comparison of the state-of-the-art system performance of both community-driven and industrial-driven platforms. To get started, the details of the Graphalyics documentation and its software components are described below.</p>
+<h2 id="documents-and-repositories">Documents and repositories</h2>
+<ul>
+<li><a href="https://arxiv.org/pdf/2011.15028.pdf">Benchmark specification</a>. The source code is stored in the <a href="https://github.com/ldbc/ldbc_graphalytics_docs"><code>ldbc_graphalytics_docs</code></a> repository</li>
+<li><a href="http://www.vldb.org/pvldb/vol9/p1317-iosup.pdf">VLDB paper</a></li>
+<li><a href="https://github.com/ldbc/ldbc_graphalytics"><code>ldbc_graphalytics</code></a>: Generic driver</li>
+<li><a href="https://github.com/ldbc/ldbc_graphalytics_platforms_umbra"><code>ldbc_graphalytics_platforms_umbra</code></a>: Umbra implementation</li>
+<li><a href="https://github.com/ldbc/ldbc_graphalytics_platforms_graphblas"><code>ldbc_graphalytics_platforms_graphblas</code></a>: GraphBLAS implementation</li>
+</ul>
+<h2 id="graphalytics-competition-2023">Graphalytics competition 2023</h2>
+<p>In 2023, we will hold a new round of the Graphalytics competition. See the <a href="https://docs.google.com/presentation/d/13MwAkn6UDMVI80DGdgErDyRbGkxbkpIb3N1oj5znjyc/edit">LDBC Graphalytics Benchmark presentation</a> for an introduction to the benchmark framework and the competition&rsquo;s rules.</p>
+<p>Artifacts:</p>
+<ul>
+<li><a href="https://github.com/ldbc/ldbc_graphalytics">benchmark framework</a></li>
+<li><a href="https://github.com/ldbc?q=graphalytics">reference implementations</a></li>
+<li>data sets (data sets and expected results) are available on GitHub</li>
+</ul>
+<h3 id="rules">Rules</h3>
+<ul>
+<li>Participation is free.</li>
+<li>There are no monetary prizes.</li>
+<li>Single-node and distributed implementations are allowed.</li>
+<li>Partial implementations (e.g. just small to mid-sized data sets and only a few algorithms) are allowed.</li>
+<li>Submissions should execute each algorithm-data set combination <strong>three times</strong>. From these, the <strong>arithmetic mean of the processing times</strong> is used for ranking.</li>
+<li>The results of the competition will be published on the LDBC website in the form of leaderboards, which rank them based on performance and price-performance (adjusted for the system price).</li>
+<li>There is a global leaderboard that includes all algorithms and scale factors. Additionally, there is a separate leaderboard for each scale (S, M, L, XL, 2XL+), algorithm and system category (CPU-based/GPU-based, single-node vs. distributed) to for fine-grained comparison.</li>
+<li>Submissions are subject to code review and reproducibility attempts from the organizers.</li>
+<li>System prices should be reported following the <a href="http://www.tpc.org/tpc_documents_current_versions/pdf/pricing_v2.8.0.pdf">TPC Pricing specification</a>.</li>
+</ul>
+<h3 id="recommendations-for-submissions">Recommendations for submissions</h3>
+<ul>
+<li>Submissions using modern hardware are welcome (GPUs, FPGAs, etc.).</li>
+<li>We encourage the use of cloud compute instances for running the benchmark (if possible).</li>
+</ul>
+<h2 id="data-sets">Data sets</h2>
+<p>The Graphalytics data sets are compressed using <a href="https://github.com/facebook/zstd"><code>zstd</code></a>. The total size of the compressed archives is approx. 350 GB. When decompressed, the data sets require approximately 1.5 TB of disk space.</p>
+<p>For detailed information on the data sets, see the <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQmFsORNp8OhemIpbAXODkhly2XRkhUuIUTvUv9oHJSgCKQaNNiPFGmHfWPswG3NTUbitAc9nJ3ztRx/pubhtml?gid=1975005458&amp;single=true">table with their statistics</a>.</p>
+<p>The data sets are available in two locations:</p>
+<ul>
+<li>A public Cloudflare R2 bucket
+<ul>
+<li>This is the primary source for the data sets and is kept up-to-date upon changes</li>
+<li>The links in the table below point to this bucket</li>
+<li><a href="/scripts/download-graphalytics-data-sets-r2.sh">Shell script to download the data sets from Cloudflare R2</a></li>
+<li>Download scripts for individual sizes: <a href="/scripts/download-graphalytics-data-sets-r2-test.sh">test graphs</a>, <a href="/scripts/download-graphalytics-data-sets-r2-s.sh">sizes up to S</a>, <a href="/scripts/download-graphalytics-data-sets-r2-m.sh">size M</a>, <a href="/scripts/download-graphalytics-data-sets-r2-l.sh">size L</a>, <a href="/scripts/download-graphalytics-data-sets-r2-xl.sh">size XL</a>, <a href="/scripts/download-graphalytics-data-sets-r2-2xl.sh">sizes 2XL+</a></li>
+</ul>
+</li>
+<li><a href="https://ldbcouncil.org/data-sets-surf-repository/graphalytics.html">CWI/SURFsara data repository</a>
+<ul>
+<li>Backup repository</li>
+<li><a href="/scripts/download-graphalytics-data-sets-surfsara.sh">Shell script to download the data sets from SURFsara</a></li>
+</ul>
+</li>
+</ul>
+<p>Note that some of the Graphalytics data sets were fixed in March 2023. Prior to this, they were incorrectly packaged or had missing/incorrect reference outputs for certain algorithms. If you are uncertain whether you have the correct versions, cross-check them against these MD5 checksums: <a href="/benchmarks/graphalytics/datagen-9_4-fb.md5"><code>datagen-9_4-fb</code></a>, <a href="/benchmarks/graphalytics/datagen-sf3k-fb.md5"><code>datagen-sf3k-fb</code></a>, <a href="/benchmarks/graphalytics/datagen-sf10k-fb.md5"><code>datagen-sf10k-fb</code></a>, <a href="/benchmarks/graphalytics/graph500-27.md5"><code>graph500-27</code></a>, <a href="/benchmarks/graphalytics/graph500-28.md5"><code>graph500-28</code></a>, <a href="/benchmarks/graphalytics/graph500-29.md5"><code>graph500-29</code></a>, <a href="/benchmarks/graphalytics/graph500-30.md5"><code>graph500-30</code></a>.</p>
+<table>
+<thead>
+<tr>
+<th>data set</th>
+<th>#nodes</th>
+<th>#edges</th>
+<th>scale</th>
+<th>link</th>
+<th>size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cit-Patents</td>
+<td>3,774,768</td>
+<td>16,518,947</td>
+<td>XS</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/cit-Patents.tar.zst"><code>cit-Patents.tar.zst</code></a></td>
+<td>119.1 MB</td>
+</tr>
+<tr>
+<td>com-friendster</td>
+<td>65,608,366</td>
+<td>1,806,067,135</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/com-friendster.tar.zst"><code>com-friendster.tar.zst</code></a></td>
+<td>6.7 GB</td>
+</tr>
+<tr>
+<td>datagen-7_5-fb</td>
+<td>633,432</td>
+<td>34,185,747</td>
+<td>S</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-7_5-fb.tar.zst"><code>datagen-7_5-fb.tar.zst</code></a></td>
+<td>162.3 MB</td>
+</tr>
+<tr>
+<td>datagen-7_6-fb</td>
+<td>754,147</td>
+<td>42,162,988</td>
+<td>S</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-7_6-fb.tar.zst"><code>datagen-7_6-fb.tar.zst</code></a></td>
+<td>200.0 MB</td>
+</tr>
+<tr>
+<td>datagen-7_7-zf</td>
+<td>13,180,508</td>
+<td>32,791,267</td>
+<td>S</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-7_7-zf.tar.zst"><code>datagen-7_7-zf.tar.zst</code></a></td>
+<td>434.5 MB</td>
+</tr>
+<tr>
+<td>datagen-7_8-zf</td>
+<td>16,521,886</td>
+<td>41,025,255</td>
+<td>S</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-7_8-zf.tar.zst"><code>datagen-7_8-zf.tar.zst</code></a></td>
+<td>544.3 MB</td>
+</tr>
+<tr>
+<td>datagen-7_9-fb</td>
+<td>1,387,587</td>
+<td>85,670,523</td>
+<td>S</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-7_9-fb.tar.zst"><code>datagen-7_9-fb.tar.zst</code></a></td>
+<td>401.2 MB</td>
+</tr>
+<tr>
+<td>datagen-8_0-fb</td>
+<td>1,706,561</td>
+<td>107,507,376</td>
+<td>M</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_0-fb.tar.zst"><code>datagen-8_0-fb.tar.zst</code></a></td>
+<td>502.5 MB</td>
+</tr>
+<tr>
+<td>datagen-8_1-fb</td>
+<td>2,072,117</td>
+<td>134,267,822</td>
+<td>M</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_1-fb.tar.zst"><code>datagen-8_1-fb.tar.zst</code></a></td>
+<td>625.4 MB</td>
+</tr>
+<tr>
+<td>datagen-8_2-zf</td>
+<td>43,734,497</td>
+<td>106,440,188</td>
+<td>M</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_2-zf.tar.zst"><code>datagen-8_2-zf.tar.zst</code></a></td>
+<td>1.4 GB</td>
+</tr>
+<tr>
+<td>datagen-8_3-zf</td>
+<td>53,525,014</td>
+<td>130,579,909</td>
+<td>M</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_3-zf.tar.zst"><code>datagen-8_3-zf.tar.zst</code></a></td>
+<td>1.7 GB</td>
+</tr>
+<tr>
+<td>datagen-8_4-fb</td>
+<td>3,809,084</td>
+<td>269,479,177</td>
+<td>M</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_4-fb.tar.zst"><code>datagen-8_4-fb.tar.zst</code></a></td>
+<td>1.2 GB</td>
+</tr>
+<tr>
+<td>datagen-8_5-fb</td>
+<td>4,599,739</td>
+<td>332,026,902</td>
+<td>L</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_5-fb.tar.zst"><code>datagen-8_5-fb.tar.zst</code></a></td>
+<td>1.5 GB</td>
+</tr>
+<tr>
+<td>datagen-8_6-fb</td>
+<td>5,667,674</td>
+<td>421,988,619</td>
+<td>L</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_6-fb.tar.zst"><code>datagen-8_6-fb.tar.zst</code></a></td>
+<td>1.9 GB</td>
+</tr>
+<tr>
+<td>datagen-8_7-zf</td>
+<td>145,050,709</td>
+<td>340,157,363</td>
+<td>L</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_7-zf.tar.zst"><code>datagen-8_7-zf.tar.zst</code></a></td>
+<td>4.6 GB</td>
+</tr>
+<tr>
+<td>datagen-8_8-zf</td>
+<td>168,308,893</td>
+<td>413,354,288</td>
+<td>L</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_8-zf.tar.zst"><code>datagen-8_8-zf.tar.zst</code></a></td>
+<td>5.3 GB</td>
+</tr>
+<tr>
+<td>datagen-8_9-fb</td>
+<td>10,572,901</td>
+<td>848,681,908</td>
+<td>L</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-8_9-fb.tar.zst"><code>datagen-8_9-fb.tar.zst</code></a></td>
+<td>3.7 GB</td>
+</tr>
+<tr>
+<td>datagen-9_0-fb</td>
+<td>12,857,671</td>
+<td>1,049,527,225</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-9_0-fb.tar.zst"><code>datagen-9_0-fb.tar.zst</code></a></td>
+<td>4.6 GB</td>
+</tr>
+<tr>
+<td>datagen-9_1-fb</td>
+<td>16,087,483</td>
+<td>1,342,158,397</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-9_1-fb.tar.zst"><code>datagen-9_1-fb.tar.zst</code></a></td>
+<td>5.8 GB</td>
+</tr>
+<tr>
+<td>datagen-9_2-zf</td>
+<td>434,943,376</td>
+<td>1,042,340,732</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-9_2-zf.tar.zst"><code>datagen-9_2-zf.tar.zst</code></a></td>
+<td>13.7 GB</td>
+</tr>
+<tr>
+<td>datagen-9_3-zf</td>
+<td>555,270,053</td>
+<td>1,309,998,551</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-9_3-zf.tar.zst"><code>datagen-9_3-zf.tar.zst</code></a></td>
+<td>17.4 GB</td>
+</tr>
+<tr>
+<td>datagen-9_4-fb</td>
+<td>29,310,565</td>
+<td>2,588,948,669</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-9_4-fb.tar.zst"><code>datagen-9_4-fb.tar.zst</code></a></td>
+<td>14.0 GB</td>
+</tr>
+<tr>
+<td>datagen-sf3k-fb</td>
+<td>33,484,375</td>
+<td>2,912,009,743</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-sf3k-fb.tar.zst"><code>datagen-sf3k-fb.tar.zst</code></a></td>
+<td>12.7 GB</td>
+</tr>
+<tr>
+<td>datagen-sf10k-fb</td>
+<td>100,218,750</td>
+<td>9,404,822,538</td>
+<td>2XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/datagen-sf10k-fb.tar.zst"><code>datagen-sf10k-fb.tar.zst</code></a></td>
+<td>40.5 GB</td>
+</tr>
+<tr>
+<td>dota-league</td>
+<td>61,170</td>
+<td>50,870,313</td>
+<td>S</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/dota-league.tar.zst"><code>dota-league.tar.zst</code></a></td>
+<td>114.3 MB</td>
+</tr>
+<tr>
+<td>graph500-22</td>
+<td>2,396,657</td>
+<td>64,155,735</td>
+<td>S</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/graph500-22.tar.zst"><code>graph500-22.tar.zst</code></a></td>
+<td>202.4 MB</td>
+</tr>
+<tr>
+<td>graph500-23</td>
+<td>4,610,222</td>
+<td>129,333,677</td>
+<td>M</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/graph500-23.tar.zst"><code>graph500-23.tar.zst</code></a></td>
+<td>410.6 MB</td>
+</tr>
+<tr>
+<td>graph500-24</td>
+<td>8,870,942</td>
+<td>260,379,520</td>
+<td>M</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/graph500-24.tar.zst"><code>graph500-24.tar.zst</code></a></td>
+<td>847.7 MB</td>
+</tr>
+<tr>
+<td>graph500-25</td>
+<td>17,062,472</td>
+<td>523,602,831</td>
+<td>L</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/graph500-25.tar.zst"><code>graph500-25.tar.zst</code></a></td>
+<td>1.7 GB</td>
+</tr>
+<tr>
+<td>graph500-26</td>
+<td>32,804,978</td>
+<td>1,051,922,853</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/graph500-26.tar.zst"><code>graph500-26.tar.zst</code></a></td>
+<td>3.4 GB</td>
+</tr>
+<tr>
+<td>graph500-27</td>
+<td>63,081,040</td>
+<td>2,111,642,032</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/graph500-27.tar.zst"><code>graph500-27.tar.zst</code></a></td>
+<td>7.1 GB</td>
+</tr>
+<tr>
+<td>graph500-28</td>
+<td>121,242,388</td>
+<td>4,236,163,958</td>
+<td>2XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/graph500-28.tar.zst"><code>graph500-28.tar.zst</code></a></td>
+<td>14.4 GB</td>
+</tr>
+<tr>
+<td>graph500-29</td>
+<td>232,999,630</td>
+<td>8,493,569,115</td>
+<td>2XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/graph500-29.tar.zst"><code>graph500-29.tar.zst</code></a></td>
+<td>29.6 GB</td>
+</tr>
+<tr>
+<td>graph500-30</td>
+<td>447,797,986</td>
+<td>17,022,117,362</td>
+<td>3XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/graph500-30.tar.zst"><code>graph500-30.tar.zst</code></a></td>
+<td>60.8 GB</td>
+</tr>
+<tr>
+<td>kgs</td>
+<td>832,247</td>
+<td>17,891,698</td>
+<td>XS</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/kgs.tar.zst"><code>kgs.tar.zst</code></a></td>
+<td>65.7 MB</td>
+</tr>
+<tr>
+<td>twitter_mpi</td>
+<td>52,579,678</td>
+<td>1,963,263,508</td>
+<td>XL</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/twitter_mpi.tar.zst"><code>twitter_mpi.tar.zst</code></a></td>
+<td>5.7 GB</td>
+</tr>
+<tr>
+<td>wiki-Talk</td>
+<td>2,394,385</td>
+<td>5,021,410</td>
+<td>2XS</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/wiki-Talk.tar.zst"><code>wiki-Talk.tar.zst</code></a></td>
+<td>34.9 MB</td>
+</tr>
+<tr>
+<td>example-directed</td>
+<td>10</td>
+<td>17</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/example-directed.tar.zst"><code>example-directed.tar.zst</code></a></td>
+<td>1.0 KB</td>
+</tr>
+<tr>
+<td>example-undirected</td>
+<td>9</td>
+<td>12</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/example-undirected.tar.zst"><code>example-undirected.tar.zst</code></a></td>
+<td>1.0 KB</td>
+</tr>
+<tr>
+<td>test-bfs-directed</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-bfs-directed.tar.zst"><code>test-bfs-directed.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-bfs-undirected</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-bfs-undirected.tar.zst"><code>test-bfs-undirected.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-cdlp-directed</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-cdlp-directed.tar.zst"><code>test-cdlp-directed.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-cdlp-undirected</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-cdlp-undirected.tar.zst"><code>test-cdlp-undirected.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-pr-directed</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-pr-directed.tar.zst"><code>test-pr-directed.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-pr-undirected</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-pr-undirected.tar.zst"><code>test-pr-undirected.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-lcc-directed</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-lcc-directed.tar.zst"><code>test-lcc-directed.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-lcc-undirected</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-lcc-undirected.tar.zst"><code>test-lcc-undirected.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-wcc-directed</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-wcc-directed.tar.zst"><code>test-wcc-directed.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-wcc-undirected</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-wcc-undirected.tar.zst"><code>test-wcc-undirected.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-sssp-directed</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-sssp-directed.tar.zst"><code>test-sssp-directed.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+<tr>
+<td>test-sssp-undirected</td>
+<td>&lt;100</td>
+<td>&lt;100</td>
+<td>-</td>
+<td><a href="https://pub-383410a98aef4cb686f0c7601eddd25f.r2.dev/graphalytics/test-sssp-undirected.tar.zst"><code>test-sssp-undirected.tar.zst</code></a></td>
+<td>&lt;2.0 KB</td>
+</tr>
+</tbody>
+</table>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- Generic page details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>

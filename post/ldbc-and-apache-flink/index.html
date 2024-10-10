@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>LDBC and Apache Flink</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Linked Data Benchmark Council Website">
+  
+  <meta name="author" content="LDBC">
+  <meta name="generator" content="Hugo 0.114.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/fontawesome/font-awesome.min.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/animate/animate.css">
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/plugins/venobox/venobox.css">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://ldbcouncil.org/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="https://ldbcouncil.org/images/favicon.png" type="image/x-icon">
+
+  <!-- RSS -->
+  <link rel="alternate" href="https://ldbcouncil.org/index.xml" type="application/rss+xml" title="Linked Data Benchmark Council" />
+
+  <!-- Custom JS -->
+  <script type="module" type="text/javascript" src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script><script type="module" type="text/javascript" src="https://ldbcouncil.org/js/wowchemy.js"></script>
+
+  <!-- Custom CSS -->
+  
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- header -->
+<header>
+  
+
+  <!-- navigation -->
+  <div class="navigation bg-white position-relative">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="/"><img class="img-fluid pb-lg-3" src="https://ldbcouncil.org/images/ldbc-title.png" alt="Linked Data Benchmark Council" style="scale: 70%;"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navigation">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/">Home</a>
+              <div class="dropdown-menu" >
+                <a class="dropdown-item" href="/introduction">Introduction</a>
+                <a class="dropdown-item" href="/faq">FAQ</a>
+                <a class="dropdown-item" href="/developer-community">Developer Community</a>
+              </div>
+            </li>
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Benchmarks
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/benchmarks/overview">Overview of LDBC Benchmarks</a>
+                
+                <a class="dropdown-item" href="/benchmarks/graphalytics">Graphalytics Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/spb">Semantic Publishing Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/snb">Social Network Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/finbench">Financial Benchmark</a>
+                
+                <a class="dropdown-item" href="/benchmarks/fair-use-policies">Fair Use Policies</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                GQL&NonBreakingSpace;Community
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/gql-community/overview">Overview</a>
+                
+                <a class="dropdown-item" href="/gql-community/lex">LEX Working Group</a>
+                
+                <a class="dropdown-item" href="/pages/opengql-announce">Open GQL Tools</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Membership
+              </a>
+              <div class="dropdown-menu" >
+                
+                <a class="dropdown-item" href="/organizational-members">Organizational Members</a>
+                
+                <a class="dropdown-item" href="/leadership">Leadership</a>
+                
+                <a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a>
+                
+                <a class="dropdown-item" href="/constitutional-documents">Constitutional Documents</a>
+                
+              </div>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/post">Posts</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/event">Events</a>
+            </li>
+            
+            
+            
+            <li class="nav-item">
+              <a class="nav-link" href="/publication">Publications</a>
+            </li>
+            
+            
+          </ul>
+
+          
+          
+
+          
+          
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- /navigation -->
+</header>
+<!-- /header -->
+
+<!-- page title -->
+<section class="section bg-cover overlay"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        <h2 class="text-white mb-3">LDBC and Apache Flink</h2>
+        
+        <!-- breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="/">Home</a></li>
+        
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">LDBC and Apache Flink</li>
+        
+          </ol>
+        </nav>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /page title -->
+
+
+<!-- blog details -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- post thumb -->
+        
+        <div class="card-meta text-uppercase mb-2">by <strong class="text-dark">Martin Junghanns</strong> / on <strong class="text-dark">16 Nov 2015</strong></div>
+        
+        
+        
+        <div class="position-relative mb-5">
+          
+          
+        </div>
+        <div class="content">
+          <p>Apache Flink <a href="#references">[1]</a> is an open source platform for distributed stream and batch data processing. Flink&rsquo;s core is a streaming dataflow engine that provides data distribution, communication, and fault tolerance for distributed computations over data streams. Flink also builds batch processing on top of the streaming engine, overlaying native iteration support, managed memory, and program optimization.</p>
+<p><img src="https://flink.apache.org/img/flink-stack-small.png" alt=""></p>
+<p>Flink offers multiple APIs to process data from various data sources (e.g. HDFS, HBase, Kafka and JDBC). The DataStream and DataSet APIs allow the user to apply general-purpose data operations, like map, reduce, groupBy and join, on streams and static data respectively. In addition, Flink provides libraries for machine learning (Flink ML), graph processing (Gelly) and SQL-like operations (Table). All APIs can be used together in a single Flink program which enables the definition of powerful analytical workflows and the implementation of distributed algorithms.</p>
+<p>The following snippet shows how a wordcount program can be expressed in Flink using the DataSet API:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>DataSet<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> text <span style="color:#f92672">=</span> env<span style="color:#f92672">.</span><span style="color:#a6e22e">fromElements</span><span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;He who controls the past controls the future.&#34;</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;He who controls the present controls the past.&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>DataSet<span style="color:#f92672">&lt;</span>Tuple2<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Integer<span style="color:#f92672">&gt;&gt;</span> wordCounts <span style="color:#f92672">=</span> text
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">.</span><span style="color:#a6e22e">flatMap</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> LineSplitter<span style="color:#f92672">())</span> <span style="color:#75715e">// splits the line and outputs (word,1)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>tuples<span style="color:#f92672">.</span><span style="color:#a6e22e">groupBy</span><span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> <span style="color:#75715e">// group by word
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#f92672">.</span><span style="color:#a6e22e">sum</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">);</span> <span style="color:#75715e">// sum the 1&#39;s
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>wordCounts<span style="color:#f92672">.</span><span style="color:#a6e22e">print</span><span style="color:#f92672">();</span>
+</span></span></code></pre></div><p>At the Leipzig University, we use Apache Flink as execution layer for our graph analytics platform Gradoop <a href="#references">[2]</a>. The LDBC datagen helps us to evaluate the scalability of our algorithms and operators in a distributed execution environment. To use the generated graph data in Flink, we wrote a tool that transforms the LDBC output files into Flink data sets for further processing <a href="#references">[3]</a>. Using the class <code>LDBCToFlink</code>, LDBC output files can be read directly from HDFS or from the local file system:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> ExecutionEnvironment env <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  ExecutionEnvironment<span style="color:#f92672">.</span><span style="color:#a6e22e">getExecutionEnvironment</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> LDBCToFlink ldbcToFlink <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LDBCToFlink<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;hdfs:///ldbc_snb_datagen/social_network&#34;</span><span style="color:#f92672">,</span> <span style="color:#75715e">// or &#34;/path/to/social_network&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  env<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>DataSet<span style="color:#f92672">&lt;</span>LDBCVertex<span style="color:#f92672">&gt;</span> vertices <span style="color:#f92672">=</span> ldbcToFlink<span style="color:#f92672">.</span><span style="color:#a6e22e">getVertices</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>DataSet<span style="color:#f92672">&lt;</span>LDBCEdge<span style="color:#f92672">&gt;</span> edges <span style="color:#f92672">=</span> ldbcToFlink<span style="color:#f92672">.</span><span style="color:#a6e22e">getEdges</span><span style="color:#f92672">();</span>
+</span></span></code></pre></div><p>The tuple classes <code>LDBCVertex</code> and <code>LDBCEdge</code> hold the information generated by the LDBC datagen and are created directly from its output files. During the transformation process, globally unique vertex identifiers are created based on the LDBC identifier and the vertex class. When reading edge files, source and target vertex identifiers are computed in the same way to ensure consistent linking between vertices.</p>
+<p>Each <code>LDBCVertex</code> instance contains:</p>
+<ul>
+<li>an identifier, which is unique among all vertices * a vertex label (e.g. <code>Person</code>, <code>Comment</code>) * a key-value map of properties including also multivalued properties<br>
+(e.g. <code>Person.email</code>)</li>
+</ul>
+<p>Each <code>LDBCEdge</code> instance contains:</p>
+<ul>
+<li>an identifier, which is unique among all edges</li>
+<li>an edge label (e.g. <code>knows</code>, <code>likes</code>)</li>
+<li>a source vertex identifier</li>
+<li>a target vertex identifier</li>
+<li>a key-value map of properties</li>
+</ul>
+<p>The resulting datasets can be used by the DataSet API and all libraries that are built on top of it (i.e. Flink ML, Gelly and Table). In the following example, we load the LDBC graph from HDFS, filter vertices with the label <code>Person</code> and edges with the label <code>knows</code> and use Gelly to compute the connected components of that subgraph. The full source code is available on GitHub <a href="#references">[4]</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">final</span> ExecutionEnvironment env <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  ExecutionEnvironment<span style="color:#f92672">.</span><span style="color:#a6e22e">getExecutionEnvironment</span><span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> LDBCToFlink ldbcToFlink <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> LDBCToFlink<span style="color:#f92672">(</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;/home/s1ck/Devel/Java/ldbc_snb_datagen/social_network&#34;</span><span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>  env<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// filter vertices with label “Person”
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DataSet<span style="color:#f92672">&lt;</span>LDBCVertex<span style="color:#f92672">&gt;</span> ldbcVertices <span style="color:#f92672">=</span> ldbcToFlink<span style="color:#f92672">.</span><span style="color:#a6e22e">getVertices</span><span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">.</span><span style="color:#a6e22e">filter</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> VertexLabelFilter<span style="color:#f92672">(</span>LDBCConstants<span style="color:#f92672">.</span><span style="color:#a6e22e">VERTEX_CLASS_PERSON</span><span style="color:#f92672">));</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// filter edges with label “knows”
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DataSet<span style="color:#f92672">&lt;</span>LDBCEdge<span style="color:#f92672">&gt;</span> ldbcEdges <span style="color:#f92672">=</span> ldbcToFlink<span style="color:#f92672">.</span><span style="color:#a6e22e">getEdges</span><span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">.</span><span style="color:#a6e22e">filter</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> EdgeLabelFilter<span style="color:#f92672">(</span>LDBCConstants<span style="color:#f92672">.</span><span style="color:#a6e22e">EDGE_CLASS_KNOWS</span><span style="color:#f92672">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// create Gelly vertices suitable for connected components
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DataSet<span style="color:#f92672">&lt;</span>Vertex<span style="color:#f92672">&lt;</span>Long<span style="color:#f92672">,</span> Long<span style="color:#f92672">&gt;&gt;</span> vertices <span style="color:#f92672">=</span> ldbcVertices<span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> VertexInitializer<span style="color:#f92672">());</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// create Gelly edges suitable for connected components
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DataSet<span style="color:#f92672">&lt;</span>Edge<span style="color:#f92672">&lt;</span>Long<span style="color:#f92672">,</span> NullValue<span style="color:#f92672">&gt;&gt;</span> edges <span style="color:#f92672">=</span> ldbcEdges<span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> EdgeInitializer<span style="color:#f92672">());</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// create Gelly graph
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Graph<span style="color:#f92672">&lt;</span>Long<span style="color:#f92672">,</span> Long<span style="color:#f92672">,</span> NullValue<span style="color:#f92672">&gt;</span> g <span style="color:#f92672">=</span> Graph<span style="color:#f92672">.</span><span style="color:#a6e22e">fromDataSet</span><span style="color:#f92672">(</span>vertices<span style="color:#f92672">,</span> edges<span style="color:#f92672">,</span> env<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// run connected components on the subgraph for 10 iterations
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>DataSet<span style="color:#f92672">&lt;</span>Vertex<span style="color:#f92672">&lt;</span>Long<span style="color:#f92672">,</span> Long<span style="color:#f92672">&gt;&gt;</span> components <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>  g<span style="color:#f92672">.</span><span style="color:#a6e22e">run</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> ConnectedComponents<span style="color:#f92672">&lt;</span>Long<span style="color:#f92672">,</span> NullValue<span style="color:#f92672">&gt;(</span><span style="color:#ae81ff">10</span><span style="color:#f92672">));</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// print the component id of the first 10 vertices
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>components<span style="color:#f92672">.</span><span style="color:#a6e22e">first</span><span style="color:#f92672">(</span><span style="color:#ae81ff">10</span><span style="color:#f92672">).</span><span style="color:#a6e22e">print</span><span style="color:#f92672">();</span>
+</span></span></code></pre></div><p>The ldbc-flink-import tool is available on Github <a href="#references">[3]</a> and licensed under the GNU GPLv3. If you have any questions regarding the tool please feel free to contact me on GitHub. If you find bugs or have any ideas for improvements, please create an issue or a pull request.</p>
+<p>If you want to learn more about Apache Flink, a good starting point is the main documentation <a href="#references">[5]</a> and if you have any question feel free to ask the official mailing lists.<br>
+There is also a nice set of videos <a href="#references">[6]</a> available from the latest Flink Forward conference.</p>
+<h4 id="references">References</h4>
+<p>[1] <a href="http://flink.apache.org/">http://flink.apache.org/</a></p>
+<p>[2] <a href="https://github.com/dbs-leipzig/gradoop">https://github.com/dbs-leipzig/gradoop</a></p>
+<p>[3] <a href="https://github.com/s1ck/ldbc-flink-import">https://github.com/s1ck/ldbc-flink-import</a></p>
+<p>[4] <a href="https://gist.github.com/s1ck/b33e6a4874c15c35cd16">https://gist.github.com/s1ck/b33e6a4874c15c35cd16</a></p>
+<p>[5] (link expired)</p>
+<p>[6] <a href="https://www.youtube.com/channel/UCY8_lgiZLZErZPF47a2hXMA">https://www.youtube.com/channel/UCY8_lgiZLZErZPF47a2hXMA</a></p>
+
+        </div>
+        <!-- tags -->
+        <div class="mb-3">
+          <h5 class="d-inline-block mr-3">Tags:</h5>
+          <ul class="list-inline d-inline-block">
+            <a href="/tags/flink">FLINK</a>
+            , <a href="/tags/datagen">DATAGEN</a>
+            , <a href="/tags/snb">SNB</a>
+            
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar -->
+<aside class="col-lg-4 order-1 order-lg-2">
+  <!-- latest post -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4">Latest updates</h4>
+    <!-- post-item -->
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/eighteenth-tuc-meeting/">
+          <h5 class="mt-0">Eighteenth TUC Meeting</h5>
+        </a>
+        24 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/event/seventeenth-tuc-meeting/">
+          <h5 class="mt-0">Seventeenth TUC Meeting</h5>
+        </a>
+        18 Apr 2024
+      </div>
+      
+      
+    </div>
+    
+    <div class="media border-bottom border-color pb-3 mb-3">
+      <div class="media-body">
+        <a href="https://ldbcouncil.org/post/record-breaking-snb-interactive-results-for-graphscope/">
+          <h5 class="mt-0">Record-Breaking SNB Interactive Results for GraphScope</h5>
+        </a>
+        26 May 2024
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <!-- tags -->
+  <div class="bg-white px-4 py-5 box-shadow mb-5">
+    <h4 class="mb-4"></h4>
+    <ul class="list-inline tag-list">
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/amazon">AMAZON</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/analytics">ANALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/aws">AWS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmark">BENCHMARK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/benchmarking">BENCHMARKING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bersys">BERSYS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/bi">BI</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/cfp">CFP</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/chile">CHILE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/database">DATABASE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/datagen">DATAGEN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/design">DESIGN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/developer">DEVELOPER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/driver">DRIVER</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ec2">EC2</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/finbench">FINBENCH</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/flink">FLINK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/gql">GQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/grades">GRADES</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/graphalytics">GRAPHALYTICS</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/guide">GUIDE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/industry">INDUSTRY</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/instance-matching">INSTANCE-MATCHING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/interactive">INTERACTIVE</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/ldbc">LDBC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/rdf">RDF</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/santiago">SANTIAGO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sesame">SESAME</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sigmod">SIGMOD</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/snb">SNB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/social-network">SOCIAL-NETWORK</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/sparql">SPARQL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/spb">SPB</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/test-run">TEST-RUN</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc">TPC</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tpc-c">TPC-C</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tu-delft">TU-DELFT</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tuc-meeting">TUC-MEETING</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/tutorial">TUTORIAL</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/virtuoso">VIRTUOSO</a></li>
+      <li class="list-inline-item"><a class="hover-ripple" href="/tags/workshop">WORKSHOP</a></li>
+    </ul>
+  </div>
+  
+  
+</aside>
+<!-- /sidebar -->
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+<footer>
+  
+  <div class="section bg-secondary">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          
+          <a class="mb-4 d-inline-block" href="/"><img class="img-fluid"
+              src="https://ldbcouncil.org/images/ldbc.png" alt="Linked Data Benchmark Council"></a>
+          <p class="text-light mb-5">LDBC came out of an EU FP7 project and is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+          <h4 class="text-white mb-4"></h4>
+          
+          <ul class="list-inline social-icon-alt">
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://twitter.com/LDBCouncil"><i class="fa fa-twitter"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://www.linkedin.com/company/ldbcouncil/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="https://github.com/ldbc"><i class="fa fa-github"></i></a>
+            </li>
+            
+            <li class="list-inline-item">
+              <a class="hover-ripple" href="/index.xml"><i class="fa fa-rss"></i></a>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            
+            
+            
+            
+            <div class="col-12">
+
+  <!-- Twitter timeline -->
+  
+  
+  <a class="twitter-timeline" data-height="450" data-theme="dark"  href="https://twitter.com/LDBCouncil" style="background-color: #252d39;">Tweets by LDBCouncil</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-secondary-darken py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <p class="mb-0 text-white">© Copyright LDBC 2024</p>
+        </div>
+        <div class="col-md-6 text-center text-md-right">
+          <ul class="list-inline">
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/" class="text-white"></a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf" class="text-white">Byelaws</a></li>
+            
+            <li class="list-inline-item mx-0"><a class="d-inline-block px-3 text-white" href="/docs/LDBC.Articles.of.Association.ADOPTED.2023-03-30.pdf" class="text-white">Articles of Association</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://ldbcouncil.org/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/slick/slick.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/google-map/gmap.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/filterizr/jquery.filterizr.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/fuse.min.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/mark.js"></script>
+
+<script src="https://ldbcouncil.org/plugins/search/search.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://ldbcouncil.org/js/script.min.js"></script>
+
+<!-- google analitycs -->
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 btn-sm js-copy-cite" href="#" target="_blank">
+          
+          COPY
+        </a>
+        <a class="btn btn-outline-primary my-1 btn-sm js-download-cite" href="#" target="_blank">
+          
+          DOWNLOAD
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
