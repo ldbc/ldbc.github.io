@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>SNB Interactive Part 3: Choke Points and Initial Run on Virtuoso | Graph Data Council</title>
+<meta name="description" content="Website for the Graph Data Council (GDC), formerly known as the Linked Data Benchmark Council (LDBC)">
+
+<link rel="icon" href="https://ldbcouncil.org/images/favicon.png">
+
+
+
+
+
+<link rel="stylesheet" href="https://ldbcouncil.org/css/style.6bdd59910146a51b3d209def78f148d548a22bdfac1fb8f6c8fa4ae5cdeee4cd3bf00b4d90facace8291d0bf0bfe7c32571947313327b023f06cbdc544687caf.css" integrity="sha512-a91ZkQFGpRs9IJ3vePFI1UiiK9&#43;sH7j2yPpK5c3u5M078AtNkPrKzoKR0L8L/nwyVxlHMTMnsCPwbL3FRGh8rw==">
+
+
+
+<script type="module" src="https://ldbcouncil.org/js/sticky-table-wrapper.js"></script>
+
+</head>
+<body class="page page-snb-interactive-part-3-choke-points-and-initial-run-on-virtuoso">
+    <header class="site-header">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="site-logo">
+        <a href="/">
+          <img src="https://ldbcouncil.org/images/gdc.svg" alt="Graph Data Council">
+        </a>
+      </div>
+      
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown mega-menu" id="menu-0">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" id="benchmarks-menu" aria-expanded="false">Benchmarks</a>
+                  <div class="mega-menu-content" data-parent="benchmarks-menu">
+                    <button class="submenu-back" aria-label="Back to main menu">
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                      </svg>
+                      <span>Back</span>
+                    </button>
+                    <div class="mega-menu-grid" style="grid-template-columns: repeat(4, 1fr);">
+                      
+                      
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/finbench" class="main">Financial Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/datasets">FinBench Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/results">FinBench Results</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/finbench/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/snb" class="main">Social Network Bench.</a></li>
+                              
+                                <li><a href="/benchmarks/snb/datasets">SNB Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/snb/bi">BI Workload</a></li>
+                              
+                                <li><a href="/benchmarks/snb/interactive">Interactive Workload</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/snb/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/graphalytics" class="main">Graphalytics Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/datasets">Graphalytics Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/algorithms">Algorithms</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/rules">Competition Rules</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/graphalytics/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/" class="main">More</a></li>
+                              
+                                <li><a href="/benchmarks/fair-use-policies">LDBC Fair Use Policies</a></li>
+                              
+                                <li><a href="/benchmarks/spb">Semantic Pub. Benchmark</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                    </div>
+                  </div>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-1">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Query Languages & Data Models</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/">Overview</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/text2gq">Text2GraphQuery WG</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/lex">Schema WG (LEX)</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/opengql-announce">Open GQL Tools</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-2">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Resources</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/resources/publications">Publications</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/datasets">Datasets</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/pointers">Pointers</a></li>
+                    
+                      <li><a class="dropdown-item" href="/benchmarks/fair-use-policies">Trademark</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/faq">FAQ</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-3">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Organization</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/introduction">Introduction</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-members">Members</a></li>
+                    
+                      <li><a class="dropdown-item" href="/leadership">Leadership</a></li>
+                    
+                      <li><a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-documents">Documents</a></li>
+                    
+                      <li><a class="dropdown-item" href="/contact-us">Contact</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/post">Blog</a>
+              </li>
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/event">Events</a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    
+    <main id="main">
+        
+
+
+
+
+<!-- page title -->
+<section class="hero">
+  <div class="container-default">
+
+  
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb">
+    
+  
+    
+  
+
+
+    
+    <li class="breadcrumb-item">
+      <a href="/post/">Posts</a>
+    </li>
+  
+
+
+  </ol>
+</nav>
+
+
+  <h1 class="pagetitle">SNB Interactive Part 3: Choke Points and Initial Run on Virtuoso</h1>
+
+  </div>
+</section>
+<!-- /page title -->
+
+
+
+
+
+<!-- blog details -->
+<section class="single-content">
+  <div class="container-default">
+    <!-- post thumb -->
+    
+    <div class="meta">by <strong class="text-dark">Orri Erling</strong> / on <strong class="text-dark">10 Jun 2015</strong></div>
+    
+    
+    
+    <div class="maincontent">
+      <blockquote>
+<p>This post is a continuation of our <a href="/post/snb-interactive-part-2-modeling-choices/">series on SNB Interactive</a>.</p>
+</blockquote>
+<p>In this post we will look at running the <a href="https://ldbcouncil.org/benchmarks/snb/">LDBC SNB</a> on <a href="https://virtuoso.openlinksw.com/">Virtuoso</a>.</p>
+<p>First, let&rsquo;s recap what the benchmark is about:</p>
+<ol>
+<li>
+<p>fairly frequent short updates, with no update contention worth mentioning</p>
+</li>
+<li>
+<p>short random lookups</p>
+</li>
+<li>
+<p>medium complex queries centered around a person&rsquo;s social environment</p>
+</li>
+</ol>
+<p>The updates exist so as to invalidate strategies that rely too heavily on precomputation. The short lookups exist for the sake of realism; after all, an online social application does lookups for the most part. The medium complex queries are to challenge the DBMS.</p>
+<p>The DBMS challenges have to do firstly with query optimization, and secondly with execution with a lot of non-local random access patterns. Query optimization is not a requirement, <em>per se,</em> since imperative implementations are allowed, but we will see that these are no more free of the laws of nature than the declarative ones.</p>
+<p>The workload is arbitrarily parallel, so intra-query parallelization is not particularly useful, if also not harmful. There are latency constraints on operations which strongly encourage implementations to stay within a predictable time envelope regardless of specific query parameters. The parameters are a combination of person and date range, and sometimes tags or countries. The hardest queries have the potential to access all content created by people within 2 steps of a central person, so possibly thousands of people, times 2000 posts per person, times up to 4 tags per post. We are talking in the millions of key lookups, aiming for sub-second single-threaded execution.</p>
+<p>The test system is the same as used in the <a href="http://www.openlinksw.com/weblog/oerling/?id=1739">TPC-H series</a>: dual Xeon E5-2630, 2x6 cores x 2 threads, 2.3GHz, 192 GB RAM. The software is the <a href="https://github.com/v7fasttrack/virtuoso-opensource/tree/feature/analytics">feature/analytics branch</a> of <a href="https://github.com/v7fasttrack/virtuoso-opensource/">v7fasttrack, available from www.github.com</a>.</p>
+<p>The dataset is the SNB 300G set, with:</p>
+<table>
+  <thead>
+      <tr>
+          <th>1,136,127</th>
+          <th>persons</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>125,249,604</td>
+          <td>knows edges</td>
+      </tr>
+      <tr>
+          <td>847,886,644</td>
+          <td>posts, including replies</td>
+      </tr>
+      <tr>
+          <td>1,145,893,841</td>
+          <td>tags of posts or replies</td>
+      </tr>
+      <tr>
+          <td>1,140,226,235</td>
+          <td>likes of posts or replies</td>
+      </tr>
+  </tbody>
+</table>
+<p>As an initial step, we run the benchmark as fast as it will go. We use 32 threads on the driver side for 24 hardware threads.</p>
+<p>Below are the numerical quantities for a 400K operation run after 150K operations worth of warmup.</p>
+<p><strong>Duration:</strong> 10:41.251
+<strong>Throughput:</strong> 623.71 (op/s)</p>
+<p>The statistics that matter are detailed below, with operations ranked in order of descending client-side wait-time. All times are in milliseconds.</p>
+<table>
+  <thead>
+      <tr>
+          <th>% of total</th>
+          <th>total_wait</th>
+          <th>name</th>
+          <th>count</th>
+          <th>mean</th>
+          <th>min</th>
+          <th>max</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>20%</td>
+          <td>4,231,130</td>
+          <td>LdbcQuery5</td>
+          <td>656</td>
+          <td>6,449.89</td>
+          <td>245</td>
+          <td>10,311</td>
+      </tr>
+      <tr>
+          <td>11%</td>
+          <td>2,272,954</td>
+          <td>LdbcQuery8</td>
+          <td>18,354</td>
+          <td>123.84</td>
+          <td>14</td>
+          <td>2,240</td>
+      </tr>
+      <tr>
+          <td>10%</td>
+          <td>2,200,718</td>
+          <td>LdbcQuery3</td>
+          <td>388</td>
+          <td>5,671.95</td>
+          <td>468</td>
+          <td>17,368</td>
+      </tr>
+      <tr>
+          <td>7.3%</td>
+          <td>1,561,382</td>
+          <td>LdbcQuery14</td>
+          <td>1,124</td>
+          <td>1,389.13</td>
+          <td>4</td>
+          <td>5,724</td>
+      </tr>
+      <tr>
+          <td>6.7%</td>
+          <td>1,441,575</td>
+          <td>LdbcQuery12</td>
+          <td>1,252</td>
+          <td>1,151.42</td>
+          <td>15</td>
+          <td>3,273</td>
+      </tr>
+      <tr>
+          <td>6.5%</td>
+          <td>1,396,932</td>
+          <td>LdbcQuery10</td>
+          <td>1,252</td>
+          <td>1,115.76</td>
+          <td>13</td>
+          <td>4,743</td>
+      </tr>
+      <tr>
+          <td>5%</td>
+          <td>1,064,457</td>
+          <td>LdbcShortQuery3PersonFriends</td>
+          <td>46,285</td>
+          <td>22.9979</td>
+          <td>0</td>
+          <td>2,287</td>
+      </tr>
+      <tr>
+          <td>4.9%</td>
+          <td>1,047,536</td>
+          <td>LdbcShortQuery2PersonPosts</td>
+          <td>46,285</td>
+          <td>22.6323</td>
+          <td>0</td>
+          <td>2,156</td>
+      </tr>
+      <tr>
+          <td>4.1%</td>
+          <td>885,102</td>
+          <td>LdbcQuery6</td>
+          <td>1,721</td>
+          <td>514.295</td>
+          <td>8</td>
+          <td>5,227</td>
+      </tr>
+      <tr>
+          <td>3.3%</td>
+          <td>707,901</td>
+          <td>LdbcQuery1</td>
+          <td>2,117</td>
+          <td>334.389</td>
+          <td>28</td>
+          <td>3,467</td>
+      </tr>
+      <tr>
+          <td>2.4%</td>
+          <td>521,738</td>
+          <td>LdbcQuery4</td>
+          <td>1,530</td>
+          <td>341.005</td>
+          <td>49</td>
+          <td>2,774</td>
+      </tr>
+      <tr>
+          <td>2.1%</td>
+          <td>440,197</td>
+          <td>LdbcShortQuery4MessageContent</td>
+          <td>46,302</td>
+          <td>9.50708</td>
+          <td>0</td>
+          <td>2,015</td>
+      </tr>
+      <tr>
+          <td>1.9%</td>
+          <td>407,450</td>
+          <td>LdbcUpdate5AddForumMembership</td>
+          <td>14,338</td>
+          <td>28.4175</td>
+          <td>0</td>
+          <td>2,008</td>
+      </tr>
+      <tr>
+          <td>1.9%</td>
+          <td>405,243</td>
+          <td>LdbcShortQuery7MessageReplies</td>
+          <td>46,302</td>
+          <td>8.75217</td>
+          <td>0</td>
+          <td>2,112</td>
+      </tr>
+      <tr>
+          <td>1.9%</td>
+          <td>404,002</td>
+          <td>LdbcShortQuery6MessageForum</td>
+          <td>46,302</td>
+          <td>8.72537</td>
+          <td>0</td>
+          <td>1,968</td>
+      </tr>
+      <tr>
+          <td>1.8%</td>
+          <td>387,044</td>
+          <td>LdbcUpdate3AddCommentLike</td>
+          <td>12,659</td>
+          <td>30.5746</td>
+          <td>0</td>
+          <td>2,060</td>
+      </tr>
+      <tr>
+          <td>1.7%</td>
+          <td>361,290</td>
+          <td>LdbcShortQuery1PersonProfile</td>
+          <td>46,285</td>
+          <td>7.80577</td>
+          <td>0</td>
+          <td>2,015</td>
+      </tr>
+      <tr>
+          <td>1.6%</td>
+          <td>334,409</td>
+          <td>LdbcShortQuery5MessageCreator</td>
+          <td>46,302</td>
+          <td>7.22234</td>
+          <td>0</td>
+          <td>2,055</td>
+      </tr>
+      <tr>
+          <td>1%</td>
+          <td>220,740</td>
+          <td>LdbcQuery2</td>
+          <td>1,488</td>
+          <td>148.347</td>
+          <td>2</td>
+          <td>2,504</td>
+      </tr>
+      <tr>
+          <td>0.96%</td>
+          <td>205,910</td>
+          <td>LdbcQuery7</td>
+          <td>1,721</td>
+          <td>119.646</td>
+          <td>11</td>
+          <td>2,295</td>
+      </tr>
+      <tr>
+          <td>0.93%</td>
+          <td>198,971</td>
+          <td>LdbcUpdate2AddPostLike</td>
+          <td>5,974</td>
+          <td>33.3062</td>
+          <td>0</td>
+          <td>1,987</td>
+      </tr>
+      <tr>
+          <td>0.88%</td>
+          <td>189,871</td>
+          <td>LdbcQuery11</td>
+          <td>2,294</td>
+          <td>82.7685</td>
+          <td>4</td>
+          <td>2,219</td>
+      </tr>
+      <tr>
+          <td>0.85%</td>
+          <td>182,964</td>
+          <td>LdbcQuery13</td>
+          <td>2,898</td>
+          <td>63.1346</td>
+          <td>1</td>
+          <td>2,201</td>
+      </tr>
+      <tr>
+          <td>0.74%</td>
+          <td>158,188</td>
+          <td>LdbcQuery9</td>
+          <td>78</td>
+          <td>2,028.05</td>
+          <td>1,108</td>
+          <td>4,183</td>
+      </tr>
+      <tr>
+          <td>0.67%</td>
+          <td>143,457</td>
+          <td>LdbcUpdate7AddComment</td>
+          <td>3,986</td>
+          <td>35.9902</td>
+          <td>1</td>
+          <td>1,912</td>
+      </tr>
+      <tr>
+          <td>0.26%</td>
+          <td>54,947</td>
+          <td>LdbcUpdate8AddFriendship</td>
+          <td>571</td>
+          <td>96.2294</td>
+          <td>1</td>
+          <td>988</td>
+      </tr>
+      <tr>
+          <td>0.2%</td>
+          <td>43,451</td>
+          <td>LdbcUpdate6AddPost</td>
+          <td>1,386</td>
+          <td>31.3499</td>
+          <td>1</td>
+          <td>2,060</td>
+      </tr>
+      <tr>
+          <td>0.01%</td>
+          <td>1,848</td>
+          <td>LdbcUpdate4AddForum</td>
+          <td>103</td>
+          <td>17.9417</td>
+          <td>1</td>
+          <td>65</td>
+      </tr>
+      <tr>
+          <td>0.00%</td>
+          <td>44</td>
+          <td>LdbcUpdate1AddPerson</td>
+          <td>2</td>
+          <td>22</td>
+          <td>10</td>
+          <td>34</td>
+      </tr>
+  </tbody>
+</table>
+<p>At this point we have in-depth knowledge of the choke points the benchmark stresses, and we can give a first assessment of whether the design meets its objectives for setting an agenda for the coming years of graph database development.</p>
+<p>The implementation is well optimized in general but still has maybe 30% room for improvement. We note that this is based on a compressed column store. One could think that alternative data representations, like in-memory graphs of structs and pointers between them, are better for the task. This is not necessarily so; at the least, a compressed column store is much more space efficient. Space efficiency is the root of cost efficiency, since as soon as the working set is not in memory, a random access workload is badly hit.</p>
+<p>The set of choke points (technical challenges) actually revealed by the benchmark is so far as follows:</p>
+<ul>
+<li>
+<p><em>Cardinality estimation under heavy data skew —</em> Many queries take a tag or a country as a parameter. The cardinalities associated with tags vary from 29M posts for the most common to 1 for the least common. Q6 has a common tag (in top few hundred) half the time and a random, most often very infrequent, one the rest of the time. A declarative implementation must recognize the cardinality implications from the literal and plan accordingly. An imperative one would have to count. Missing this makes Q6 take about 40% of the time instead of 4.1% when adapting.</p>
+</li>
+<li>
+<p><em>Covering indices —</em> Being able to make multi-column indices that duplicate some columns from the table often saves an entire table lookup. For example, an index on post by author can also contain the post&rsquo;s creation date.</p>
+</li>
+<li>
+<p><em>Multi-hop graph traversal —</em> Most queries access a two-hop environment starting at a person. Two queries look for shortest paths of unbounded length. For the two-hop case, it makes almost no difference whether this is done as a union or a special graph traversal operator. For shortest paths, this simply must be built into the engine; doing this client-side incurs prohibitive overheads. A bidirectional shortest path operation is a requirement for the benchmark.</p>
+</li>
+<li>
+<p><em>Top <em>K</em> —</em> Most queries returning posts order results by descending date. Once there are at least <em>k</em> results, anything older than the __k__th can be dropped, adding a dateselection as early as possible in the query. This interacts with vectored execution, so that starting with a short vector size more rapidly produces an initial top <em>k</em>.</p>
+</li>
+<li>
+<p><em>Late projection —</em> Many queries access several columns and touch millions of rows but only return a few. The columns that are not used in sorting or selection can be retrieved only for the rows that are actually returned. This is especially useful with a column store, as this removes many large columns (e.g. text of a post) from the working set.</p>
+</li>
+<li>
+<p><em>Materialization —</em> Q14 accesses an expensive-to-compute edge weight, the number of post-reply pairs between two people. Keeping this precomputed drops Q14 from the top place. Other materialization would be possible, for example Q2 (top 20 posts by friends), but since Q2 is just 1% of the load, there is no need. One could of course argue that this should be 20x more frequent, in which case there could be a point to this.</p>
+</li>
+<li>
+<p><em>Concurrency control —</em> Read-write contention is rare, as updates are randomly spread over the database. However, some pages get read very frequently, e.g. some middle level index pages in the post table. Keeping a count of reading threads requires a mutex, and there is significant contention on this. Since the hot set can be one page, adding more mutexes does not always help. However, hash partitioning the index into many independent trees (as in the case of a cluster) helps for this. There is also contention on a mutex for assigning threads to client requests, as there are large numbers of short operations.</p>
+</li>
+</ul>
+<p>In subsequent posts, we will look at specific queries, what they in fact do, and what their theoretical performance limits would be. In this way we will have a precise understanding of which way SNB can steer the graph DB community.</p>
+<h2 id="snb-interactive-series">SNB Interactive series</h2>
+<ul>
+<li><a href="https://ldbcouncil.org/post/snb-interactive-part-1-what-is-snb-interactive-really-about/">SNB Interactive, Part 1: What is SNB Interactive Really About?</a></li>
+<li><a href="https://ldbcouncil.org/post/snb-interactive-part-2-modeling-choices/">SNB Interactive, Part 2: Modeling Choices</a></li>
+<li><a href="https://ldbcouncil.org/post/snb-interactive-part-3-choke-points-and-initial-run-on-virtuoso/">SNB Interactive, Part 3: Choke Points and Initial Run on Virtuoso</a></li>
+</ul>
+
+    </div>
+    <!-- tags -->
+    <div class="tags">
+      <span>Tags:</span>
+      <ul class="list-inline d-inline-block">
+        <a href="/tags/snb">SNB</a>
+        , <a href="/tags/interactive">INTERACTIVE</a>
+        
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-intro">
+      <p class="footer-text">GDC was formerly known as LDBC (Linked Data Benchmark Council). Originally a research project, it is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+      <div class="footer-logo">
+        <img src="https://ldbcouncil.org/images/gdc_white.svg" alt="Graph Data Council">
+      </div>
+    </div>
+    
+
+    <div class="footer-grid">
+
+      <div class="footer-grid-column">
+        <h4>CONNECT WITH US</h4>
+        <div class="social-icons">
+          
+            
+              <a href="https://twitter.com/GraphCouncil" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" viewBox="0 0 20 19"><path fill="#acacac" d="M15.732.904H18.8l-6.733 7.638 7.866 10.362H13.76l-4.833-6.297-5.534 6.297H.326l7.133-8.17L-.074.904h6.326l4.367 5.752L15.732.904ZM14.66 17.11h1.7l-11-14.48H3.532L14.66 17.11Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://bsky.app/profile/ldbcouncil.org" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 21 21"><path fill="#acacac" d="M10.338 9.9c-.91-1.77-3.387-5.068-5.69-6.693C2.44 1.649 1.6 1.918 1.047 2.169.409 2.456.293 3.437.293 4.013c0 .577.316 4.73.522 5.423.683 2.29 3.108 3.064 5.343 2.816.114-.017.23-.032.348-.047a8.083 8.083 0 0 1-.348.047c-3.274.486-6.183 1.679-2.369 5.925 4.197 4.345 5.751-.932 6.549-3.606.798 2.674 1.716 7.76 6.473 3.606 3.572-3.606.981-5.44-2.293-5.925a7.242 7.242 0 0 1-.348-.047c.117.015.234.03.348.047 2.235.249 4.66-.526 5.342-2.816.207-.693.523-4.846.523-5.422 0-.578-.116-1.558-.755-1.847-.552-.25-1.393-.519-3.6 1.038-2.303 1.628-4.78 4.925-5.69 6.694Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://www.linkedin.com/company/graphdatacouncil/" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none" viewBox="0 0 22 20"><path fill="#acacac" fill-rule="evenodd" d="M5.82 2.584a2.07 2.07 0 0 1-.66 1.595c-.45.427-1.04.64-1.772.64h-.026c-.715 0-1.29-.213-1.726-.64a2.143 2.143 0 0 1-.653-1.595 2.107 2.107 0 0 1 .67-1.602C2.104.559 2.692.347 3.415.347c.724 0 1.304.212 1.74.635a2.187 2.187 0 0 1 .665 1.602Zm-.272 4v12.963H1.236V6.583h4.312Zm15.52 5.532v7.428h-4.299v-6.93c0-.915-.176-1.632-.529-2.15-.353-.52-.904-.779-1.654-.779a2.117 2.117 0 0 0-1.38.451 2.779 2.779 0 0 0-.833 1.12c-.107.341-.155.698-.142 1.056v7.232H7.928c.017-3.479.026-6.3.026-8.462S7.95 7.63 7.94 7.208l-.013-.625h4.303V8.47h-.026c.159-.257.338-.5.536-.73.225-.248.473-.476.739-.68a3.4 3.4 0 0 1 1.137-.568c.487-.14.991-.21 1.498-.203 1.491 0 2.69.494 3.597 1.484s1.36 2.438 1.36 4.346l-.004-.002Z" clip-rule="evenodd"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://github.com/ldbc" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#acacac" d="M10 0c5.523 0 10 4.59 10 10.253 0 4.529-2.862 8.371-6.833 9.728-.507.101-.687-.22-.687-.492 0-.338.012-1.442.012-2.814 0-.956-.32-1.58-.679-1.898 2.227-.254 4.567-1.121 4.567-5.06 0-1.12-.388-2.033-1.03-2.751.104-.26.447-1.302-.098-2.714 0 0-.838-.275-2.747 1.051A9.396 9.396 0 0 0 10 4.958a9.375 9.375 0 0 0-2.503.345C5.586 3.977 4.746 4.252 4.746 4.252c-.543 1.412-.2 2.455-.097 2.714-.639.718-1.03 1.632-1.03 2.752 0 3.928 2.335 4.808 4.556 5.067-.286.256-.545.708-.635 1.37-.57.263-2.018.716-2.91-.85 0 0-.529-.986-1.533-1.058 0 0-.975-.013-.068.623 0 0 .655.315 1.11 1.5 0 0 .587 1.83 3.369 1.21.005.857.014 1.665.014 1.909 0 .27-.184.588-.683.493C2.865 18.627 0 14.782 0 10.252 0 4.59 4.478 0 10 0Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/benchmarks">BENCHMARKS</a></h4>
+        <ul>
+          <li><a href="/benchmarks/finbench/">Financial Benchmark</a></li>
+          <li><a href="/benchmarks/graphalytics/">Graphalytics Benchmark</a></li>
+          <li><a href="/benchmarks/spb/">Semantic Publishing Benchmark</a></li>
+          <li><a href="/benchmarks/snb/">Social Network Benchmark</a></li>
+          <li><a href="/benchmarks/fair-use-policies/">Fair Use Policies</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/introduction">ORGANIZATION</a></h4>
+        <ul>
+          <li><a href="/organizational-members/">Members</a></li>
+          <li><a href="/leadership/">Leadership</a></li>
+          <li><a href="/contact-us/">Contact</a></li>
+        </ul>
+
+        <h4 class="mt-4"><a href="/organizational-documents/">ORGANIZATIONAL DOCUMENTS</a></h4>
+
+        <ul>
+          <li><a href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf">Byelaws</a></li>
+          <li><a href="/docs/LDBC.Articles.of.Association.ADOPTED.2025-02-21.pdf">Articles of Association</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-grid-column">
+        <h4><a href="/gql-community/">LANGUAGES &amp; DATA MODELS</a></h4>
+        <ul>
+          <li><a href="/gql-community/text2gq/">Text2GraphQuery WG</a></li>
+          <li><a href="/gql-community/lex/">LEX (Extended GQL Schema) WG</a></li>
+          <li><a href="/gql-community/opengql-announce/">Open-Source GQL Tools</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p>© Graph Data Council (GDC)</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    
+    
+    <div id="cite-modal" class="cite-modal" style="display: none;">
+        <div class="cite-modal-content">
+            <div class="cite-modal-header">
+                <h3></h3>
+                <button class="cite-modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="cite-modal-body">
+                <pre id="cite-content" class="cite-bibtex"></pre>
+            </div>
+            <div class="cite-modal-footer">
+                <button id="cite-copy" class="button copy">Copy</button>
+                <button id="cite-download" class="button download">Download</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://ldbcouncil.org/js/main.min.b94883609a8d2a09b9ee5b3cf945fa299b24aadf9d5d863b35d8d29d8b2450267a2ab3c2a6c9718625218a9a3a960d03c8374f04fc184603d42353d9c2dac3d5.js" integrity="sha512-uUiDYJqNKgm57ls8&#43;UX6KZskqt&#43;dXYY7NdjSnYskUCZ6KrPCpslxhiUhipo6lg0DyDdPBPwYRgPUI1PZwtrD1Q=="></script>
+
+
+<script src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script>
+
+
+</body>
+</html>

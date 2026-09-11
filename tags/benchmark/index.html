@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Benchmark | Graph Data Council</title>
+<meta name="description" content="Website for the Graph Data Council (GDC), formerly known as the Linked Data Benchmark Council (LDBC)">
+
+<link rel="icon" href="https://ldbcouncil.org/images/favicon.png">
+
+
+
+
+
+<link rel="stylesheet" href="https://ldbcouncil.org/css/style.6bdd59910146a51b3d209def78f148d548a22bdfac1fb8f6c8fa4ae5cdeee4cd3bf00b4d90facace8291d0bf0bfe7c32571947313327b023f06cbdc544687caf.css" integrity="sha512-a91ZkQFGpRs9IJ3vePFI1UiiK9&#43;sH7j2yPpK5c3u5M078AtNkPrKzoKR0L8L/nwyVxlHMTMnsCPwbL3FRGh8rw==">
+
+
+
+<script type="module" src="https://ldbcouncil.org/js/sticky-table-wrapper.js"></script>
+
+</head>
+<body class="page page-benchmark">
+    <header class="site-header">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="site-logo">
+        <a href="/">
+          <img src="https://ldbcouncil.org/images/gdc.svg" alt="Graph Data Council">
+        </a>
+      </div>
+      
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown mega-menu" id="menu-0">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" id="benchmarks-menu" aria-expanded="false">Benchmarks</a>
+                  <div class="mega-menu-content" data-parent="benchmarks-menu">
+                    <button class="submenu-back" aria-label="Back to main menu">
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                      </svg>
+                      <span>Back</span>
+                    </button>
+                    <div class="mega-menu-grid" style="grid-template-columns: repeat(4, 1fr);">
+                      
+                      
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/finbench" class="main">Financial Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/datasets">FinBench Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/results">FinBench Results</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/finbench/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/snb" class="main">Social Network Bench.</a></li>
+                              
+                                <li><a href="/benchmarks/snb/datasets">SNB Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/snb/bi">BI Workload</a></li>
+                              
+                                <li><a href="/benchmarks/snb/interactive">Interactive Workload</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/snb/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/graphalytics" class="main">Graphalytics Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/datasets">Graphalytics Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/algorithms">Algorithms</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/rules">Competition Rules</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/graphalytics/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/" class="main">More</a></li>
+                              
+                                <li><a href="/benchmarks/fair-use-policies">LDBC Fair Use Policies</a></li>
+                              
+                                <li><a href="/benchmarks/spb">Semantic Pub. Benchmark</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                    </div>
+                  </div>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-1">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Query Languages & Data Models</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/">Overview</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/text2gq">Text2GraphQuery WG</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/lex">Schema WG (LEX)</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/opengql-announce">Open GQL Tools</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-2">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Resources</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/resources/publications">Publications</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/datasets">Datasets</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/pointers">Pointers</a></li>
+                    
+                      <li><a class="dropdown-item" href="/benchmarks/fair-use-policies">Trademark</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/faq">FAQ</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-3">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Organization</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/introduction">Introduction</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-members">Members</a></li>
+                    
+                      <li><a class="dropdown-item" href="/leadership">Leadership</a></li>
+                    
+                      <li><a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-documents">Documents</a></li>
+                    
+                      <li><a class="dropdown-item" href="/contact-us">Contact</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/post">Blog</a>
+              </li>
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/event">Events</a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    
+    <main id="main">
+        
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<section class="hero">
+  <div class="container container-wide">
+    
+      <h1>Blog posts tagged with "Benchmark"</h1>
+    
+  </div>
+</section>
+
+
+<section class="blog-section">
+  <div class="container container-wide">
+    <div class="blog-posts">
+      
+      <a href="https://ldbcouncil.org/post/best-paper-runner-up-at-vldb-2025/" class="blog-card" 
+         data-title="best paper runner up at vldb 2025 for finbench"
+         data-excerpt="we are happy to announce that the research paper “the ldbc financial benchmark: transaction workload” by shipeng qi et al. received the best experiment, analysis &amp;amp; benchmark paper runner-up award at vldb 2025.
+the paper describes the design and implementation of the ldbc financial benchmark (finbench). the paper will be presented at vldb on september 4 (thursday) in the “research 60” session (westminster 4f room) between 3:45pm and 5:15pm.
+"
+         data-tags="benchmark,finbench"
+         data-year="2025">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="Best Paper Runner Up at VLDB 2025 for FinBench">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">benchmark</span>
+            
+            <span class="tag">finbench</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">August 31, 2025</time>
+          <h3>Best Paper Runner Up at VLDB 2025 for FinBench</h3>
+          
+          <p>We are happy to announce that the research paper “The LDBC Financial Benchmark: Transaction Workload” by Shipeng Qi et al. received the Best Experiment, Analysis &amp; Benchmark Paper Runner-Up Award at …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/record-breaking-snb-interactive-results-for-graphscope/" class="blog-card" 
+         data-title="record-breaking snb interactive results for graphscope"
+         data-excerpt="we are happy to announce new audited results for the snb interactive workload, achieved by the open-source graphscope flex system.
+the current audit of the system has broken several records:
+it achieved 130.1k ops/s on scale factor 100, compared to the previous record of 48.8k ops/s. it achieved 131.3k ops/s on scale factor 300, compared to the previous record of 48.3k ops/s. it is the first system to successfully complete the benchmark on scale factor 1000. it achieved a throughput of 127.8k ops/s the audit was commissioned by the alibaba cloud and was conducted by dr. arnau prat-pérez, one of the original authors of the snb interactive benchmark. the queries were implemented as c&#43;&#43; stored procedures and the benchmark was executed on the alibaba cloud&amp;rsquo;s infrastructure. the executive summary, full disclosure report, and supplementary package describe the benchmark&amp;rsquo;s steps and include instructions for reproduction.
+ldbc would like to congratulate the graphscope flex team on their record-breaking results.
+"
+         data-tags="benchmark,snb"
+         data-year="2024">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="Record-Breaking SNB Interactive Results for GraphScope">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">benchmark</span>
+            
+            <span class="tag">snb</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">May 26, 2024</time>
+          <h3>Record-Breaking SNB Interactive Results for GraphScope</h3>
+          
+          <p>We are happy to announce new audited results for the SNB Interactive workload, achieved by the open-source GraphScope Flex system.
+The current audit of the system has broken several records:
+It …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/ldbc-is-proud-to-announce-the-new-ldbc-graphalytics-benchmark-draft-specification/" class="blog-card" 
+         data-title="ldbc is proud to announce the new ldbc graphalytics benchmark draft specification"
+         data-excerpt="ldbc is proud to announce the new ldbc graphalytics benchmark draft specification.
+ldbc graphalytics is the first industry-grade graph data management benchmark for graph analysis platforms such as giraph. it consists of six core algorithms, standard datasets, synthetic dataset generators, and reference outputs, enabling the objective comparison of graph analysis platforms. it has strong industry support from oracle, intel, huawei and ibm, and was tested and optimized on the best industrial and open-source systems.
+tim hegeman of tu delft is today presenting the technical paper describing ldbc graphalytics at the important vldb (very large databases) conference in new delhi, where his talk also marks the release by ldbc of graphalytics as a benchmark draft. practitioners are invited to read the pvldb paper, download the software and try running it.
+ldbc is eager to use any feedback for its future adoption of ldbc graphalytics.
+learn more: ldbc graphalytics
+github: https://github.com/tudelft-atlarge/graphalytics
+"
+         data-tags="benchmark,tu delft,graphalytics"
+         data-year="2016">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="LDBC Is Proud to Announce the New LDBC Graphalytics Benchmark Draft Specification">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">benchmark</span>
+            
+            <span class="tag">tu delft</span>
+            
+            <span class="tag">graphalytics</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">September 6, 2016</time>
+          <h3>LDBC Is Proud to Announce the New LDBC Graphalytics Benchmark Draft Specification</h3>
+          
+          <p>LDBC is proud to announce the new LDBC Graphalytics Benchmark draft specification.
+LDBC Graphalytics is the first industry-grade graph data management benchmark for graph analysis platforms such as …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/semantic-publishing-instance-matching-benchmark/" class="blog-card" 
+         data-title="semantic publishing instance matching benchmark"
+         data-excerpt="the semantic publishing instance matching benchmark (spimbench) is a novel benchmark for the assessment of instance matching techniques for rdf data with an associated schema. spimbench extends the state-of-the art instance matching benchmarks for rdf data in three main aspects: it allows for systematic scalability testing, supports a wider range of test cases including semantics-aware ones, and provides an enriched gold standard.
+the spimbench test cases provide a systematic way for testing the performance of instance matching systems in different settings. spimbench supports the types of test cases already adopted by existing instance matching benchmarks:
+value-based test cases based on applying value transformations (e.g. blank character addition and deletion, change of date format, abbreviations, synonyms) on triples relating to given input entity structure-based test cases characterized by a structural transformation (e.g. different nesting levels for properties, property splitting, aggregation) the novelty of spimbench lies in the support for the following semantics-aware test cases defined on the basis of owl constructs:
+instance (in)equality (owl:sameas, owl:differentfrom) class and property equivalence (owl:equivalentclass, owl:equivalentproperty) class and property disjointness (owl:disjointwith, owl:alldisjointclasses, owl:propertydisjointwith, owl:alldisjointproperties) class and property hierarchies (rdfs:subclassof, rdfs:subpropertyof) property constraints (owl:functionalproperty, owl:inversefunctionalproperty) complex class definitions (owl:unionof, owl:intersectionof) spimbench uses and extends the ontologies of ldbc&amp;rsquo;s semantic publishing benchmark (spb) to tackle the more complex schema constructs expressed in terms of owl. it also extends spb&amp;rsquo;s data generator to first generate a synthetic source dataset that does not contain any matches, and then to generate matches and non-matches to entities of the source dataset to address the supported transformations and owl constructs. the data generation process allows the creation of arbitrary large datasets, thus supporting the evaluation of both the scalability and the matching quality of an instance matching system.
+value and structure-based test cases are implemented using the swing framework [1] on data and object type properties respectively. these are produced by applying the appropriate transformation(s) on a source instance to obtain a target instance. semantics-based test cases are produced in the same way as with the value and structure-based test cases with the difference that appropriate triples are constructed and added in the target dataset to consider the respective owl constructs.
+spimbench, in addition to the semantics-based test cases that differentiate it from existing instance matching benchmarks, also offers a weighted gold standard used to judge the quality of answers of instance matching systems. it contains generated matches (a pair consisting of an entity of the source dataset and an entity of the target dataset) the type of test case it represents, the property on which a transformation was applied (in the case of value-based and structure-based test cases), and a weight that quantifies how easy it is to detect this match automatically. spimbench adopts an information-theoretical approach by applying multi-relational learning to compute the weight of the pair of matched instances by measuring the information loss that results from applying transformations to the source data to generate the target data. this detailed information, which is not provided by state of the art benchmarks, allows users of spimbench (e.g. developers of im systems) to more easily identify the reasons underlying the performance results obtained using spimbench and thereby supports the debugging of instance matching systems.
+spimbench can be downloaded from our repository.
+references [1] a. ferrara, s. montanelli, j. noessner, and h. stuckenschmidt. benchmarking matching applications on the semantic web. in eswc, 2011.
+"
+         data-tags="instance matching,benchmark"
+         data-year="2014">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="Semantic Publishing Instance Matching Benchmark">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">instance matching</span>
+            
+            <span class="tag">benchmark</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">December 30, 2014</time>
+          <h3>Semantic Publishing Instance Matching Benchmark</h3>
+          
+          <p>The Semantic Publishing Instance Matching Benchmark (SPIMBench) is a novel benchmark for the assessment of instance matching techniques for RDF data with an associated schema. SPIMBench extends the …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/choke-point-based-benchmark-design/" class="blog-card" 
+         data-title="choke point based benchmark design"
+         data-excerpt="the linked data benchmark council (ldbc) mission is to design and maintain benchmarks for graph data management systems, and establish and enforce standards in running these benchmarks, and publish and arbitrate around the official benchmark results. the council and its https://ldbcouncil.org website just launched, and in its first 1.5 year of existence, most effort at ldbc has gone into investigating the needs of the field through interaction with the ldbc technical user community (next tuc meeting will be on october 5 in athens) and indeed in designing benchmarks.
+so, what makes a good benchmark design? many talented people have paved our way in addressing this question and for relational database systems specifically the benchmarks produced by tpc have been very helpful in maturing relational database technology, and making it successful. good benchmarks are relevant and representative (address important challenges encountered in practice), understandable , economical (implementable on simple hardware), fair (such as not to favor a particular product or approach), scalable, accepted by the community and public (e.g. all of its software is available in open source). this list stems from jim gray&amp;rsquo;s benchmark handbook. in this blogpost, i will share some thoughts on each of these aspects of good benchmark design.
+a very important aspect of benchmark development is making sure that the community accepts a certain benchmark, and starts using it. a benchmark without published results and therefore opportunity to compare results, remains irrelevant. a european fp7 project is a good place to start gathering a critical mass of support (and consensus, in the process) for a new benchmark from the core group of benchmark designers in the joint work performed by the consortium. since in ldbc multiple commercial graph and rdf vendors are on the table (neo technologies, openlink, ontotext and sparsity) a minimal consensus on fairness had to be established immediately. the linked data benchmark council itself is a noncommercial, neutral, entity which releases all its benchmark specifications, software, as well as many materials created during the design. ldbc has spent a lot of time engaging interested parties (mainly through its technical user community gatherings) as well as lining up additional organizations as members of the linked data benchmark council. there is, in other words, a strong non-technical, human factor in getting benchmarks accepted.
+the need for understandability for me means that a database benchmark should consist of a limited number of queries and result metrics. hence i find tpc-h with its 22 queries more understandable than tpc-ds with its 99, because after (quite some) study and experience it is possible to understand the underlying challenges of all queries in tpc-h. it may also be possible for tpc-ds but the amount of effort is just much larger. understandable also means for me that a particular query should behave similarly, regardless of the query parameters. often, a particular query needs to be executed many times, and in order not to play into the hands of simple query caching and also enlarge the access footprint of the workload, different query parameters should be used. however, parameters can strongly change the nature of a query but this is not desirable for the understandability of the workload. for instance, we know that tpc-h q01 tests raw computation power, as its selection predicate eliminates almost nothing from the main fact table (lineitem), that it scans and aggregates into a small 4-tuple result. using a selection parameter that would select only 0.1% of the data instead, would seriously change the nature of q01, e.g. making it amendable to indexing. this stability of parameter bindings is an interesting challenge for the social network benchmark (snb) of ldbc which is not as uniform and uncorrelated as tpc-h. addressing the challenge of obtaining parameter bindings that have similar execution characteristics will be the topic of a future blog post.
+the economical aspect of benchmarking means that while rewarding high-end benchmark runs with higher scores, it is valuable if a meaningful run can also be done with small hardware. for this reason, it is good practice to use a performance-per-euro (or $) metric, so small installations despite a lower absolute score can still do well on that metric. the economical aspect is right now hurting the (still) leading relational oltp benchmark tpc-c. its implementation rules are such that for higher reported rates of throughput, a higher number of warehouses (i.e. larger data size) is needed. in the current day and age of jit-compiled machine code sql procedures and cpu-cache optimized main memory databases, the oltp throughput numbers now obtainable on modern transactional systems like hyper on even a single server (it reaches more than 100.000 transactions per second) are so high that they lead to petabyte storage requirements. not only does this make tpc-c very expensive to run, just by the sheer amount of hardware needed according to the rules, but it also undermines its representativeness, since oltp data sizes encountered in the field are much smaller than olap data sizes and do not run in the petabytes.
+representative benchmarks can be designed by studying or even directly using real workload information, e.g. query logs. a rigorous example of this is the dbpedia benchmark whose workload is based on the query logs of dbpedia.org. however, this sparql endpoint is a single public virtuoso instance that has been configured to interrupt all long running queries, such as to ensure the service remains responsive to as many users as possible. as a result, it is only practical to run small lookup queries on this database service, so the query log only contained solely such light queries. as a consequence, the dbpedia benchmark only tests small sparql queries that stress simple b-tree lookups only (and not joins, aggregations, path expressions or inference) and poses almost no technical challenges for either query optimization or execution. the lesson, thus, is to balance representativity with relevance (see later).
+the fact that a benchmark can be scaled in size favors the use of synthetic data (i.e. created by a data generator) because data generators can produce any desired quantity of data. i hereby note that in this day and age, data generators should be parallel. single-threaded single-machine data generation just becomes unbearable even at terabyte scales. a criticism of synthetic data is that it may not be representative of real data, which e.g. tends to contain highly correlated data with skewed distributions. this may be addressed to a certain extent by injecting specific skew and correlations into synthetic data as well (but: which skew and which correlations?). an alternative is to use real data and somehow blow up or contract the data. this is the approach in the mentioned dbpedia benchmark, though such scaling will distort the original distributions and correlations. scaling a benchmark is very useful to investigate the effect of data size on the metric, on individual queries, or even in micro-benchmark tests that are not part of the official query set. typically oltp database benchmarks have queries whose complexity is o(log(n)) of the data size n, whereas olap benchmarks have queries which are linear, o(n) or at most o(n.log(n)) &amp;ndash; otherwise executing the benchmark on large instances is infeasible. oltp queries thus typically touch little data, in the order of log(n) tuples. in order not to measure fully cold query performance, oltp benchmarks for that reason need a warmup phase with o(n/log(n)) queries in order to get the system into a representative state.
+now, what makes a benchmark relevant? in ldbc we think that benchmarks should be designed such that crucial areas of functionality are highlighted, and in turn system architects are stimulated to innovate. either to catch up with competitors and bring the performance and functionality in line with the state-of-the-art but even to innovate and address technical challenges for which until now no good solutions exist, but which can give a decisive performance advantage in the benchmark. inversely stated, benchmark design can thus be a powerful tool to influence the industry, as a benchmark design may set the agendas for multiple commercial design teams and database architects around the globe. to structure this design process, ldbc introduces the notion of &amp;ldquo;choke points&amp;rdquo;: by which we mean problems that challenge current technology. these choke points are collected and described early in the ldbc design process, and the workloads developed later are scored in terms of their coverage of relevant choke points. in case of graph data querying, one of the choke points that is unique to the area is recursive top-n query handling (e.g. shortest path queries). another choke point that arises is the impact of correlations between attribute values of graph nodes (e.g. both employed by tum) and the connectivity degree between nodes (the probability to be friends). the notion observed in practice is that people who are direct colleagues, often are in each other&amp;rsquo;s friend network. a query that selects people in a social graph that work for the same company, and then does a friendship traversal, may get a bad intermediate result size estimates and therefore suboptimal query plan, if optimizers remain unaware of value/structure correlations. so this is an area of functionality that the social network benchmark (snb) by ldbc will test.
+to illustrate what choke points are in more depth, we wrote a paper in the tpctc 2013 conference that performs a post-mortem analysis of tpc-h and identified 28 such choke points. this table lists them all, grouped into six choke point (cp) areas (cp1 aggregation, cp2 join, cp3 locality, cp4 calculations, cp5 subqueries and cp6 parallelism). the classification also shows cp coverage over each of the 22 tpc-h queries (black is high impact, white is no impact):
+i would recommend reading this paper to anyone who is interested in improving the tpc-h score of a relational database system, since this paper contains the collected experience of three database architects who have worked with tpc-h at length: orri erling (of virtuoso), thomas neumann (hyper,rdf-3x), and me (monetdb,vectorwise). recently orri erling showed that this paper is not complete as he discovered one more choke-point area for tpc-h: top-n pushdown. in a detailed blog entry, orri showed how this technique can trivialize q18; and this optimization can single-handedly improve the overall tpc-score by 10-15%. this is also a lesson for ldbc: even though we design benchmarks with choke points in mind, the queries themselves may bring to light unforeseen opportunities and choke-points that may give rise to yet unknown innovations.
+ldbc has just published two benchmarks as public drafts, which essentially means that you are cordially invited to download and try out the rdf-focused semantic publishing benchmark (spb) and the more graph-focused social network benchmark (snb), and tell us what you think. stay tuned for the coming detailed blog posts about these benchmarks, which will explain the graph and rdf processing choke-points that they test.
+(for more posts from peter boncz, see also database architects, a blog about data management challenges and techniques written by people who design and implement database systems)
+"
+         data-tags="database,benchmark,design"
+         data-year="2014">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="Choke Point Based Benchmark Design">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">database</span>
+            
+            <span class="tag">benchmark</span>
+            
+            <span class="tag">design</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">October 14, 2014</time>
+          <h3>Choke Point Based Benchmark Design</h3>
+          
+          <p>The Linked Data Benchmark Council (LDBC) mission is to design and maintain benchmarks for graph data management systems, and establish and enforce standards in running these benchmarks, and publish …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/2nd-international-workshop-on-benchmarking-rdf-systems/" class="blog-card" 
+         data-title="2nd international workshop on benchmarking rdf systems"
+         data-excerpt="following the 1st international workshop on benchmarking rdf systems (bersys 2013) the aim of the bersys 2014 workshop is to provide a discussion forum where researchers and industrials can meet to discuss topics related to the performance of rdf systems. bersys 2014 is the only workshop dedicated to benchmarking different aspects of rdf engines - in the line of tpctc series of workshops. the focus of the workshop is to expose and initiate discussions on best practices, different application needs and scenarios related to different aspects of rdf data management.
+"
+         data-tags="workshop,cfp,benchmark,bersys"
+         data-year="2014">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="2nd International Workshop on Benchmarking RDF Systems">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">workshop</span>
+            
+            <span class="tag">cfp</span>
+            
+            <span class="tag">benchmark</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">October 9, 2014</time>
+          <h3>2nd International Workshop on Benchmarking RDF Systems</h3>
+          
+          <p>Following the 1st International workshop on Benchmarking RDF Systems (BeRSys 2013) the aim of the BeRSys 2014 workshop is to provide a discussion forum where researchers and industrials can meet to …</p>
+          
+        </div>
+      </a>
+      
+    </div>
+    
+    
+  </div>
+</section>
+
+
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-intro">
+      <p class="footer-text">GDC was formerly known as LDBC (Linked Data Benchmark Council). Originally a research project, it is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+      <div class="footer-logo">
+        <img src="https://ldbcouncil.org/images/gdc_white.svg" alt="Graph Data Council">
+      </div>
+    </div>
+    
+
+    <div class="footer-grid">
+
+      <div class="footer-grid-column">
+        <h4>CONNECT WITH US</h4>
+        <div class="social-icons">
+          
+            
+              <a href="https://twitter.com/GraphCouncil" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" viewBox="0 0 20 19"><path fill="#acacac" d="M15.732.904H18.8l-6.733 7.638 7.866 10.362H13.76l-4.833-6.297-5.534 6.297H.326l7.133-8.17L-.074.904h6.326l4.367 5.752L15.732.904ZM14.66 17.11h1.7l-11-14.48H3.532L14.66 17.11Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://bsky.app/profile/ldbcouncil.org" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 21 21"><path fill="#acacac" d="M10.338 9.9c-.91-1.77-3.387-5.068-5.69-6.693C2.44 1.649 1.6 1.918 1.047 2.169.409 2.456.293 3.437.293 4.013c0 .577.316 4.73.522 5.423.683 2.29 3.108 3.064 5.343 2.816.114-.017.23-.032.348-.047a8.083 8.083 0 0 1-.348.047c-3.274.486-6.183 1.679-2.369 5.925 4.197 4.345 5.751-.932 6.549-3.606.798 2.674 1.716 7.76 6.473 3.606 3.572-3.606.981-5.44-2.293-5.925a7.242 7.242 0 0 1-.348-.047c.117.015.234.03.348.047 2.235.249 4.66-.526 5.342-2.816.207-.693.523-4.846.523-5.422 0-.578-.116-1.558-.755-1.847-.552-.25-1.393-.519-3.6 1.038-2.303 1.628-4.78 4.925-5.69 6.694Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://www.linkedin.com/company/graphdatacouncil/" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none" viewBox="0 0 22 20"><path fill="#acacac" fill-rule="evenodd" d="M5.82 2.584a2.07 2.07 0 0 1-.66 1.595c-.45.427-1.04.64-1.772.64h-.026c-.715 0-1.29-.213-1.726-.64a2.143 2.143 0 0 1-.653-1.595 2.107 2.107 0 0 1 .67-1.602C2.104.559 2.692.347 3.415.347c.724 0 1.304.212 1.74.635a2.187 2.187 0 0 1 .665 1.602Zm-.272 4v12.963H1.236V6.583h4.312Zm15.52 5.532v7.428h-4.299v-6.93c0-.915-.176-1.632-.529-2.15-.353-.52-.904-.779-1.654-.779a2.117 2.117 0 0 0-1.38.451 2.779 2.779 0 0 0-.833 1.12c-.107.341-.155.698-.142 1.056v7.232H7.928c.017-3.479.026-6.3.026-8.462S7.95 7.63 7.94 7.208l-.013-.625h4.303V8.47h-.026c.159-.257.338-.5.536-.73.225-.248.473-.476.739-.68a3.4 3.4 0 0 1 1.137-.568c.487-.14.991-.21 1.498-.203 1.491 0 2.69.494 3.597 1.484s1.36 2.438 1.36 4.346l-.004-.002Z" clip-rule="evenodd"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://github.com/ldbc" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#acacac" d="M10 0c5.523 0 10 4.59 10 10.253 0 4.529-2.862 8.371-6.833 9.728-.507.101-.687-.22-.687-.492 0-.338.012-1.442.012-2.814 0-.956-.32-1.58-.679-1.898 2.227-.254 4.567-1.121 4.567-5.06 0-1.12-.388-2.033-1.03-2.751.104-.26.447-1.302-.098-2.714 0 0-.838-.275-2.747 1.051A9.396 9.396 0 0 0 10 4.958a9.375 9.375 0 0 0-2.503.345C5.586 3.977 4.746 4.252 4.746 4.252c-.543 1.412-.2 2.455-.097 2.714-.639.718-1.03 1.632-1.03 2.752 0 3.928 2.335 4.808 4.556 5.067-.286.256-.545.708-.635 1.37-.57.263-2.018.716-2.91-.85 0 0-.529-.986-1.533-1.058 0 0-.975-.013-.068.623 0 0 .655.315 1.11 1.5 0 0 .587 1.83 3.369 1.21.005.857.014 1.665.014 1.909 0 .27-.184.588-.683.493C2.865 18.627 0 14.782 0 10.252 0 4.59 4.478 0 10 0Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/benchmarks">BENCHMARKS</a></h4>
+        <ul>
+          <li><a href="/benchmarks/finbench/">Financial Benchmark</a></li>
+          <li><a href="/benchmarks/graphalytics/">Graphalytics Benchmark</a></li>
+          <li><a href="/benchmarks/spb/">Semantic Publishing Benchmark</a></li>
+          <li><a href="/benchmarks/snb/">Social Network Benchmark</a></li>
+          <li><a href="/benchmarks/fair-use-policies/">Fair Use Policies</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/introduction">ORGANIZATION</a></h4>
+        <ul>
+          <li><a href="/organizational-members/">Members</a></li>
+          <li><a href="/leadership/">Leadership</a></li>
+          <li><a href="/contact-us/">Contact</a></li>
+        </ul>
+
+        <h4 class="mt-4"><a href="/organizational-documents/">ORGANIZATIONAL DOCUMENTS</a></h4>
+
+        <ul>
+          <li><a href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf">Byelaws</a></li>
+          <li><a href="/docs/LDBC.Articles.of.Association.ADOPTED.2025-02-21.pdf">Articles of Association</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-grid-column">
+        <h4><a href="/gql-community/">LANGUAGES &amp; DATA MODELS</a></h4>
+        <ul>
+          <li><a href="/gql-community/text2gq/">Text2GraphQuery WG</a></li>
+          <li><a href="/gql-community/lex/">LEX (Extended GQL Schema) WG</a></li>
+          <li><a href="/gql-community/opengql-announce/">Open-Source GQL Tools</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p>© Graph Data Council (GDC)</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    
+    
+    <div id="cite-modal" class="cite-modal" style="display: none;">
+        <div class="cite-modal-content">
+            <div class="cite-modal-header">
+                <h3></h3>
+                <button class="cite-modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="cite-modal-body">
+                <pre id="cite-content" class="cite-bibtex"></pre>
+            </div>
+            <div class="cite-modal-footer">
+                <button id="cite-copy" class="button copy">Copy</button>
+                <button id="cite-download" class="button download">Download</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://ldbcouncil.org/js/main.min.b94883609a8d2a09b9ee5b3cf945fa299b24aadf9d5d863b35d8d29d8b2450267a2ab3c2a6c9718625218a9a3a960d03c8374f04fc184603d42353d9c2dac3d5.js" integrity="sha512-uUiDYJqNKgm57ls8&#43;UX6KZskqt&#43;dXYY7NdjSnYskUCZ6KrPCpslxhiUhipo6lg0DyDdPBPwYRgPUI1PZwtrD1Q=="></script>
+
+
+<script src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script>
+
+
+</body>
+</html>

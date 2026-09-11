@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Ldbc | Graph Data Council</title>
+<meta name="description" content="Website for the Graph Data Council (GDC), formerly known as the Linked Data Benchmark Council (LDBC)">
+
+<link rel="icon" href="https://ldbcouncil.org/images/favicon.png">
+
+
+
+
+
+<link rel="stylesheet" href="https://ldbcouncil.org/css/style.6bdd59910146a51b3d209def78f148d548a22bdfac1fb8f6c8fa4ae5cdeee4cd3bf00b4d90facace8291d0bf0bfe7c32571947313327b023f06cbdc544687caf.css" integrity="sha512-a91ZkQFGpRs9IJ3vePFI1UiiK9&#43;sH7j2yPpK5c3u5M078AtNkPrKzoKR0L8L/nwyVxlHMTMnsCPwbL3FRGh8rw==">
+
+
+
+<script type="module" src="https://ldbcouncil.org/js/sticky-table-wrapper.js"></script>
+
+</head>
+<body class="page page-ldbc">
+    <header class="site-header">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="site-logo">
+        <a href="/">
+          <img src="https://ldbcouncil.org/images/gdc.svg" alt="Graph Data Council">
+        </a>
+      </div>
+      
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown mega-menu" id="menu-0">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" id="benchmarks-menu" aria-expanded="false">Benchmarks</a>
+                  <div class="mega-menu-content" data-parent="benchmarks-menu">
+                    <button class="submenu-back" aria-label="Back to main menu">
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                      </svg>
+                      <span>Back</span>
+                    </button>
+                    <div class="mega-menu-grid" style="grid-template-columns: repeat(4, 1fr);">
+                      
+                      
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/finbench" class="main">Financial Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/datasets">FinBench Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/results">FinBench Results</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/finbench/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/snb" class="main">Social Network Bench.</a></li>
+                              
+                                <li><a href="/benchmarks/snb/datasets">SNB Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/snb/bi">BI Workload</a></li>
+                              
+                                <li><a href="/benchmarks/snb/interactive">Interactive Workload</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/snb/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/graphalytics" class="main">Graphalytics Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/datasets">Graphalytics Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/algorithms">Algorithms</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/rules">Competition Rules</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/graphalytics/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/" class="main">More</a></li>
+                              
+                                <li><a href="/benchmarks/fair-use-policies">LDBC Fair Use Policies</a></li>
+                              
+                                <li><a href="/benchmarks/spb">Semantic Pub. Benchmark</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                    </div>
+                  </div>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-1">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Query Languages & Data Models</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/">Overview</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/text2gq">Text2GraphQuery WG</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/lex">Schema WG (LEX)</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/opengql-announce">Open GQL Tools</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-2">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Resources</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/resources/publications">Publications</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/datasets">Datasets</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/pointers">Pointers</a></li>
+                    
+                      <li><a class="dropdown-item" href="/benchmarks/fair-use-policies">Trademark</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/faq">FAQ</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-3">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Organization</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/introduction">Introduction</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-members">Members</a></li>
+                    
+                      <li><a class="dropdown-item" href="/leadership">Leadership</a></li>
+                    
+                      <li><a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-documents">Documents</a></li>
+                    
+                      <li><a class="dropdown-item" href="/contact-us">Contact</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/post">Blog</a>
+              </li>
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/event">Events</a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    
+    <main id="main">
+        
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<section class="hero">
+  <div class="container container-wide">
+    
+      <h1>Blog posts tagged with "Ldbc"</h1>
+    
+  </div>
+</section>
+
+
+<section class="blog-section">
+  <div class="container container-wide">
+    <div class="blog-posts">
+      
+      <a href="https://ldbcouncil.org/post/graphalytics-2023-competition-report/" class="blog-card" 
+         data-title="graphalytics 2023 competition report"
+         data-excerpt="this report was produced by the following authors (affiliations given as of the time of the competition, 2023):
+ldbc: gábor szárnyas, david püroja alibaba: xiaojian luo, ke meng, wenyuan yu ant group: likang chen, heng lin, shipeng qi intel: sriram aananthakrishnan, pascal costanza, henry a. gabb, yves vandriessche introduction graph analytics and why it matters over the last few years, gartner has consistently ranked graph analytics, graph processing, knowledge graphs, and context-enriched analysis (e.g. graph neural networks) among its top data science trends. this is because connected data, or graphs, are everywhere. biochemical pathways, electrical grids, roadmaps, and communications networks are common examples of graphs. because graphs are everywhere, it stands to reason that graph processing is also everywhere. operations on such connected data invoke various graph analytics algorithms to extract useful information embedded in the connections. for example, web searches examine the connections among webpages to find the most relevant information. social networks use friend connections to identify communities of people with similar interests. mapping software looks for optimal routes in road networks.
+similarly, the graphs themselves are highly varied. some are large and some are small. some are relatively dense while others are very sparse. some graphs have highly-skewed degree distributions. for example, the x (formerly twitter) network is skewed because some people have millions of followers while most have only a few. web graphs, on the other hand, tend to have a high average degree. road networks often have a high diameter (the length of the path between the most distant nodes). all of these characteristics affect the performance of graph algorithms.
+the computational landscape of graph analytics is very diverse, so no single graph and algorithm pair can represent the entire computational space. several combinations are needed to give a comprehensive, objective, and reproducible representation of graph analytics performance because optimizations that work well for one graph topology might not work well for others.
+gapbs vs. graphalytics good benchmarks are available to measure the performance of graph analytics software and hardware. the gap benchmark suite from the university of california, berkeley runs six common algorithms on five graphs with different characteristics to give good coverage of the graph analytics landscape (beamer et al., 2015). another advantage is that gap is easy to run, so it was chosen for a recent comparison of several academic software packages for graph analysis (azad et al., 2020). however, it does not have automatic correctness checking and its graphs are fixed-size and small by modern standards.
+ldbc graphalytics is more of an industrial-strength benchmark consisting of “six deterministic algorithms, standard datasets, synthetic dataset generators, and reference output, that enable objective comparison of graph analysis platforms” (iosup et al., 2016). it is not as easy to run as gap, but it covers similar regions of the graph analytics landscape and offers a few key advantages. first, it is strictly deterministic and provides reference output to make correctness checking easier. second, its input graphs are classified by size, some of which are considerably larger than those provided by gap. third, the graphalytics specification is maintained and updated by the ldbc. in 2023, the ldbc sponsored an open competition for graph practitioners to compare their hardware and/or software using graphalytics. the results of this competition are described in the next section.
+it is worth noting that both gap and graphalytics measure static graph analytics. saga-bench is a better option for use-cases that require streaming graphs (basak et al., 2020).
+ldbc graphalytics 2023 competition in 2023, we ran a competition on all graphalytics algorithms (bfs, cdlp, lcc, pr, sssp, wcc) and datasets of all sizes (s, m, l, xl, 2xl, 3xl). we received five submissions from three different vendors.
+submissions first, we provide a brief description of each team&amp;rsquo;s hardware and software environments.
+ant group submissions the ant group team ran a graphalytics implementation on the geacompute data processing platform. the benchmark was run on a cluster of ecs.c8i.24xlarge and ecs.c8a.48xlarge cloud instances:
+each ecs.c8i.24xlarge cloud instance has a 96-core intel xeon platinum 8475b with 192 gb of main memory and 8 tb external storage on alibaba cloud capacity nas. each ecs.c8a.48xlarge cloud instance has a 192-core amd epyc genoa 9t24 with 384 gb of main memory and 8 tb external storage on alibaba cloud capacity nas. the benchmark used different numbers of instances for different scale data. for s-scale, m-scale, l-scale, xl-scale data, 1, 2, 4, 16 instances were used. for 2xl and 3xl scales, 24 instances were used. the three-year total costs of ownership are the following:
+1 instance: 217,609.99 usd, 2 instances: 309,472.61 usd, 4 instances: 457,058.18 usd, 16 instances: 1,548,135.04 usd, 24 instances: 2,204,702.88 usd. alibaba submission the alibaba team ran a graphalytics implementation on the libgrape-lite library. it has graphalytics implementations for both gpu and cpu versions, so they submitted execution time results on both types of hardware.
+the gpu version ran on a single ebmgn7e.32xlarge cloud instance. the instance features two intel(r) xeon(r) platinum 8396 @ 2.70 ghz cpus, each with 32 cores. it has 1 tb of main memory and is equipped with 8 nvidia a100 gpus. the external storage used is essd pl1, and the operating system is ubuntu 20.04.5 lts. the total cost of ownership for three years for this version was 456,697.00 usd.
+the cpu version ran on a cluster of r7.16xlarge cloud instances. for s-scale data, 2 instances were used; for m-scale, 4 instances; and for l, xl, 2xl and 3xl scales, 8 instances were used. each cloud instance has a 32-core intel(r) xeon(r) platinum 8480b cpu, with 512 gb of main memory. the external storage used is alibaba cloud capacity nas, and the operating system is ubuntu 20.04.5 lts. the three-year total costs of ownership for these configurations were the following:
+2 instances: 72,328.41 usd, 4 instances: 114,656.82 usd, 8 instances: 199,308.88 usd. intel submissions the intel team ran the unmodified graphblas reference implementation of graphalytics. the benchmark was run on on-premises servers:
+a custom server with a two-socket intel xeon platinum 8480 (224 hardware threads) with 1 tb 4800 mhz ddr5 rdimm ram and 7.6 tb solidigm d7-p5510 nvme. the operating system was ubuntu 22.04.2 lts. the three-year total cost of ownership was calculated based on public vendor purchase prices for an equivalent system, resulting in 51,826 usd. for dataset sizes s to l, a poweredge r650 server with an intel xeon gold 6342, 16 gb ddr4 rdimm ram, and 960 gb ssd, running ubuntu 22.04. the three-year total cost of ownership was 15,354.81 usd. benchmark phases the graphalytics benchmark&amp;rsquo;s workload includes the following phases:
+the key performance metrics used in the competition are the following:
+makespan (in seconds): the time between the graphalytics driver issuing the command to execute an algorithm on a (previously uploaded) graph and the output of the algorithm being made available to the driver. the makespan can be further divided into processing time and overhead. the makespan metric corresponds to the operation of a cold graph-processing system, which depicts the situation where the system is started up, processes a single dataset using a single algorithm, and then is shut down. processing time (in seconds): the time required to execute an actual algorithm. this does not include platform-specific overhead, such as allocating resources, loading the graph from the file system, or graph partitioning. the processing time metric corresponds to the operation of an in-production, warmed-up graph-processing system, where especially loading of the graph from the file system and graph partitioning, both of which are typically done only once and are algorithm-independent, are not considered. benchmark results and analysis the following tables show the results per dataset size, first ranked by price-adjusted processing throughput then by absolute makespan time.
+price-adjusted throughput and pricing results legend for the table header:
+ms thru./$: price-adjusted makespan throughput (per usd). proc. thru./$: price-adjusted processing throughput (per usd). by default, the results are sorted on this column (descending) per dataset size. pricing ($): total cost of ownership in usd. # size platform environment ms thru./$ proc. thru./$ pricing ($) 1. s libgrape-gpu ebmgn7e.32xlarge 0.080 58.349 456,697.00 2. s libgrape-lite r7.16xlarge 1.454 37.403 72,328.41 3. s graphblas bare metal,
+xeon gold 6342 3.051 11.452 15,354.81 4. s graphblas bare metal,
+xeon platinum 8480 6.262 17.988 51,826.00 5. s geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 7.838 15.727 217,609.99 1. m libgrape-gpu ebmgn7e.32xlarge 0.025 37.132 456,697.00 2. m libgrape-lite r7.16xlarge 0.492 25.441 114,656.82 3. m graphblas bare metal,
+xeon gold 6342 1.120 5.737 15,354.81 4. m geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 1.938 5.880 309,472.61 5. m graphblas bare metal,
+xeon platinum 8480 2.658 5.319 51,826.00 1. l libgrape-gpu ebmgn7e.32xlarge 0.033 16.575 456,697.00 2. l libgrape-lite r7.16xlarge 0.145 8.987 199,308.88 3. l geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 0.428 2.275 457,058.18 4. l graphblas bare metal,
+xeon gold 6342 0.621 2.131 15,354.81 5. l graphblas bare metal,
+xeon platinum 8480 0.923 1.945 51,826.00 1. xl libgrape-gpu ebmgn7e.32xlarge 0.015 3.981 456,697.00 2. xl libgrape-lite r7.16xlarge 0.065 2.072 199,308.88 3. xl graphblas bare metal,
+xeon platinum 8480 0.242 0.388 51,826.00 4. xl geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 0.077 0.275 1,548,135.04 1. 2xl libgrape-gpu ebmgn7e.32xlarge 0.008 0.593 456,697.00 2. 2xl libgrape-lite r7.16xlarge 0.047 0.329 199,308.88 3. 2xl geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 0.024 0.050 2,204,702.88 4. 2xl graphblas bare metal,
+xeon platinum 8480 0.034 0.039 51,826.00 1. 3xl libgrape-lite r7.16xlarge 0.013 0.066 199,308.88 2. 3xl geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 0.005 0.008 2,204,702.88 between sizes s and l, we can observe a clear pattern: graphblas implementations have the lead on price-adjusted makespan throughput, while libgrape implementations rank higher on price-adjusted processing throughput, with libgrape-gpu dominating the price-adjusted processing throughput results, and geacompute taking the place in the middle. this trend largely continues for xl and 2xl datasets, for price-adjusted processing throughput, with libgrape-gpu leading followed by libgrape-lite, while for price-adjusted makespan throughput, graphblas is best for xl and libgrape-lite wins for the 2xl size. on the 3xl datasets, the libgrape-lite implementation has an edge for price-adjusted results over geacompute.
+makespan and processing times legend for the table header:
+mean ms: mean makespan (in seconds). by default, the results are sorted on these values (ascending) per dataset size. mean proc. time: mean processing time (in seconds). #runs: the minimum number of runs conducted per entry. # size platform environment mean ms (s) mean proc. time (s) #runs 1. s geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 2.25 0.20 3 2. s graphblas bare metal,
+xeon platinum 8480 2.46 1.23 3 3. s libgrape-lite r7.16xlarge 9.51 0.37 3 4. s graphblas bare metal,
+xeon gold 6342 10.40 3.62 1 5. s libgrape-gpu ebmgn7e.32xlarge 27.42 0.04 3 1. m geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 3.72 0.50 3 2. m graphblas bare metal,
+xeon platinum 8480 7.26 3.63 3 3. m libgrape-lite r7.16xlarge 17.73 0.34 3 4. m graphblas bare metal,
+xeon gold 6342 33.60 11.08 1 5. m libgrape-gpu ebmgn7e.32xlarge 85.91 0.06 3 1. l geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 6.30 0.79 3 2. l graphblas bare metal,
+xeon platinum 8480 20.90 9.92 3 3. l libgrape-lite r7.16xlarge 34.65 0.56 3 4. l libgrape-gpu ebmgn7e.32xlarge 66.55 0.13 3 5. l graphblas bare metal,
+xeon gold 6342 104.82 30.56 1 1. xl geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 11.83 2.31 3 2. xl libgrape-lite r7.16xlarge 77.63 2.42 3 3. xl graphblas bare metal,
+xeon platinum 8480 79.75 49.71 3 4. xl libgrape-gpu ebmgn7e.32xlarge 150.75 0.55 3 1. 2xl geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 19.56 9.25 3 2. 2xl libgrape-lite r7.16xlarge 105.83 15.26 3 3. 2xl libgrape-gpu ebmgn7e.32xlarge 259.01 3.69 3 4. 2xl graphblas bare metal,
+xeon platinum 8480 570.77 492.87 3 1. 3xl geacompute ecs.c8i.24xlarge / ecs.c8a.48xlarge 90.17 60.39 3 2. 3xl libgrape-lite r7.16xlarge 383.52 75.48 3 across all dataset sizes, geacompute consistently has the best mean makespan runtimes, i.e. it provides the best end-to-end runtimes. for mean processing times, the libgrape-gpu implementation has leads up to 2xl. the largest dataset size, 3xl, was only completed by two distributed implementations, libgrape-lite and geacompute, with geacompute producing better runtimes. graphblas implementations have the slowest absolute runtimes.
+concluding remarks this report presented the results of the graphalytics competition 2023. the results show a surprisingly large variance between end-to-end performance, processing time in a warmed-up state and total cost of ownership. geacompute won in the end-to-end category, the gpu-based libgrape-gpu library was the fastest in most cases for warmed-up processing, while graphblas was the least expensive option.
+we thank all participants who entered the competition in 2023. if you are interested in future iterations of the competition, please reach out to info@ldbcouncil.org.
+references azad et al. (2020), evaluation of graph analytics frameworks using the gap benchmark suite, 2020 ieee international symposium on workload characterization (iiswc). basak et al. (2020), saga-bench: software and hardware characterization of streaming graph analytics workloads, 2020 ieee international symposium on performance analysis of systems and software (ispass). beamer et al. (2015), the gap benchmark suite. iosup et al. (2016), ldbc graphalytics: a benchmark for large-scale graph analysis on parallel and distributed platforms, proceedings of the vldb endowment, 9(13), 1317-1328. mattson et al. (2013), standards for graph algorithm primitives, 2013 ieee high performance extreme computing conference (hpec). "
+         data-tags="ldbc,graphalytics"
+         data-year="2026">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="Graphalytics 2023 Competition Report">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">ldbc</span>
+            
+            <span class="tag">graphalytics</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">March 1, 2026</time>
+          <h3>Graphalytics 2023 Competition Report</h3>
+          
+          <p>This report was produced by the following authors (affiliations given as of the time of the competition, 2023):
+LDBC: Gábor Szárnyas, David Püroja Alibaba: Xiaojian Luo, Ke Meng, Wenyuan Yu Ant Group: …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/the-history-of-the-graph-data-council/" class="blog-card" 
+         data-title="the history of the graph data council"
+         data-excerpt="the graph data council (gdc) is nearly fifteen years old. during this period, the organization has undergone quite a few changes, including to its organizational structure, finances, and branding. in this blog post, we summarize the organization&amp;rsquo;s history and present its current state and goals.
+research project (2012–2015) ldbc started as a european union-funded fp7 research project by the same name with the participation of four academic and four industry partners. the project was coordinated by josep larriba pey (universitat politècnica de catalunya) and peter boncz (cwi &amp;amp; vu amsterdam).
+the consortium established the non-profit organization linked data benchmark council and registered it in the united kingdom. the organization was led by the steering committee with josep larriba pey and peter boncz appointed as the project&amp;rsquo;s chair and vice-chair, respectively. member organizations nominated their representatives to the board of directors.
+over these years, we designed the social network benchmark suite and released its first workload, snb interactive. we also designed the semantic publishing benchmark (spb) with a workload based on bbc&amp;rsquo;s real-world ontology. we conducted standard-establishing audits using graphdb, virtuoso and sparksee, and created an early draft implementation of the snb business intelligence (bi) workload.
+orri erling presenting the snb workloads in 2015
+sustained research efforts (2016–2018) after the successful conclusion of the eu project, research efforts continued but their focus shifted to query languages. this was motivated by an earlier observation: during the benchmark design, we realized that a major blocker in the adoption of graph technology and the design of benchmarks is the lack of a standard graph query language. therefore, through a multi-year collaboration between academia and industry, ldbc created g-core, a design language. our goal was to create a query language from first principles: visual graph syntax, focus on composability, and treating paths as first-class citizens.
+in 2017, the international standards committee responsible for the sql database language standard (iso/iec/jtc 1/sc 32/wg 3 “database languages”) established a category c liaison relationship with ldbc. this liaison allows wg 3 to share its working documents, draft specifications, and draft digital artifacts with ldbc participants, giving them early visibility into standards development efforts. it has also made the sc 32/wg 3 work more visible to ldbc member organizations and gave g-core more visibility in the database language standards process, which allowed it to influence the design of the iso gql and sql/pgq languages.
+the benchmark task forces were also active. the graphalytics task force, led by alexandru iosup at vu amsterdam, designed the ldbc graphalytics benchmark for graph analytics and organized several graphalytics competitions. the social network benchmark task force created the first paper on the snb business intelligence with preliminary benchmark results and published it at grades-nda 2018.
+during this phase, the organization did not collect any membership fees. instead, members continued contributing their work (research, programming, etc.), while the organization&amp;rsquo;s it and administration were supported by cwi and sparsity.
+expansion and auditing ramp-up (2019–2022) from 2019, companies reached out to us and commissioned audits for the snb interactive workload. thanks to the work on new benchmarks and the many audits conducted in this period, ldbc&amp;rsquo;s benchmark design process and auditing process crystallized. the snb task force completed the bi workload&amp;rsquo;s standard-establishing audits, and the first real-life audit, sponsored by a collaboration between amd and tigergraph.
+thanks to the wide interest in audited benchmark results as well as ldbc&amp;rsquo;s work on schema and query languages, our membership grew from approximately seven organizations in 2019 to 22 organizations in 2022. alastair green became ldbc&amp;rsquo;s vice-chair and began setting up the organization&amp;rsquo;s finances to collect membership fees. this seemingly trivial matter posed a surprisingly difficult hurdle for an organization with many directors – one per member organization at the time – of 10&#43; different nationalities. however, once this hurdle was cleared, we could finally collect membership fees and start professionalizing the organization and our events.
+we established a new working group to research property graph schemas (pgswg), which produced the pg-keys paper, published at sigmod 2022. several ldbc members also contributed to establishing the semantics of sql/pgq and gql.
+the social network benchmark task force, led by gábor szárnyas, finalized the snb business intelligence workload and submitted it for publication to vldb. at the initiative of ant group, a new task force was set up to design the ldbc financial benchmark suite with the first workload focusing on high-throughput transactional distributed systems.
+meanwhile, we were also asked to scrutinize some earlier, unsanctioned benchmark results. we conducted and published retrospective reviews on these. to make sure that the benchmarks are used as intended in the future, we trademarked the term “ldbc benchmark result” and published a fair use policy for our benchmarks.
+restructuring and continued work (2023–2024) in early 2023, the organization was restructured to simplify governance and avoid issues with having too many directors on the board. in the new structure, the existing steering committee was replaced by a smaller board of directors (3–5 representatives), while the voting body of representatives became the policy council. from 2023 to early 2024, oskar van rest of oracle served as the chair of the organization.
+in this period, the benchmark task forces released the initial version of the financial benchmark, created a preliminary version of the snb interactive v2.0 workload, and organized a new graphalytics competition.
+the schema working group produced the comprehensive pg-schema paper, which won the best industry track paper award at sigmod 2023. the paper on the snb business intelligence workload won the best paper award at vldb 2023&amp;rsquo;s benchmark track.
+ldbc started investing in creating open-source software to aid the adoption of gql and launched the ldbc open gql tools.
+rebranding and new fee structure (2025–present) in 2025, henry gabb, who was formerly intel&amp;rsquo;s representative, became the chair of the organization.
+we rebranded the organization to graph data council (gdc) to better reflect our broad focus on graph data management, which extends well beyond linked data and rdf technologies. we launched a redesigned website.
+at the beginning of the year, we reworked our membership fees and moved to a tiered system, which provides gdc with a larger financial buffer for open-source work, event organization, and compensation for board members. auditing activities continued with record-breaking results for snb interactive.
+the financial benchmark was published at vldb 2025, where it won the best paper runner-up award in the benchmark track. alastair green and shipeng qi led the setup of the text2graphquery working group, which aims to study the problem of generating graph queries from natural language.
+to help set directions for 2026, the board conducted a membership survey and published the findings in a report.
+conclusion in this blog post, we looked back upon the history of the graph data council. we presented its evolution from a research project through a small nonprofit to a sizable open-source organization focused on graph processing technologies. in the coming years, we look forward to expanding our benchmark offering and exploring topics around graph schema and query generation.
+"
+         data-tags="ldbc,gdc"
+         data-year="2026">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="The History of the Graph Data Council">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">ldbc</span>
+            
+            <span class="tag">gdc</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">February 28, 2026</time>
+          <h3>The History of the Graph Data Council</h3>
+          
+          <p>The Graph Data Council (GDC) is nearly fifteen years old. During this period, the organization has undergone quite a few changes, including to its organizational structure, finances, and branding. In …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/ldbc-gdc-domains/" class="blog-card" 
+         data-title="ldbc and gdc domains"
+         data-excerpt="following our rebranding, the gdc site is available under the following domain addresses:
+graphdata.io graphdatacouncil.org ldbc.github.io ldbc.org ldbcouncil.org for the time being, we&amp;rsquo;ll keep ldbcouncil.org as our primary domain for the website and for our email accounts.
+"
+         data-tags="ldbc"
+         data-year="2025">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="LDBC and GDC Domains">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">ldbc</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">November 28, 2025</time>
+          <h3>LDBC and GDC Domains</h3>
+          
+          <p>Following our rebranding, the GDC site is available under the following domain addresses:
+graphdata.io graphdatacouncil.org ldbc.github.io ldbc.org ldbcouncil.org For the time being, we’ll keep …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/2025-graph-data-council-member-survey-report/" class="blog-card" 
+         data-title="2025 gdc member survey report"
+         data-excerpt=" this report is also available as a pdf.
+motivation the graph data council (gdc, formerly the linked data benchmark council) board of directors decided earlier this year to “take the pulse” of the organization to help align the strategic direction with member expectations. in q1 2025, gdc members were invited to participate in confidential interviews to discuss their reasons for joining the gdc and their priorities for the coming year. thirteen members agreed to participate. the data collection process is described in the data collection section. the key findings that emerged from these discussions are summarized in the qualitative analysis section. the anonymized notes from the individual interviews are included in the appendix.
+data collection freeform interviews were used to gather information, but the following questions were used to frame the discussion around gdc mission, value proposition, priorities, and benchmarks:
+in your view, what is the gdc mission? how does your organization use gdc products (e.g. benchmark or graph query language specifications, benchmark results)? what is the gdc value proposition for your organization? what are your organization’s gdc priorities for 2025? if your organization is running ldbc benchmarks, what keeps you from commissioning an audit: price, complexity, etc.? (note that ldbc is still used to denote ldbc trademarked benchmarks and when discussing the benchmarks, their results, and their data sets.) what changes would you like to see in existing ldbc benchmarks? what new benchmarks does the graph community need? do you or your customers make purchasing decisions based on ldbc benchmark results? not every question was relevant or important to each participant, so it is important to note that participants were allowed to guide the discussion. interviews ranged from 30–60 minutes.
+qualitative analysis when the interviews were finished, qualitative coding was used to extract common themes and member objectives from the interview notes. the sample size is too small for quantitative analysis.
+value propositions the interviews revealed the common tangible and intangible reasons for joining the gdc. there is a desire for vendor-neutral graph query languages and benchmarks to use for product testing, but there is some disagreement among members on the relative importance of performance vs. conformance testing. when performance matters to a member (or their customers), audited ldbc benchmark results are used for external promotion to gain a competitive advantage. however, membership is just as often driven by defensive considerations. in other words, members are sensitive to ldbc benchmark results being used against them. similarly, members are also sensitive to modification to the benchmark specifications that could put them at a competitive disadvantage.
+being part of the graph processing community is a key intangible reason for joining the gdc. members want “a seat at the table” when graph benchmarks and query languages are discussed. the gdc gives them an opportunity to influence the discussion. networking with other members helps them monitor the industry direction and learn the practical use-cases that drive adoption of graph technologies.
+member priorities the member priorities identified during these interviews will help guide the strategic direction of the gdc. priorities tended to fall into three, sometimes overlapping, categories: new development initiatives, benchmark improvements, and graph community efforts. it is important to note that priorities vary among members and conflicts are possible.
+leveraging ai was a common theme. there was a lot of enthusiasm around developing an ai tool to convert natural language to graph queries (similar to the spider 1.0: yale semantic parsing and text-to-sql challenge), though there was disagreement on the target query language. along the same lines, developing an ai tool to optimize graph queries was also suggested. a text2graph task force (work charter) has already been proposed.
+gql is strategically important to many gdc members, so it is not surprising that a gql testing and compatibility toolkit was suggested as a new development initiative. creating a working group to get language clarifications and to make suggestions for gql was also suggested. it could also be merged with the gdc extended gql schema (lex) working group.
+members would like to see the ldbc work toward unification of lpg and rdf and become more of a liaison between industry and academia.
+the ldbc benchmarks are important to many members, so several benchmark-related priorities emerged from these discussions. members would like to see the gdc gather real-world graph database use-cases, particularly those combining graphs and llms. some members are interested in streaming graphs, so they would like the gdc to develop a new benchmark specification for streaming graph computation.
+a few specific benchmark updates were also suggested. members want subgraph mining and community detection algorithms added to graphalytics. for snb, members want a clear versioning scheme, deletion updates, and ease of use (i.e., make this benchmark easier to run). finbench users want “future queries” (i.e., the timer starts when the data streams in, and stops when a signal is detected) on streaming data.
+though many members (or their customers) use the benchmarks, some feel that the benchmarks are too specific to particular use-cases, updated too infrequently to prevent overfitting and abuse, too difficult to run, and too expensive to audit. they would prefer that the gdc deemphasize the benchmarks and focus on data sets and synthetic data generators instead.
+appendix – anonymized interview notes the anonymized notes from the member interviews are included here. each participant verified that no confidential information was discussed during the interviews. however, any comments that could identify a particular member have been scrubbed, even when it meant deleting useful information. the board of directors erred on the side of caution to preserve anonymity.
+member a the questions listed above were used to start the conversation. the member gave two reasons for joining the gdc. first, a trusted third party recommended that they join to keep up with graph query language developments. their main interest is the future direction of gql. they currently support opencypher, but they’re moving to gql. second, their membership is defensive. in other words, they monitor industry graph benchmarks that could be used against them or that they could use for competitive advantage.
+their main priority for 2025 is streaming graph benchmarks. they need a benchmark in which the data are always in motion. saga-bench is not suitable because it was created with a static data mindset. ldbc finbench measures the wrong thing. finbench times how long it takes to get an answer after a question is asked (i.e., query the present and let me know if an event occurred). in a real-world streaming application, the timer starts when the data streams in, and stops when a signal is detected (i.e., query the future and let me know when it happens). two academic research groups are working on this problem: riccardo tommasini (cnrs liris, france) and david bader (njit, usa).
+the member is not involved with the gql language committee, but they believe a well-designed streaming graph benchmark could influence the direction of gql. this would be an important reason to maintain their gdc membership.
+member b the member derives several benefits from its gdc membership:
+it gives them a feel for how other companies use graph databases. membership provides networking opportunities. the gdc helps to build the graph processing community. it helps them monitor and potentially influence the direction of gql. they are interested in graph database usage in financial scenarios. they run ldbc finbench internally. their customers occasionally run ldbc benchmarks.
+the member specified the following priorities for gdc in 2025 (in priority order):
+developing a test and compatibility toolkit for gql gathering real-world graph database use-cases (they are particularly interested in combining graphs with llms) add new graph analytics algorithms (e.g. subgraph mining, community detection) to ldbc graphalytics in addition to these priorities, this member would also like to see the gdc become a liaison between industry and academia. they want a way for members to contribute projects that benefit the larger graph community to the gdc for ongoing maintenance and governance. finally, they would like to see the gdc contribute to something like spider (i.e., natural language text to sql), but for gql.
+member c the ldbc benchmarks, particularly snb, are the main reason for their membership. they use snb to test their products. they mentioned that the development of the snb workload did not follow a clear versioning scheme, which occasionally made it difficult for them to keep track of the changes that occurred with the data. this implies that task forces need to be diligent on this by applying semantic versioning to the data sets. they are also interested in finbench but haven’t started using it yet.
+the second reason for membership is the opportunity to interact with other gdc members and the graph community.
+they expressed some interest in adding new algorithms (particularly community detection) to ldbc graphalytics. graphalytics doesn&amp;rsquo;t exactly cover the part of the graph landscape that they need. they are not interested in streaming graph benchmarks at this time.
+going forward, they would like to see the gdc contribute to something like spider (i.e., natural language text to sql), but for graph queries. they would prefer if gdc had a balance in promoting query languages.
+member d this member’s primary motivation for joining the gdc is to be part of the graph community discussion, for the exchange of ideas, to learn about graph use-cases (particularly in generative ai), and to be part of the gql discussion. the gdc gives them “a seat at the table.” it also serves as a bridge between industry and the forward-looking ideas of academia. however, the member went on to say later that the lex wg is the reason they joined the gdc. this working group is very important to them.
+they are not using ldbc benchmarks because they are too domain-specific: “like most application benchmarks, they’re not sufficiently general.” they would prefer a meta benchmark or ci/cd framework/library that takes a graph schema and query descriptions as input and generates a benchmark that reports such metrics as query runtime and memory footprint.
+this year, the gdc should work to raise awareness of graph databases and consider new benchmarks for llms and graphrag.
+member e this member’s main motivation was initially graph benchmarks. today, being part of the gdc community is their main reason for membership. they still use ldbc benchmarks for internal testing, but they commented that the benchmarks need “easier entry points” (e.g. a version of spb that doesn’t require inference or reasoning). they don’t believe benchmark performance is as important to the market. the market is more interested in generative ai. they would like the gdc to extend the existing benchmarks toward ai use-cases and ai for query optimization.
+member f in their view, the gdc mission is to produce vendor-neutral graph benchmarks and graph query languages. influencing and monitoring gql direction was their initial reason for joining the gdc. it is still their main priority, though they are also interested in sql/pgq. most of their customers are interested in cypher, but more of them are asking about gql because cypher doesn’t have schema definitions.
+they contend that users approach graph databases as follows. first, they check the database engine’s ranking, then they check publicly available benchmark results, and finally they run their own benchmarks.
+they have no plans to publish audited ldbc benchmark results. they have their own internal benchmark, but they use ldbc interactive workloads and queries.
+member g they have integrated gql into their database product, and plan to propose new requirements for gql this year. they believe a gdc task force or working group is needed to get clarifications and make suggestions about gql. they suggest merging lex with this working group.
+they have not used gql tck for testing, but acknowledged that it will be useful in product testing.
+their customers fall into two categories: those who value ldbc audit results and those who use the ldbc datasets but design their own tests. they say there are gaps (e.g. llm, graphrag, vector index) between what the ldbc benchmarks measure and what they require, so they plan to suggest changes to the ldbc benchmarks.
+member h according to this member, the gdc mission is to facilitate the development of graph processing technologies across industries. providing vendor-neutral benchmarks is a key value proposition. they use ldbc snb and finbench for internal testing. they share benchmark results with their customers. their customers care about audited ldbc results, but the cost of audits is a barrier. they haven’t decided on whether to request audited results in 2025.
+some of their customers are skeptical about the applicability to their specific query requirements. the benchmarks are sometimes too specific to a particular use-case. for example, snb results do not necessarily translate to financial services requirements. the benchmarks and queries need to be updated to reflect new use-cases. in 2025, gdc should emphasize the benchmark data sets and data set generation. a possible solution is to design a synthetic data generator with multiple parameter configurations like the degree distribution.
+gql is also important to this member. an engine to convert text to gql or cypher would be useful.
+member i all of the notes from this discussion contain potentially identifiable information. scrubbing them removes too much context. therefore, the notes from this discussion were redacted to preserve member confidentiality. however, the broad points were incorporated into the qualitative analysis.
+member j gdc&amp;rsquo;s mission is to establish industry standards. focus on developing more user scenarios, educating graph database users, and driving the growth of the graph market. the graph computing domain lacks a &amp;ldquo;killer application.&amp;rdquo;
+ldbc benchmarks are quite important. this member uses ldbc benchmarks to uncover system performance bottlenecks and verify acid properties. they use the full suite of benchmarks in evaluation processes and recognize the validity of benchmark results.
+snb interactive is well-designed, but delete updates are still needed. running and implementing the benchmarks must also be simplified. this would increase adoption.
+users usually do not know how to use the graph technology. it would be helpful if gdc could publish more industry-specific use-cases to assist users in better adopting and using graph technology.
+the gdc should work to unify lpg and rdf and to produce more user-focused cases.
+member k their main interest in the gdc is access to the gdc member community and sql/pgq discussion. a trusted third party recommended that they join the gdc to keep up with graph query language developments.
+this member is interested in graph databases and implementing gql. the ldbc benchmarks are not important to them right now, but could become important once gql is implemented.
+they believe that strong schemas are important, but a database has to work with and without them.
+gql tck is important, but more queries need to be added. a gql conformance suite is also needed, even though they believe that cypher is the dominant graph query language.
+member l the gdc value proposition for this member is as follows:
+gdc initiatives help them align with industry trends “to prevent internal overfitting.” they use ldbc benchmarks (mainly snb and graphalytics) to validate system performance and competitiveness. they view the gdc as a forum to spread ideas. their current priorities are as follows:
+the gdc should expand channels for members to share findings (e.g. whitepapers, workshops, collaborative research). the snb queries are useful for query optimization research, but they need more complexity and variety to allow more space for optimization. they suggest annual updates to benchmark queries to prevent vendor overfitting and to ensure system adaptability. they would like the cost of audits to be standardized. they would like to see the gdc fund open source graph projects to strengthen the gdc tooling ecosystem and community adoption. publish technical blogs to demystify ldbc benchmarks and use-cases. engage developer communities and publish an annual &amp;ldquo;state of graph systems&amp;rdquo; report to solidify gdc thought leadership. member m the gdc’s role as a standards organization is this member’s main reason for joining. however, they are worried that the ldbc benchmarks are being abused in spite of the “fair use” provisions. they are worried about benchmark integrity, so their membership is also partly defensive.
+they are interested in finbench. they are also interested in benchmarks with real-time latency thresholds and online data ingestion and analytics. they use the ldbc datasets.
+their priorities for 2025 are as follows:
+promote the gql standard new benchmark features: add queries with real-time latency thresholds (e.g. 30–200 milliseconds) add safeguards for benchmark integrity add the highly-skewed twitter graph to snb or some new benchmark there is some interest in tools to convert natural language to gql queries "
+         data-tags="ldbc,gdc"
+         data-year="2025">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="2025 GDC Member Survey Report">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">ldbc</span>
+            
+            <span class="tag">gdc</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">November 18, 2025</time>
+          <h3>2025 GDC Member Survey Report</h3>
+          
+          <p> This report is also available as a PDF.
+Motivation The Graph Data Council (GDC, formerly the Linked Data Benchmark Council) Board of Directors decided earlier this year to “take the pulse” of the …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/welcome-to-the-new-industry-oriented-ldbc-organisation-for-benchmarking-rdf-and-graph-technologies/" class="blog-card" 
+         data-title="welcome to the new industry oriented ldbc organisation for benchmarking rdf and graph technologies"
+         data-excerpt="it is with great pleasure that we announce the new ldbc organisation site at www.ldbcouncil.org. the ldbc started as a european community fp7 funded project with the objective to create, foster and become an industry reference for benchmarking rdf and graph technologies. a period of more than one and a half years has led us to the creation of the first two workloads, the semantic publishing benchmark and the social network benchmark in its interactive workload, which you will find in the benchmarks menu on this site.
+those benchmarks will allow all the actors in the rdf and graph industry to know who is who and how the different technology players are reacting to the results of their competing industry companies. thus, the users will have results to compare the technologies and vendors will have a clear idea of how their products evolve compared to other vendors, all with the objective to foster the technological growth of the rdf and graph arena.
+while the main objective of ldbc is to create benchmarks, we know that we need a strong community to grow and evolve those benchmarks taking into consideration all the market and technology needs. with this objective, we have created a special section to engage all the interested community through a blog, forums to discuss interesting issues and a lot of information on benchmarking, including links to other benchmarks, pointers to interesting conferences and venues and all the publications on benchmarking rdf and graph technologies.
+we want to make sure that we all know what benchmarking and the ldbc effort means, both historically, and from the global needs perspective. to make sure that this is accomplished, we set up a section open to the public with in depth explanations of the history of industry benchmarking, ldbc and why our society needs such efforts globally.
+finally, we want to invite you to our fifth technical users community (tuc) meeting to be held in athens next monday oct. 6th 2014. this event will have as its main objective to allow for presentations on experiences with the two already released benchmarks, snb and spb. you’ll find updated information here.
+in all, we expect that the ldbc organisation site engages all of you and that the growth of rdf and graph technologies in the future is secured by the benchmarks fostered by us.
+"
+         data-tags="ldbc"
+         data-year="2014">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="Welcome to the New Industry Oriented LDBC Organisation for Benchmarking RDF and Graph Technologies">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">ldbc</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">October 14, 2014</time>
+          <h3>Welcome to the New Industry Oriented LDBC Organisation for Benchmarking RDF and Graph Technologies</h3>
+          
+          <p>It is with great pleasure that we announce the new LDBC organisation site at www.ldbcouncil.org. The LDBC started as a European Community FP7 funded project with the objective to create, foster and …</p>
+          
+        </div>
+      </a>
+      
+      <a href="https://ldbcouncil.org/post/using-ldbc-spb-to-find-owlim-performance-issues/" class="blog-card" 
+         data-title="using ldbc spb to find owlim performance issues"
+         data-excerpt="during the past six months we (the owlim team at ontotext) have integrated the ldbc semantic publishing benchmark (ldbc-spb) as a part of our development and release process.
+first thing we’ve started using the ldbc-spb for is to monitor the performance of our rdf store when a new release is about to come out.
+initially we’ve decided to fix some of the benchmark parameters :
+the dataset size - 50 million triples (ldbc-spb50) benchmark warmup and benchmark run times - 60s and 600s respectively. maximum number of editorial agents (e) : 2 (threads that will execute insert/update operations) * maximum number of aggregation agents (a) : 16 (threads that will execute select operations) generated data by the benchmark driver to be “freshly” deployed before each benchmark run - benchmark driver can be configured to generate the data and stop. we’re using that option and have a fresh copy of it put aside ready for each run. having those parameters fixed, running ldbc-spb is a straight-forward task. the hardware we’re using for benchmarking is a machine with 2 intel xeon cpus, 8 cores each, 256 gb of memory and ssd storage, running linux. another piece of hardware we’ve tested with is a regular desktop machine with intel i7, 32 gb of memory and hdd storage. during our experiments we have allowed a deviation in results of 5% to 10% because of the multi-threaded nature of the benchmark driver.
+we’ve also decided to produce some benchmark results on amazon’s ec2 instances and compare with the results we’ve had so far. starting with m3.2xlarge instance (8 vcpus, 30gb of memory and 2x80gb ssd storage) on a 50m dataset we’ve achieved more than 50% lower results than ones on our own hardware. on a larger amazon instance c3.4xlarge (16 vcpus, 30gb of memory and doubled ssd storage) we’ve achieved the same performance in terms of aggregation operations and even worse performance in terms of editorial operations, which we give to the fact that amazon instances are not providing consistent performance all the time.
+following two charts are showing how owlim performs on different hardware and with different configurations. they also give an indication of amazon’s capabilities compared to the results achieved on a bare-metal hardware.
+figure 1 : owlim performance : 2 amazon instances and 2 local machines. 16 aggregation and 2 editorial agents running simultaneously. aggregation and editorial operations displayed here should be considered independently, i.e. even though editorial operations graph shows higher results on amazon m3.2xlarge instance, values are normalized and are referring to corresponding type of operation.
+figure 2 : owlim performance : 2 amazon instances and 2 local machines. 8 aggregation running simultaneously. read-only mode.
+another thing that we’re using ldbc-spb for is to monitor load performance speeds. loading of generated data can be done either manually by creating some sort of a script (curl), or by the benchmark driver itself which will execute a standard post request against a provided sparql endpoint. benchmark&amp;rsquo;s data generator can be configured to produce chunks of generated data in various sizes, which can be used for experiments on load performance. of course load times of forward-chaining reasoners can not be compared to backward-chaining ones which is not the goal of the benchmark. loading performances is not measured “officially” by ldbc-spb (although time for loading the data is reported), but it&amp;rsquo;s a good thing to have when comparing rdf stores.
+an additional and interesting feature of the spb is the test for conformance to owl2-rl rule-set. it is a part of the ldbc-spb benchmark and that phase is called checkconformance. the phase is run independently of the benchmark phase itself. it requires no data generation or loading except the initial set of ontologies. it tests rdf store’s capabilities for conformance to the rules in owl2-rl rule-set by executing a number of insert/ask queries specific for each rule. the result of that phase is a list of all rules that have been passed or failed which is very useful for regression testing.
+"
+         data-tags="ldbc,spb,rdf"
+         data-year="2014">
+        <div class="blog-card__image">
+          
+            <img src="/images/posts/post-thumb-default.png" alt="Using LDBC SPB to Find OWLIM Performance Issues">
+          
+          
+          
+          <div class="blog-card__tags">
+            
+            <span class="tag">ldbc</span>
+            
+            <span class="tag">spb</span>
+            
+            <span class="tag">rdf</span>
+            
+          </div>
+          
+        </div>
+        
+        <div class="blog-card__content">
+          <time class="blog-card__date">August 20, 2014</time>
+          <h3>Using LDBC SPB to Find OWLIM Performance Issues</h3>
+          
+          <p>During the past six months we (the OWLIM Team at Ontotext) have integrated the LDBC Semantic Publishing Benchmark (LDBC-SPB) as a part of our development and release process.
+First thing we’ve started …</p>
+          
+        </div>
+      </a>
+      
+    </div>
+    
+    
+  </div>
+</section>
+
+
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-intro">
+      <p class="footer-text">GDC was formerly known as LDBC (Linked Data Benchmark Council). Originally a research project, it is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+      <div class="footer-logo">
+        <img src="https://ldbcouncil.org/images/gdc_white.svg" alt="Graph Data Council">
+      </div>
+    </div>
+    
+
+    <div class="footer-grid">
+
+      <div class="footer-grid-column">
+        <h4>CONNECT WITH US</h4>
+        <div class="social-icons">
+          
+            
+              <a href="https://twitter.com/GraphCouncil" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" viewBox="0 0 20 19"><path fill="#acacac" d="M15.732.904H18.8l-6.733 7.638 7.866 10.362H13.76l-4.833-6.297-5.534 6.297H.326l7.133-8.17L-.074.904h6.326l4.367 5.752L15.732.904ZM14.66 17.11h1.7l-11-14.48H3.532L14.66 17.11Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://bsky.app/profile/ldbcouncil.org" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 21 21"><path fill="#acacac" d="M10.338 9.9c-.91-1.77-3.387-5.068-5.69-6.693C2.44 1.649 1.6 1.918 1.047 2.169.409 2.456.293 3.437.293 4.013c0 .577.316 4.73.522 5.423.683 2.29 3.108 3.064 5.343 2.816.114-.017.23-.032.348-.047a8.083 8.083 0 0 1-.348.047c-3.274.486-6.183 1.679-2.369 5.925 4.197 4.345 5.751-.932 6.549-3.606.798 2.674 1.716 7.76 6.473 3.606 3.572-3.606.981-5.44-2.293-5.925a7.242 7.242 0 0 1-.348-.047c.117.015.234.03.348.047 2.235.249 4.66-.526 5.342-2.816.207-.693.523-4.846.523-5.422 0-.578-.116-1.558-.755-1.847-.552-.25-1.393-.519-3.6 1.038-2.303 1.628-4.78 4.925-5.69 6.694Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://www.linkedin.com/company/graphdatacouncil/" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none" viewBox="0 0 22 20"><path fill="#acacac" fill-rule="evenodd" d="M5.82 2.584a2.07 2.07 0 0 1-.66 1.595c-.45.427-1.04.64-1.772.64h-.026c-.715 0-1.29-.213-1.726-.64a2.143 2.143 0 0 1-.653-1.595 2.107 2.107 0 0 1 .67-1.602C2.104.559 2.692.347 3.415.347c.724 0 1.304.212 1.74.635a2.187 2.187 0 0 1 .665 1.602Zm-.272 4v12.963H1.236V6.583h4.312Zm15.52 5.532v7.428h-4.299v-6.93c0-.915-.176-1.632-.529-2.15-.353-.52-.904-.779-1.654-.779a2.117 2.117 0 0 0-1.38.451 2.779 2.779 0 0 0-.833 1.12c-.107.341-.155.698-.142 1.056v7.232H7.928c.017-3.479.026-6.3.026-8.462S7.95 7.63 7.94 7.208l-.013-.625h4.303V8.47h-.026c.159-.257.338-.5.536-.73.225-.248.473-.476.739-.68a3.4 3.4 0 0 1 1.137-.568c.487-.14.991-.21 1.498-.203 1.491 0 2.69.494 3.597 1.484s1.36 2.438 1.36 4.346l-.004-.002Z" clip-rule="evenodd"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://github.com/ldbc" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#acacac" d="M10 0c5.523 0 10 4.59 10 10.253 0 4.529-2.862 8.371-6.833 9.728-.507.101-.687-.22-.687-.492 0-.338.012-1.442.012-2.814 0-.956-.32-1.58-.679-1.898 2.227-.254 4.567-1.121 4.567-5.06 0-1.12-.388-2.033-1.03-2.751.104-.26.447-1.302-.098-2.714 0 0-.838-.275-2.747 1.051A9.396 9.396 0 0 0 10 4.958a9.375 9.375 0 0 0-2.503.345C5.586 3.977 4.746 4.252 4.746 4.252c-.543 1.412-.2 2.455-.097 2.714-.639.718-1.03 1.632-1.03 2.752 0 3.928 2.335 4.808 4.556 5.067-.286.256-.545.708-.635 1.37-.57.263-2.018.716-2.91-.85 0 0-.529-.986-1.533-1.058 0 0-.975-.013-.068.623 0 0 .655.315 1.11 1.5 0 0 .587 1.83 3.369 1.21.005.857.014 1.665.014 1.909 0 .27-.184.588-.683.493C2.865 18.627 0 14.782 0 10.252 0 4.59 4.478 0 10 0Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/benchmarks">BENCHMARKS</a></h4>
+        <ul>
+          <li><a href="/benchmarks/finbench/">Financial Benchmark</a></li>
+          <li><a href="/benchmarks/graphalytics/">Graphalytics Benchmark</a></li>
+          <li><a href="/benchmarks/spb/">Semantic Publishing Benchmark</a></li>
+          <li><a href="/benchmarks/snb/">Social Network Benchmark</a></li>
+          <li><a href="/benchmarks/fair-use-policies/">Fair Use Policies</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/introduction">ORGANIZATION</a></h4>
+        <ul>
+          <li><a href="/organizational-members/">Members</a></li>
+          <li><a href="/leadership/">Leadership</a></li>
+          <li><a href="/contact-us/">Contact</a></li>
+        </ul>
+
+        <h4 class="mt-4"><a href="/organizational-documents/">ORGANIZATIONAL DOCUMENTS</a></h4>
+
+        <ul>
+          <li><a href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf">Byelaws</a></li>
+          <li><a href="/docs/LDBC.Articles.of.Association.ADOPTED.2025-02-21.pdf">Articles of Association</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-grid-column">
+        <h4><a href="/gql-community/">LANGUAGES &amp; DATA MODELS</a></h4>
+        <ul>
+          <li><a href="/gql-community/text2gq/">Text2GraphQuery WG</a></li>
+          <li><a href="/gql-community/lex/">LEX (Extended GQL Schema) WG</a></li>
+          <li><a href="/gql-community/opengql-announce/">Open-Source GQL Tools</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p>© Graph Data Council (GDC)</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    
+    
+    <div id="cite-modal" class="cite-modal" style="display: none;">
+        <div class="cite-modal-content">
+            <div class="cite-modal-header">
+                <h3></h3>
+                <button class="cite-modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="cite-modal-body">
+                <pre id="cite-content" class="cite-bibtex"></pre>
+            </div>
+            <div class="cite-modal-footer">
+                <button id="cite-copy" class="button copy">Copy</button>
+                <button id="cite-download" class="button download">Download</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://ldbcouncil.org/js/main.min.b94883609a8d2a09b9ee5b3cf945fa299b24aadf9d5d863b35d8d29d8b2450267a2ab3c2a6c9718625218a9a3a960d03c8374f04fc184603d42353d9c2dac3d5.js" integrity="sha512-uUiDYJqNKgm57ls8&#43;UX6KZskqt&#43;dXYY7NdjSnYskUCZ6KrPCpslxhiUhipo6lg0DyDdPBPwYRgPUI1PZwtrD1Q=="></script>
+
+
+<script src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script>
+
+
+</body>
+</html>

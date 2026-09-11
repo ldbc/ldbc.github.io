@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Speeding Up LDBC SNB Datagen | Graph Data Council</title>
+<meta name="description" content="Website for the Graph Data Council (GDC), formerly known as the Linked Data Benchmark Council (LDBC)">
+
+<link rel="icon" href="https://ldbcouncil.org/images/favicon.png">
+
+
+
+
+
+<link rel="stylesheet" href="https://ldbcouncil.org/css/style.6bdd59910146a51b3d209def78f148d548a22bdfac1fb8f6c8fa4ae5cdeee4cd3bf00b4d90facace8291d0bf0bfe7c32571947313327b023f06cbdc544687caf.css" integrity="sha512-a91ZkQFGpRs9IJ3vePFI1UiiK9&#43;sH7j2yPpK5c3u5M078AtNkPrKzoKR0L8L/nwyVxlHMTMnsCPwbL3FRGh8rw==">
+
+
+
+<script type="module" src="https://ldbcouncil.org/js/sticky-table-wrapper.js"></script>
+
+</head>
+<body class="page page-speeding-up-ldbc-snb-datagen">
+    <header class="site-header">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="site-logo">
+        <a href="/">
+          <img src="https://ldbcouncil.org/images/gdc.svg" alt="Graph Data Council">
+        </a>
+      </div>
+      
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown mega-menu" id="menu-0">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" id="benchmarks-menu" aria-expanded="false">Benchmarks</a>
+                  <div class="mega-menu-content" data-parent="benchmarks-menu">
+                    <button class="submenu-back" aria-label="Back to main menu">
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                      </svg>
+                      <span>Back</span>
+                    </button>
+                    <div class="mega-menu-grid" style="grid-template-columns: repeat(4, 1fr);">
+                      
+                      
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/finbench" class="main">Financial Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/datasets">FinBench Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/results">FinBench Results</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/finbench/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/snb" class="main">Social Network Bench.</a></li>
+                              
+                                <li><a href="/benchmarks/snb/datasets">SNB Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/snb/bi">BI Workload</a></li>
+                              
+                                <li><a href="/benchmarks/snb/interactive">Interactive Workload</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/snb/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/graphalytics" class="main">Graphalytics Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/datasets">Graphalytics Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/algorithms">Algorithms</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/rules">Competition Rules</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/graphalytics/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/" class="main">More</a></li>
+                              
+                                <li><a href="/benchmarks/fair-use-policies">LDBC Fair Use Policies</a></li>
+                              
+                                <li><a href="/benchmarks/spb">Semantic Pub. Benchmark</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                    </div>
+                  </div>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-1">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Query Languages & Data Models</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/">Overview</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/text2gq">Text2GraphQuery WG</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/lex">Schema WG (LEX)</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/opengql-announce">Open GQL Tools</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-2">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Resources</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/resources/publications">Publications</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/datasets">Datasets</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/pointers">Pointers</a></li>
+                    
+                      <li><a class="dropdown-item" href="/benchmarks/fair-use-policies">Trademark</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/faq">FAQ</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-3">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Organization</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/introduction">Introduction</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-members">Members</a></li>
+                    
+                      <li><a class="dropdown-item" href="/leadership">Leadership</a></li>
+                    
+                      <li><a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-documents">Documents</a></li>
+                    
+                      <li><a class="dropdown-item" href="/contact-us">Contact</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/post">Blog</a>
+              </li>
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/event">Events</a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    
+    <main id="main">
+        
+
+
+
+
+<!-- page title -->
+<section class="hero">
+  <div class="container-default">
+
+  
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb">
+    
+  
+    
+  
+
+
+    
+    <li class="breadcrumb-item">
+      <a href="/post/">Posts</a>
+    </li>
+  
+
+
+  </ol>
+</nav>
+
+
+  <h1 class="pagetitle">Speeding Up LDBC SNB Datagen</h1>
+
+  </div>
+</section>
+<!-- /page title -->
+
+
+
+
+
+<!-- blog details -->
+<section class="single-content">
+  <div class="container-default">
+    <!-- post thumb -->
+    
+    <div class="meta">by <strong class="text-color"><a href="https://www.linkedin.com/in/dszakallas/">Dávid Szakállas</a></strong> / on <strong class="text-dark">12 Jun 2020</strong></div>
+    
+    
+    
+    <div class="maincontent">
+      <p>LDBC&rsquo;s <a href="/post/speeding-up-ldbc-snb-datagen/#references">Social Network Benchmark [4]</a> (LDBC SNB) is an industrial and academic initiative, formed by principal actors in the field of graph-like data management. Its goal is to define a framework where different graph-based technologies can be fairly tested and compared, that can drive the identification of systems&rsquo; bottlenecks and required functionalities, and can help researchers open new frontiers in high-performance graph data management.</p>
+<p>LDBC SNB provides <a href="https://github.com/ldbc/ldbc_snb_datagen">Datagen</a> (Data Generator), which produces synthetic datasets, mimicking a social network&rsquo;s activity during a period of time. Datagen is defined by the characteristics of realism, scalability, determinism and usability. To address scalability in particular, Datagen has been implemented on the MapReduce computation model to enable scaling out across a distributed cluster. However, since its inception in the early 2010s there has been a tremendous amount of development in the big data landscape, both in the sophistication of distributed processing platforms, as well as public cloud IaaS offerings. In the light of this, we should reevaluate this implementation, and in particular, investigate if Apache Spark would be a more cost-effective solution for generating datasets on the scale of tens of terabytes, on public clouds such as Amazon Web Services (AWS).</p>
+<h2 id="overview">Overview</h2>
+<p>The benchmark&rsquo;s specification describes a social network <a href="https://github.com/ldbc/ldbc_snb_docs/blob/9253abbde94ec7eaccd366c5d4c15cca30752e36/figures/schema-comfortable.pdf">data model</a> which divides its components into two broad categories: static and dynamic. The dynamic element consists of an evolving network where people make friends, post in forums, comment or like each others posts, etc. In contrast, the static component contains related attributes such as countries, universities and organizations and are fixed values. For the detailed specifications of the benchmark and the Datagen component, see <a href="/post/speeding-up-ldbc-snb-datagen/#references">References</a>.</p>
+<p>Datasets are generated in a multi-stage process captured as a sequence of MapReduce steps (shown in the diagram below).</p>
+<p><img src="/post/speeding-up-ldbc-snb-datagen/post/speeding-up-ldbc-snb-datagen/datagen_flow.png" alt=""> \ <em>Figure 1. LDBC SNB Datagen Process on Hadoop</em></p>
+<p>In the initialization phase dictionaries are populated and distributions are initialized. In the first generation phase persons are synthesized, then relationships are wired between them along 3 dimensions (university, interest and random). After merging the graph of person relationships, the resulting dataset is output. Following this, activities such as forum posts, comments, likes and photos are generated and output. Finally, the static components are output.</p>
+<blockquote>
+<p>The diagram shows the call sequence as implemented. All steps are sequential &ndash; including the relationship generation &ndash;, even in cases when the data dependencies would allow for parallelization.</p>
+</blockquote>
+<p>Entities are generated by procedural Java code and are represented as POJOs in memory and as sequence files on disk. Most entities follow a shallow representation, i.e foreign keys (in relational terms) are mapped to integer ids, which makes serialization straightforward.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> A notable exception is the Knows edge which contains only the target vertex, and is used as a navigation property on the source Person. The target Person is replaced with only the foreign key augmented with some additional information in order to keep the structure free of cycles. Needless to say, this <em>edge as property</em> representation makes the data harder to handle in SQL than it would be with a flat join table.</p>
+<p>Entity generation amounts to roughly one fifth of the main codebase. It generates properties drawn from several random distributions using mutable pRNGs. Determinism is achieved by initializing the pRNGs to seeds that are fully defined by the configuration with constants, and otherwise having no external state in the logic.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup></p>
+<p>Serialization is done by hand-written serializers for the supported output formats (e.g. CSV) and comprises just a bit less than one third of the main codebase. Most of the output is created by directly interacting with low-level HDFS file streams. Ideally, this code should be migrated to higher-level writers that handle faults and give consistent results when the task has to be restarted.</p>
+<h2 id="motivations-for-the-migration">Motivations for the migration</h2>
+<p>The application is written using Hadoop MapReduce, which is now largely superseded by more modern distributed batch processing platforms, notably Apache Spark. For this reason, it was proposed to migrate Datagen to Spark. The migration provides the following benefits:</p>
+<ul>
+<li>
+<p><strong>Better memory utilization:</strong> MapReduce is disk-oriented, i.e. it writes the output to disk after each reduce stage which is then read by the next MapReduce job. As public clouds provide virtual machines with sufficient RAM to encapsulate any generated dataset, time and money are wasted by the overhead this unnecessary disk I/O incurs. Instead, the intermediate results should be cached in memory where possible. The lack of support for this is a well-known limitation of MapReduce.</p>
+</li>
+<li>
+<p><strong>Smaller codebase:</strong> The Hadoop MapReduce library is fairly ceremonial and boilerplatey. Spark provides a higher-level abstraction that is simpler to work with, while still providing enough control on the lower-level details required for this workload.</p>
+</li>
+<li>
+<p><strong>Small entry cost:</strong> Spark and MapReduce are very close conceptually, they both utilise HDFS under the hood, and run on the JVM. This means that a large chunk of the existing code can be reused, and migration to Spark can, therefore, be completed with relatively small effort. Additionally, MapReduce and Spark jobs can be run on AWS EMR using basically the same HW/SW configuration, which facilitates straightforward performance comparisons.</p>
+</li>
+<li>
+<p><strong>Incremental improvements:</strong> Spark exposes multiple APIs for different workloads and operating on different levels of abstraction. Datagen may initially utilise the lower-level, Java-oriented RDDs (which offer the clearest 1 to 1 mapping when coming from MapReduce) and gradually move towards DataFrames to support Parquet output in the serializers and maybe unlock some SQL optimization capabilities in the generators later down the road.</p>
+</li>
+<li>
+<p><strong>OSS, commodity:</strong> Spark is one of the most widely used open-source big data platforms. Every major public cloud provides a managed offering for Spark. Together these mean that the migration increases the approachability and portability of the code.</p>
+</li>
+</ul>
+<h2 id="first-steps">First steps</h2>
+<p>The first milestone is a successful run of LDBC Datagen on Spark while making the minimum necessary amount of code alterations. This entails the migration of the Hadoop wrappers around the generators and serializers. The following bullet-points summarize the key notions that cropped up during the process.</p>
+<ul>
+<li>
+<p><strong>Use your memory:</strong> A strong focus was placed on keeping the call sequence intact, so that the migrated code evaluates the same steps in the same order, but with data passed as RDDs. It was hypothesised that the required data could be either cached in memory entirely at all times, or if not, regenerating them would still be faster than involving the disk I/O loop (e.g. by using <code>MEMORY_AND_DISK</code>). In short, the default caching strategy was used everywhere.</p>
+</li>
+<li>
+<p><strong>Regression tests:</strong> Lacking tests apart from an id uniqueness check, meant there were no means to detect bugs introduced by the migration. Designing and implementing a comprehensive test suite was out of scope, so instead, regression testing was utilised, with the MapReduce output as the baseline. The original output mostly consists of Hadoop sequence files which can be read into Spark, allowing comparisons to be drawn with the output from the RDD produced by the migrated code.</p>
+</li>
+<li>
+<p><strong>Thread-safety concerns:</strong> Soon after migrating the first generator and running the regression tests, there were clear discrepancies in the output. These only surfaced when the parallelization level was set greater than 1. This indicated the presence of potential race conditions. Thread-safety wasn&rsquo;t a concern in the original implementation due to the fact that MapReduce doesn&rsquo;t use thread-based parallelization for mappers and reducers.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> In Spark however, tasks are executed by parallel threads in the same JVM application, so the code is required to be thread-safe. After some debugging, a bug was discovered originating from the shared use of java.text.SimpleDateFormat (notoriously known to be not thread-safe) in the serializers. This was resolved simply by changing to java.time.format.DateTimeFormatter. There were multiple instances of some static field on an object being mutated concurrently. In some cases this was a temporary buffer and was easily resolved by making it an instance variable. In another case a shared context variable was used, which was resolved by passing dedicated instances as function arguments. Sadly, the Java language has the same syntax for accessing locals, fields and statics, <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> which makes it somewhat harder to find potential unguarded shared variables.</p>
+</li>
+</ul>
+<h2 id="case-study-person-ranking">Case study: Person ranking</h2>
+<p>Migrating was rather straightforward, however, the so-called person ranking step required some thought. The goal of this step is to organize persons so that similar ones appear close to each other in a deterministic order. This provides a scalable way to cluster persons according to a similarity metric, as introduced in the <a href="/post/speeding-up-ldbc-snb-datagen/#references">S3G2 paper [3]</a>.</p>
+<h3 id="the-original-mapreduce-version">The original MapReduce version</h3>
+<p><img src="/post/speeding-up-ldbc-snb-datagen/post/speeding-up-ldbc-snb-datagen/person_ranking.svg" alt=""> \ <em>Figure 2. Diagram of the MapReduce code for ranking persons</em></p>
+<p>The implementation, shown in pseudocode above, works as follows:</p>
+<ol>
+<li>The equivalence keys are mapped to each person and fed into TotalOrderPartitioner which maintains an order sensitive partitioning while trying to emit more or less equal sized groups to keep the data skew low.</li>
+<li>The reducer keys the partitions with its own task id and a counter variable which has been initialized to zero and incremented on each person, establishing a local ranking inside the group. The final state of the counter (which is the total number of persons in that group) is saved to a separate &ldquo;side-channel&rdquo; file upon the completion of a reduce task.</li>
+<li>In a consecutive reduce-only stage, the global order is established by reading all of these previously emitted count files in the order of their partition number in each reducer, then creating an ordered map from each partition number to the corresponding cumulative count of persons found in all preceding ones. This is done in the setup phase. In the reduce function, the respective count is incremented and assigned to each person.</li>
+</ol>
+<p>Once this ranking is done, the whole range is sliced up into equally sized blocks, which are processed independently. For example, when wiring relationships between persons, only those appearing in the same block are considered.</p>
+<h3 id="the-migrated-version">The migrated version</h3>
+<p>Spark provides a sortBy function which takes care of the first step above in a single line. The gist of the problem remains collecting the partition sizes and making them available in a later step. While the MapReduce version uses a side output, in Spark the partition sizes are collected in a separate job and passed into the next phase using a broadcast variable. The resulting code size is a fraction of the original one.</p>
+<h2 id="benchmarks">Benchmarks</h2>
+<p>Benchmarks were carried out on AWS <a href="https://aws.amazon.com/emr/">EMR</a>, originally utilising <a href="https://aws.amazon.com/ec2/instance-types/i3/">i3.xlarge</a> instances because of their fast NVMe SSD storage and ample amount of RAM.</p>
+<p>The application parameter <code>hadoop.numThreads</code> controls the number of reduce threads in each Hadoop job for the MapReduce version and the number of partitions in the serialization jobs in the Spark one. For MapReduce, this was set to <code>n_nodes</code>, i.e. the number of machines; experimentation yielded slowdowns for higher values. The Spark version on the other hand, performed better with this parameter set to <code>n_nodes * v_cpu</code>. The scale factor (SF) parameter determines the output size. It is defined so that one SF unit generates around 1 GB of data. That is, SF10 generates around 10 GB, SF30 around 30 GB, etc. It should be noted however, that incidentally the output was only 60% of this in these experiments, stemming from two reasons. One, update stream serialization was not migrated to Spark, due to problems in the original implementation. Of course, for the purpose of faithful comparison the corresponding code was removed from the MapReduce version as well before executing the benchmarks. This explains a 10% reduction from the expected size. The rest can be attributed to incorrectly tuned parameters.<sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup> The MapReduce results were as follows:</p>
+<table>
+  <thead>
+      <tr>
+          <th>SF</th>
+          <th>workers</th>
+          <th>Platform</th>
+          <th>Instance Type</th>
+          <th>runtime (min)</th>
+          <th>runtime * worker/SF (min)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>10</td>
+          <td>1</td>
+          <td>MapReduce</td>
+          <td>i3.xlarge</td>
+          <td>16</td>
+          <td>1.60</td>
+      </tr>
+      <tr>
+          <td>30</td>
+          <td>1</td>
+          <td>MapReduce</td>
+          <td>i3.xlarge</td>
+          <td>34</td>
+          <td>1.13</td>
+      </tr>
+      <tr>
+          <td>100</td>
+          <td>3</td>
+          <td>MapReduce</td>
+          <td>i3.xlarge</td>
+          <td>40</td>
+          <td>1.20</td>
+      </tr>
+      <tr>
+          <td>300</td>
+          <td>9</td>
+          <td>MapReduce</td>
+          <td>i3.xlarge</td>
+          <td>44</td>
+          <td>1.32</td>
+      </tr>
+  </tbody>
+</table>
+<p>It can be observed that the runtime per scale factor only increases slowly, which is good. The metric charts show an underutilized, bursty CPU. The bursts are supposedly interrupted by the disk I/O parts when the node is writing the results of a completed job. It can also be seen that the memory only starts to get consumed after 10 minutes of the run have passed.</p>
+<p><img src="/post/speeding-up-ldbc-snb-datagen/post/speeding-up-ldbc-snb-datagen/mr_sf100_cpu_load.png" alt=""> <br>
+<em>Figure 3. CPU Load for the Map Reduce cluster is bursty and less than
+50% on average (SF100, 2nd graph shows master)</em></p>
+<p><img src="/post/speeding-up-ldbc-snb-datagen/post/speeding-up-ldbc-snb-datagen/mr_sf100_mem_free.png" alt=""> <br>
+<em>Figure 4. The job only starts to consume memory when already 10 minutes
+into the run (SF100, 2nd graph shows master)</em></p>
+<p>Let&rsquo;s see how Spark fares.</p>
+<table>
+  <thead>
+      <tr>
+          <th>SF</th>
+          <th>workers</th>
+          <th>Platform</th>
+          <th>Instance Type</th>
+          <th>runtime (min)</th>
+          <th>runtime * worker/SF (min)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>10</td>
+          <td>1</td>
+          <td>Spark</td>
+          <td>i3.xlarge</td>
+          <td>10</td>
+          <td>1.00</td>
+      </tr>
+      <tr>
+          <td>30</td>
+          <td>1</td>
+          <td>Spark</td>
+          <td>i3.xlarge</td>
+          <td>21</td>
+          <td>0.70</td>
+      </tr>
+      <tr>
+          <td>100</td>
+          <td>3</td>
+          <td>Spark</td>
+          <td>i3.xlarge</td>
+          <td>27</td>
+          <td>0.81</td>
+      </tr>
+      <tr>
+          <td>300</td>
+          <td>9</td>
+          <td>Spark</td>
+          <td>i3.xlarge</td>
+          <td>36</td>
+          <td>1.08</td>
+      </tr>
+      <tr>
+          <td>1000</td>
+          <td>30</td>
+          <td>Spark</td>
+          <td>i3.xlarge</td>
+          <td>47</td>
+          <td>1.41</td>
+      </tr>
+      <tr>
+          <td>3000</td>
+          <td>90</td>
+          <td>Spark</td>
+          <td>i3.xlarge</td>
+          <td>47</td>
+          <td>1.41</td>
+      </tr>
+  </tbody>
+</table>
+<p>A similar trend here, however the run times are around 70% of the MapReduce version. It can be seen that the larger scale factors (SF1000 and SF3000) yielded a longer runtime than expected. On the metric charts of SF100 the CPU shows full utilization, except at the end, when the results are serialized in one go and the CPU is basically idle (the snapshot of the diagram doesn&rsquo;t include this part unfortunately). Spark can be seen to have used up all memory pretty fast even in case of SF100. In case of SF1000 and SF3000, the nodes are running so low on memory that most probably some of the RDDs have to be calculated multiple times (no disk level serialization was used here), which seem to be the most plausible explanation for the slowdowns experienced. In fact, the OOM errors encountered when running SF3000 supports this hypothesis even further. It was thus proposed to scale up the RAM in the instances. The CPU utilization hints that adding some extra vCPUs as well can further yield speedup.</p>
+<p><img src="/post/speeding-up-ldbc-snb-datagen/post/speeding-up-ldbc-snb-datagen/spark_sf100_cpu_load.png" alt=""> <br>
+<em>Figure 5. Full CPU utilization for Spark (SF100, last graph shows
+master)</em></p>
+<p><img src="/post/speeding-up-ldbc-snb-datagen/post/speeding-up-ldbc-snb-datagen/spark_sf100_mem_free.png" alt=""> <br>
+<em>Figure 6. Spark eats up memory fast (SF100, 2nd graph shows master)</em></p>
+<p>i3.2xlarge would have been the most straightforward option for scaling up the instances, however the humongous 1.9 TB disk of this image is completely unnecessary for the job. Instead the cheaper r5d.2xlarge instance was utilised, largely identical to i3.2xlarge, except it <em>only</em> has a 300 GB SSD.</p>
+<table>
+  <thead>
+      <tr>
+          <th>SF</th>
+          <th>workers</th>
+          <th>Platform</th>
+          <th>Instance Type</th>
+          <th>runtime (min)</th>
+          <th>runtime * worker/SF (min)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>100</td>
+          <td>3</td>
+          <td>Spark</td>
+          <td>r5d.2xlarge</td>
+          <td>16</td>
+          <td>0.48</td>
+      </tr>
+      <tr>
+          <td>300</td>
+          <td>9</td>
+          <td>Spark</td>
+          <td>r5d.2xlarge</td>
+          <td>21</td>
+          <td>0.63</td>
+      </tr>
+      <tr>
+          <td>1000</td>
+          <td>30</td>
+          <td>Spark</td>
+          <td>r5d.2xlarge</td>
+          <td>26</td>
+          <td>0.78</td>
+      </tr>
+      <tr>
+          <td>3000</td>
+          <td>90</td>
+          <td>Spark</td>
+          <td>r5d.2xlarge</td>
+          <td>25</td>
+          <td>0.75</td>
+      </tr>
+      <tr>
+          <td>10000</td>
+          <td>303</td>
+          <td>Spark</td>
+          <td>r5d.2xlarge</td>
+          <td>25</td>
+          <td>0.75</td>
+      </tr>
+  </tbody>
+</table>
+<p>The last column clearly demonstrates our ability to keep the cost per scale factor unit constant.</p>
+<h2 id="next-steps">Next steps</h2>
+<p>The next improvement is refactoring the serializers so they use Spark&rsquo;s high-level writer facilities. The most compelling benefit is that it will make the jobs fault-tolerant, as Spark maintains the integrity of the output files in case the task that writes it fails. This makes Datagen more resilient and opens up the possibility to run on less reliable hardware configuration (e.g. EC2 spot nodes on AWS) for additional cost savings. They will supposedly also yield some speedup on the same cluster configuration.</p>
+<p>As already mentioned, the migration of the update stream serialization was ignored due to problems with the original code. Ideally, they should be implemented with the new serializers.</p>
+<p>The Spark migration also serves as an important building block for the next generation of LDBC benchmarks. As part of extending the SNB benchmark suite, the SNB task force has recently extended Datagen with support for <a href="/post/speeding-up-ldbc-snb-datagen/#references">generating delete operations [1]</a>. The next step for the task force is to fine-tune the temporal distributions of these deletion operations to ensure that the emerging sequence of events is realistic, i.e. the emerging distribution resembles what a database system would experience when serving a real social network.</p>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>This work is based upon the work of Arnau Prat, Gábor Szárnyas, Ben Steer, Jack Waudby and other LDBC contributors. Thanks for your help and feedback!</p>
+<h2 id="references">References</h2>
+<p>[1] <a href="/docs/papers/datagen-deletes-grades-nda-2020.pdf">Supporting Dynamic Graphs and Temporal Entity Deletions in the LDBC Social Network Benchmark&rsquo;s Data Generator</a></p>
+<p>[2] <a href="https://www.youtube.com/watch?v=ZQOLuCOOpSI">9th TUC Meeting &ndash; LDBC SNB Datagen Update &ndash; Arnau Prat (UPC)</a> - <a href="https://datasets.ldbcouncil.org/event/ninth-tuc-meeting/attachments/59277315/75431942.pdf">slides</a></p>
+<p>[3] <a href="https://research.vu.nl/en/publications/s3g2-a-scalable-structure-correlated-social-graph-generator">S3G2: a Scalable Structure-correlated Social Graph Generator</a></p>
+<p>[4] <a href="https://arxiv.org/abs/2001.02299">The LDBC Social Network Benchmark</a></p>
+<p>[5] <a href="https://github.com/ldbc">LDBC GitHub organization</a></p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Also makes it easier to map to a tabular format thus it is a SQL friendly representation.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>It&rsquo;s hard to imagine this done declaratively in SQL.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Instead, multiple YARN containers have to be used if you want to parallelize on the same machine.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>Although editors usually render these using different font styles.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5">
+<p>With the addition of deletes, entities often get inserted and deleted during the simulation (which is normal in a social network). During serialization, we check for such entities and omit them. However, we forgot to calculate this when determining the output size, which we will amend when tuning the distributions.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    </div>
+    <!-- tags -->
+    <div class="tags">
+      <span>Tags:</span>
+      <ul class="list-inline d-inline-block">
+        <a href="/tags/datagen">DATAGEN</a>
+        , <a href="/tags/snb">SNB</a>
+        
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- /blog details -->
+
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-intro">
+      <p class="footer-text">GDC was formerly known as LDBC (Linked Data Benchmark Council). Originally a research project, it is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+      <div class="footer-logo">
+        <img src="https://ldbcouncil.org/images/gdc_white.svg" alt="Graph Data Council">
+      </div>
+    </div>
+    
+
+    <div class="footer-grid">
+
+      <div class="footer-grid-column">
+        <h4>CONNECT WITH US</h4>
+        <div class="social-icons">
+          
+            
+              <a href="https://twitter.com/GraphCouncil" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" viewBox="0 0 20 19"><path fill="#acacac" d="M15.732.904H18.8l-6.733 7.638 7.866 10.362H13.76l-4.833-6.297-5.534 6.297H.326l7.133-8.17L-.074.904h6.326l4.367 5.752L15.732.904ZM14.66 17.11h1.7l-11-14.48H3.532L14.66 17.11Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://bsky.app/profile/ldbcouncil.org" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 21 21"><path fill="#acacac" d="M10.338 9.9c-.91-1.77-3.387-5.068-5.69-6.693C2.44 1.649 1.6 1.918 1.047 2.169.409 2.456.293 3.437.293 4.013c0 .577.316 4.73.522 5.423.683 2.29 3.108 3.064 5.343 2.816.114-.017.23-.032.348-.047a8.083 8.083 0 0 1-.348.047c-3.274.486-6.183 1.679-2.369 5.925 4.197 4.345 5.751-.932 6.549-3.606.798 2.674 1.716 7.76 6.473 3.606 3.572-3.606.981-5.44-2.293-5.925a7.242 7.242 0 0 1-.348-.047c.117.015.234.03.348.047 2.235.249 4.66-.526 5.342-2.816.207-.693.523-4.846.523-5.422 0-.578-.116-1.558-.755-1.847-.552-.25-1.393-.519-3.6 1.038-2.303 1.628-4.78 4.925-5.69 6.694Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://www.linkedin.com/company/graphdatacouncil/" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none" viewBox="0 0 22 20"><path fill="#acacac" fill-rule="evenodd" d="M5.82 2.584a2.07 2.07 0 0 1-.66 1.595c-.45.427-1.04.64-1.772.64h-.026c-.715 0-1.29-.213-1.726-.64a2.143 2.143 0 0 1-.653-1.595 2.107 2.107 0 0 1 .67-1.602C2.104.559 2.692.347 3.415.347c.724 0 1.304.212 1.74.635a2.187 2.187 0 0 1 .665 1.602Zm-.272 4v12.963H1.236V6.583h4.312Zm15.52 5.532v7.428h-4.299v-6.93c0-.915-.176-1.632-.529-2.15-.353-.52-.904-.779-1.654-.779a2.117 2.117 0 0 0-1.38.451 2.779 2.779 0 0 0-.833 1.12c-.107.341-.155.698-.142 1.056v7.232H7.928c.017-3.479.026-6.3.026-8.462S7.95 7.63 7.94 7.208l-.013-.625h4.303V8.47h-.026c.159-.257.338-.5.536-.73.225-.248.473-.476.739-.68a3.4 3.4 0 0 1 1.137-.568c.487-.14.991-.21 1.498-.203 1.491 0 2.69.494 3.597 1.484s1.36 2.438 1.36 4.346l-.004-.002Z" clip-rule="evenodd"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://github.com/ldbc" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#acacac" d="M10 0c5.523 0 10 4.59 10 10.253 0 4.529-2.862 8.371-6.833 9.728-.507.101-.687-.22-.687-.492 0-.338.012-1.442.012-2.814 0-.956-.32-1.58-.679-1.898 2.227-.254 4.567-1.121 4.567-5.06 0-1.12-.388-2.033-1.03-2.751.104-.26.447-1.302-.098-2.714 0 0-.838-.275-2.747 1.051A9.396 9.396 0 0 0 10 4.958a9.375 9.375 0 0 0-2.503.345C5.586 3.977 4.746 4.252 4.746 4.252c-.543 1.412-.2 2.455-.097 2.714-.639.718-1.03 1.632-1.03 2.752 0 3.928 2.335 4.808 4.556 5.067-.286.256-.545.708-.635 1.37-.57.263-2.018.716-2.91-.85 0 0-.529-.986-1.533-1.058 0 0-.975-.013-.068.623 0 0 .655.315 1.11 1.5 0 0 .587 1.83 3.369 1.21.005.857.014 1.665.014 1.909 0 .27-.184.588-.683.493C2.865 18.627 0 14.782 0 10.252 0 4.59 4.478 0 10 0Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/benchmarks">BENCHMARKS</a></h4>
+        <ul>
+          <li><a href="/benchmarks/finbench/">Financial Benchmark</a></li>
+          <li><a href="/benchmarks/graphalytics/">Graphalytics Benchmark</a></li>
+          <li><a href="/benchmarks/spb/">Semantic Publishing Benchmark</a></li>
+          <li><a href="/benchmarks/snb/">Social Network Benchmark</a></li>
+          <li><a href="/benchmarks/fair-use-policies/">Fair Use Policies</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/introduction">ORGANIZATION</a></h4>
+        <ul>
+          <li><a href="/organizational-members/">Members</a></li>
+          <li><a href="/leadership/">Leadership</a></li>
+          <li><a href="/contact-us/">Contact</a></li>
+        </ul>
+
+        <h4 class="mt-4"><a href="/organizational-documents/">ORGANIZATIONAL DOCUMENTS</a></h4>
+
+        <ul>
+          <li><a href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf">Byelaws</a></li>
+          <li><a href="/docs/LDBC.Articles.of.Association.ADOPTED.2025-02-21.pdf">Articles of Association</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-grid-column">
+        <h4><a href="/gql-community/">LANGUAGES &amp; DATA MODELS</a></h4>
+        <ul>
+          <li><a href="/gql-community/text2gq/">Text2GraphQuery WG</a></li>
+          <li><a href="/gql-community/lex/">LEX (Extended GQL Schema) WG</a></li>
+          <li><a href="/gql-community/opengql-announce/">Open-Source GQL Tools</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p>© Graph Data Council (GDC)</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    
+    
+    <div id="cite-modal" class="cite-modal" style="display: none;">
+        <div class="cite-modal-content">
+            <div class="cite-modal-header">
+                <h3></h3>
+                <button class="cite-modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="cite-modal-body">
+                <pre id="cite-content" class="cite-bibtex"></pre>
+            </div>
+            <div class="cite-modal-footer">
+                <button id="cite-copy" class="button copy">Copy</button>
+                <button id="cite-download" class="button download">Download</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://ldbcouncil.org/js/main.min.b94883609a8d2a09b9ee5b3cf945fa299b24aadf9d5d863b35d8d29d8b2450267a2ab3c2a6c9718625218a9a3a960d03c8374f04fc184603d42353d9c2dac3d5.js" integrity="sha512-uUiDYJqNKgm57ls8&#43;UX6KZskqt&#43;dXYY7NdjSnYskUCZ6KrPCpslxhiUhipo6lg0DyDdPBPwYRgPUI1PZwtrD1Q=="></script>
+
+
+<script src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Third TUC Meeting | Graph Data Council</title>
+<meta name="description" content="Website for the Graph Data Council (GDC), formerly known as the Linked Data Benchmark Council (LDBC)">
+
+<link rel="icon" href="https://ldbcouncil.org/images/favicon.png">
+
+
+
+
+
+<link rel="stylesheet" href="https://ldbcouncil.org/css/style.6bdd59910146a51b3d209def78f148d548a22bdfac1fb8f6c8fa4ae5cdeee4cd3bf00b4d90facace8291d0bf0bfe7c32571947313327b023f06cbdc544687caf.css" integrity="sha512-a91ZkQFGpRs9IJ3vePFI1UiiK9&#43;sH7j2yPpK5c3u5M078AtNkPrKzoKR0L8L/nwyVxlHMTMnsCPwbL3FRGh8rw==">
+
+
+
+<script type="module" src="https://ldbcouncil.org/js/sticky-table-wrapper.js"></script>
+
+</head>
+<body class="page page-third-tuc-meeting">
+    <header class="site-header">
+  <div class="container">
+    <div class="header-wrapper">
+      <div class="site-logo">
+        <a href="/">
+          <img src="https://ldbcouncil.org/images/gdc.svg" alt="Graph Data Council">
+        </a>
+      </div>
+      
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-menu">
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown mega-menu" id="menu-0">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" id="benchmarks-menu" aria-expanded="false">Benchmarks</a>
+                  <div class="mega-menu-content" data-parent="benchmarks-menu">
+                    <button class="submenu-back" aria-label="Back to main menu">
+                      <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                      </svg>
+                      <span>Back</span>
+                    </button>
+                    <div class="mega-menu-grid" style="grid-template-columns: repeat(4, 1fr);">
+                      
+                      
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/finbench" class="main">Financial Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/datasets">FinBench Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/finbench/results">FinBench Results</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/finbench/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/snb" class="main">Social Network Bench.</a></li>
+                              
+                                <li><a href="/benchmarks/snb/datasets">SNB Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/snb/bi">BI Workload</a></li>
+                              
+                                <li><a href="/benchmarks/snb/interactive">Interactive Workload</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/snb/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/graphalytics" class="main">Graphalytics Benchmark</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/datasets">Graphalytics Datasets</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/algorithms">Algorithms</a></li>
+                              
+                                <li><a href="/benchmarks/graphalytics/rules">Competition Rules</a></li>
+                              
+                                <li class="overview"><a href="/benchmarks/graphalytics/" class="overview">Overview</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                        
+                        
+                          <div class="mega-menu-section">
+                            <ul>
+                              
+                                <li class="main"><a href="/benchmarks/" class="main">More</a></li>
+                              
+                                <li><a href="/benchmarks/fair-use-policies">LDBC Fair Use Policies</a></li>
+                              
+                                <li><a href="/benchmarks/spb">Semantic Pub. Benchmark</a></li>
+                              
+                            </ul>
+                          </div>
+                        
+                      
+                    </div>
+                  </div>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-1">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Query Languages & Data Models</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/">Overview</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/text2gq">Text2GraphQuery WG</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/lex">Schema WG (LEX)</a></li>
+                    
+                      <li><a class="dropdown-item" href="/gql-community/opengql-announce">Open GQL Tools</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-2">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Resources</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/resources/publications">Publications</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/datasets">Datasets</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/pointers">Pointers</a></li>
+                    
+                      <li><a class="dropdown-item" href="/benchmarks/fair-use-policies">Trademark</a></li>
+                    
+                      <li><a class="dropdown-item" href="/resources/faq">FAQ</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              
+                
+                <li class="nav-item dropdown" id="menu-3">
+                  <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-toggle="dropdown" aria-expanded="false">Organization</a>
+                  <ul class="dropdown-menu">
+                    <li class="submenu-back-item">
+                      <button class="submenu-back" aria-label="Back to main menu">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M5.5 9.5L1.5 5L5.5 0.5" stroke="black"/>
+                        </svg>
+                        <span>Back</span>
+                      </button>
+                    </li>
+                    
+                      <li><a class="dropdown-item" href="/introduction">Introduction</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-members">Members</a></li>
+                    
+                      <li><a class="dropdown-item" href="/leadership">Leadership</a></li>
+                    
+                      <li><a class="dropdown-item" href="/becoming-a-member">Becoming a Member</a></li>
+                    
+                      <li><a class="dropdown-item" href="/organizational-documents">Documents</a></li>
+                    
+                      <li><a class="dropdown-item" href="/contact-us">Contact</a></li>
+                    
+                  </ul>
+                </li>
+              
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/post">Blog</a>
+              </li>
+            
+          
+            
+            
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/event">Events</a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    
+    <main id="main">
+        
+
+
+
+
+<!-- page title -->
+<section class="hero">
+  <div class="container-default">
+
+  
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <ol class="breadcrumb">
+    
+  
+    
+  
+
+
+    
+    <li class="breadcrumb-item">
+      <a href="/event/">Events</a>
+    </li>
+  
+
+
+  </ol>
+</nav>
+
+
+  <h1 class="pagetitle">Third TUC Meeting</h1>
+
+  </div>
+</section>
+<!-- /page title -->
+
+
+
+
+
+<!-- event details -->
+<section class="single-content">
+  <div class="container-default">
+    <!-- event meta -->
+    <div class="meta">
+      
+        <strong class="text-color">London, United Kingdom</strong>
+      
+       / 
+      <strong class="text-dark">19 Nov 2013</strong>
+    </div>
+    
+    
+    <div class="maincontent">
+      <p>The LDBC consortium is pleased to announce the third Technical User Community (TUC) meeting!</p>
+<p>This will be a one day event in London on the <strong>19 November 2013</strong> running in collaboration with the GraphConnect event (18/19 November). Registered TUC participants that would like a free pass to all of GraphConnect should register for GraphConnect using this following coupon code: <strong>LDBCTUC</strong>.</p>
+<p>The TUC event will include:</p>
+<ul>
+<li>Introduction to the objectives and progress of the LDBC project</li>
+<li>Description of the progress of the benchmarks being evolved through Task Forces</li>
+<li>Users explaining their use-cases and describing the limitations they have found in current technology</li>
+<li>Industry discussions on the contents of the benchmarks</li>
+</ul>
+<p>We will also be launching the LDBC non-profit organization, so anyone outside the EU project will be able to join as a member.</p>
+<p>We will kick off new benchmark development task forces in the coming year, and talks at this coming TUC will play an important role in deciding the use case scenarios that will drive those benchmarks.</p>
+<p>All users of RDF and graph databases are welcome to attend.</p>
+<ul>
+<li><a href="/event/third-tuc-meeting/#agenda">Agenda</a></li>
+<li><a href="/event/third-tuc-meeting/#logistics">Logistics</a></li>
+<li><a href="/event/third-tuc-meeting/#ldbctuc-background">LDBC/TUC background</a>
+<ul>
+<li><a href="/event/third-tuc-meeting/#social-network-benchmark">Social Network Benchmark</a></li>
+<li><a href="/event/third-tuc-meeting/#semantic-publishing-benchmark">Semantic Publishing Benchmark</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="agenda">Agenda</h2>
+<p><strong>November 19th - Public TUC Meeting</strong></p>
+<p>8:00 Breakfast and registration will open for Graph Connect/TUC at 8:00 am (Dexter House)</p>
+<p>short LDBC presentation (Peter Boncz) during GraphConnect keynote by Emil Eifrem (09:00-09:30 Dexter House)</p>
+<p>Note that the TUC meeting is at the Tower Hotel, nearby Dexter House.</p>
+<p>10:00 TUC Meeting Opening (Peter Boncz)</p>
+<p>10:10 TUC Presentations (RDF Application Descriptions)</p>
+<ul>
+<li>Johan Hjerling (BBC): <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5275669.pdf">BBC Linked Data and the Semantic Publishing Benchmark</a></strong></em></li>
+<li>Andreas Both (Unister): <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5505027.pdf">Ontology-driven applications in an e-commerce context</a></strong></em></li>
+<li>Nuno Carvalho (Fujitsu Laboratories Europe): <a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5275666.pdf"><em><strong>Fujitsu RDF use cases and benchmarking requirements</strong></em></a></li>
+<li>Robina Clayphan (Europeana): <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/4816977.ppt">Europeana and Open Data</a></strong></em></li>
+</ul>
+<p>11:30 Semantic Publishing Benchmark (SPB)</p>
+<ul>
+<li>Venelin Kotsev (Ontotext - LDBC): <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/4816974.pdf">Semantic Publishing Benchmark Task Force Update</a></strong></em> and <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/4816974.pdf">report</a></strong></em></li>
+</ul>
+<p>12:00-13:00 Lunch at the Graph Connect venue</p>
+<p><em>Talks During Lunch:</em></p>
+<ul>
+<li>Pedro Furtado, Jorge Bernardino (Univ. Coimbra): <strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5275671.pdf">KEYSTONE Cost Action</a></strong></li>
+</ul>
+<p>13:00 TUC Presentations (Graph Application Descriptions)</p>
+<ul>
+<li>Minqi Zhou / Weining Qian (East China Normal University): <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5275670.pdf">Elastic and realistic social media data generation</a></strong></em></li>
+<li>Andrew Sherlock (Shapespace): <em><strong>Shapespace Use Case</strong></em></li>
+<li>Sebastian Verheughe (Telenor): <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5275667.pdf">Real-time Resource Authorization</a></strong></em></li>
+</ul>
+<p>14:00 Social Network Benchmark (SNB)</p>
+<ul>
+<li>Norbert Martinez (UPC - LDBC): <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5505025.pdf">Social Network Benchmark Task Force Update</a></strong></em> and <a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/4816975.pdf">Report</a></li>
+</ul>
+<p><em>14:30 Break</em></p>
+<p>14:45 TUC Presentations (Graph Analytics)</p>
+<ul>
+<li>Keith Houck (IBM): <em><strong>Benchmarking experiences with [System G Native Store (tentative title)]</strong></em></li>
+<li>Abraham Bernstein (University of Zurich): <em><strong>Streams and Advanced Processing: Benchmarking RDF querying beyond the Standard SPARQL Triple Store</strong></em></li>
+<li>Luis Ceze (University of Washington): <em><strong>Grappa and GraphBench Status Update</strong></em></li>
+</ul>
+<p><em>15:45 Break</em></p>
+<p>16:00 TUC Presentations* (Possible Future RDF Benchmarking Topics)*</p>
+<ul>
+<li>Christian-Emil Ore (Unit for Digital Documentation, University of Oslo, Norway): <em><strong>CIDOC-CRM</strong></em></li>
+<li>Atanas Kiryakov (Ontotext): <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5275672.pdf">Large-scale Reasoning with a Complex Cultural Heritage Ontology (CIDOC CRM)</a></strong></em></li>
+<li>Kostis Kyzirakos (National and Kapodistrian University of Athens / CWI): <em><strong><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5275668.pdf">Geographica: A Benchmark for Geospatial RDF Stores</a></strong></em></li>
+<li>Xavier Lopez (Oracle): <em><strong>W3C Property Graph progress</strong></em></li>
+<li>Thomas Scharrenbach (University Zurich) <em><strong>PCKS:  Benchmarking Semantic Flow Processing Systems</strong></em></li>
+</ul>
+<p>17:20 Meeting Conclusion (Josep Larriba Pey)</p>
+<p>17:30 End of TUC meeting</p>
+<p>19:00 Social dinner</p>
+<p><strong>November 20th - Internal LDBC Meeting</strong></p>
+<p>10:00 Start</p>
+<p>12:30 <em>End of meeting</em></p>
+<ul>
+<li>coffee and lunch provided</li>
+</ul>
+<h2 id="logistics">Logistics</h2>
+<p><strong>Date</strong></p>
+<p>19th November 2013</p>
+<p><strong>Location</strong></p>
+<p>The TUC meeting will be held in <strong>The Tower</strong> hotel (<a href="http://goo.gl/qZt8Fz">Google Maps link</a>) approximately 4 minutes walk from the GraphConnect conference in London.</p>
+<p>Getting there</p>
+<ul>
+<li>From City Airport is the easiest: short ride on the DLR to Tower Gateway. Easy.</li>
+<li>From London Heathrow: first need to take the Heathrow Express to Paddington. Then take the Circle line to Tower Hill. <a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/4554995.pdf">See attached</a>.</li>
+</ul>
+<h2 id="ldbctuc-background">LDBC/TUC background</h2>
+<p>Looking back, we have been working on two benchmarks for the past year: a Social Network Benchmark (SNB) and a Semantic Publishing Benchmark (SPB). While below we provide a short summary, all the details of the work on these benchmark development efforts can be found in the first yearly progress reports:</p>
+<ul>
+<li><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/4816974.pdf">LDBC_SNB_Report_Nov2013.pdf</a></li>
+<li><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/4816974.pdf">LDBC_SPB_Report_Nov2013.pdf</a></li>
+</ul>
+<p>A summary of these efforts can be read below or, for a more detailed account, please refer to: <a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/4554967.pdf">The Linked Data Benchmark Council: a Graph and RDF industry benchmarking effort</a>. Annual reports about the progress, results, and future work of these two efforts will soon be available for download here, and will be discussed in depth at the TUC.</p>
+<h3 id="social-network-benchmark">Social Network Benchmark</h3>
+<p>The Social Network Benchmark (SNB) is designed for evaluating a broad range of technologies for tackling graph data management workloads. The systems targeted are quite broad: from graph, RDF, and relational database systems to Pregel-like graph compute frameworks. The social network scenario was chosen with the following goals in mind:</p>
+<ul>
+<li>it should be understandable, and the relevance of managing such data should be understandable</li>
+<li>it should cover the complete range of interesting challenges, according to the benchmark scope</li>
+<li>the queries should be realistic, i.e., similar data and workloads are encountered in practice</li>
+</ul>
+<p>SNB includes a data generator for creation of synthetic social network data with the following characteristics:</p>
+<ul>
+<li>data schema is representative of real social networks</li>
+<li>data generated includes properties occurring in real data, e.g. irregular structure, structure/value correlations, power-law distributions</li>
+<li>the software generator is easy-to-use, configurable and scalable</li>
+</ul>
+<p>SNB is intended to cover a broad range of aspects of social network data management, and therefore includes three distinct workloads:</p>
+<ul>
+<li><strong>Interactive</strong>
+<ul>
+<li>Tests system throughput with relatively simple queries and concurrent updates, it is designed to test ACID features and scalability in an online operational setting.</li>
+<li>The targeted systems are expected to be those that offer transactional functionality.</li>
+</ul>
+</li>
+<li><strong>Business Intelligence</strong>
+<ul>
+<li>Consists of complex structured queries for analyzing online behavior of users for marketing purposes, it is designed to stress query execution and optimization.</li>
+<li>The targeted systems are expected to be those that offer an abstract query language.</li>
+</ul>
+</li>
+<li><strong>Graph Analytics</strong>
+<ul>
+<li>Tests the functionality and scalability of systems for graph analytics, which typically cannot be expressed in a query language.</li>
+<li>Analytics is performed on most/all of the data in the graph as a single operation and produces large intermediate results, and it is not expected to be transactional or need isolation.</li>
+<li>The targeted systems are graph compute frameworks though database systems may compete, for example by using iterative implementations that repeatedly execute queries and keep intermediate results in temporary data structures.</li>
+</ul>
+</li>
+</ul>
+<h3 id="semantic-publishing-benchmark">Semantic Publishing Benchmark</h3>
+<p>The Semantic Publishing Benchmark (SPB) simulates the management and consumption of RDF metadata that describes media assets, or creative works.</p>
+<p>The scenario is a media organization that maintains RDF descriptions of its catalogue of creative works &ndash; input was provided by actual media organizations which make heavy use of RDF, including the BBC. The benchmark is designed to reflect a scenario where a large number of aggregation agents provide the heavy query workload, while at the same time a steady stream of creative work description management operations are in progress. This benchmark only targets RDF databases, which support at least basic forms of semantic inference. A tagging ontology is used to connect individual creative work descriptions to instances from reference datasets, e.g. sports, geographical, or political information. The data used will fall under the following categories: reference data, which is a combination of several Linked Open Data datasets, e.g. GeoNames and DBpedia; domain ontologies, that are specialist ontologies used to describe certain areas of expertise of the publishing, e.g. sport and education; publication asset ontologies, that describe the structure and form of the assets that are published, e.g. news stories, photos, video, audio, etc.; and tagging ontologies and the metadata, that links assets with reference/domain ontologies.</p>
+<p>The data generator is initialized by using several ontologies and datasets. The instance data collected from these datasets are then used at several points during the execution of the benchmark. Data generation is performed by generating SPARQL fragments for create operations on creative works and executing them against the RDF database system.</p>
+<p>Two separate workloads are modeled in SPB:</p>
+<ul>
+<li><strong>Editorial:</strong> Simulates creating, updating and deleting creative work metadata descriptions.  Media companies use both manual and semi-automated processes for efficiently and correctly managing asset descriptions, as well as annotating them with relevant instances from reference ontologies.</li>
+<li><strong>Aggregation:</strong> Simulates the dynamic aggregation of content for consumption by the distribution pipelines (e.g. a web-site). The publishing activity is described as &ldquo;dynamic&rdquo;, because the content is not manually selected and arranged on, say, a web page. Instead, templates for pages are defined and the content is selected when a consumer accesses the page.</li>
+</ul>
+<p><a href="https://datasets.ldbcouncil.org/event/third-tuc-meeting/attachments/4325436/5505026.pdf">Status of the Semantic Publishing Benchmark</a></p>
+
+    </div>
+    <!-- tags -->
+    
+    <div class="tags">
+      <span>Tags:</span>
+      <ul class="list-inline d-inline-block">
+        <a href="/tags/tuc-meeting">TUC MEETING</a>
+        
+      </ul>
+    </div>
+    
+  </div>
+</section>
+<!-- /event details -->
+
+
+    </main>
+    
+    <footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-intro">
+      <p class="footer-text">GDC was formerly known as LDBC (Linked Data Benchmark Council). Originally a research project, it is now a non-profit organization sustained by its members. Contact us at info AT ldbcouncil DOT org.</p>
+      <div class="footer-logo">
+        <img src="https://ldbcouncil.org/images/gdc_white.svg" alt="Graph Data Council">
+      </div>
+    </div>
+    
+
+    <div class="footer-grid">
+
+      <div class="footer-grid-column">
+        <h4>CONNECT WITH US</h4>
+        <div class="social-icons">
+          
+            
+              <a href="https://twitter.com/GraphCouncil" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none" viewBox="0 0 20 19"><path fill="#acacac" d="M15.732.904H18.8l-6.733 7.638 7.866 10.362H13.76l-4.833-6.297-5.534 6.297H.326l7.133-8.17L-.074.904h6.326l4.367 5.752L15.732.904ZM14.66 17.11h1.7l-11-14.48H3.532L14.66 17.11Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://bsky.app/profile/ldbcouncil.org" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 21 21"><path fill="#acacac" d="M10.338 9.9c-.91-1.77-3.387-5.068-5.69-6.693C2.44 1.649 1.6 1.918 1.047 2.169.409 2.456.293 3.437.293 4.013c0 .577.316 4.73.522 5.423.683 2.29 3.108 3.064 5.343 2.816.114-.017.23-.032.348-.047a8.083 8.083 0 0 1-.348.047c-3.274.486-6.183 1.679-2.369 5.925 4.197 4.345 5.751-.932 6.549-3.606.798 2.674 1.716 7.76 6.473 3.606 3.572-3.606.981-5.44-2.293-5.925a7.242 7.242 0 0 1-.348-.047c.117.015.234.03.348.047 2.235.249 4.66-.526 5.342-2.816.207-.693.523-4.846.523-5.422 0-.578-.116-1.558-.755-1.847-.552-.25-1.393-.519-3.6 1.038-2.303 1.628-4.78 4.925-5.69 6.694Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://www.linkedin.com/company/graphdatacouncil/" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none" viewBox="0 0 22 20"><path fill="#acacac" fill-rule="evenodd" d="M5.82 2.584a2.07 2.07 0 0 1-.66 1.595c-.45.427-1.04.64-1.772.64h-.026c-.715 0-1.29-.213-1.726-.64a2.143 2.143 0 0 1-.653-1.595 2.107 2.107 0 0 1 .67-1.602C2.104.559 2.692.347 3.415.347c.724 0 1.304.212 1.74.635a2.187 2.187 0 0 1 .665 1.602Zm-.272 4v12.963H1.236V6.583h4.312Zm15.52 5.532v7.428h-4.299v-6.93c0-.915-.176-1.632-.529-2.15-.353-.52-.904-.779-1.654-.779a2.117 2.117 0 0 0-1.38.451 2.779 2.779 0 0 0-.833 1.12c-.107.341-.155.698-.142 1.056v7.232H7.928c.017-3.479.026-6.3.026-8.462S7.95 7.63 7.94 7.208l-.013-.625h4.303V8.47h-.026c.159-.257.338-.5.536-.73.225-.248.473-.476.739-.68a3.4 3.4 0 0 1 1.137-.568c.487-.14.991-.21 1.498-.203 1.491 0 2.69.494 3.597 1.484s1.36 2.438 1.36 4.346l-.004-.002Z" clip-rule="evenodd"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+            
+              <a href="https://github.com/ldbc" target="_blank" rel="noopener noreferrer">
+                <span class="social-icon">
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#acacac" d="M10 0c5.523 0 10 4.59 10 10.253 0 4.529-2.862 8.371-6.833 9.728-.507.101-.687-.22-.687-.492 0-.338.012-1.442.012-2.814 0-.956-.32-1.58-.679-1.898 2.227-.254 4.567-1.121 4.567-5.06 0-1.12-.388-2.033-1.03-2.751.104-.26.447-1.302-.098-2.714 0 0-.838-.275-2.747 1.051A9.396 9.396 0 0 0 10 4.958a9.375 9.375 0 0 0-2.503.345C5.586 3.977 4.746 4.252 4.746 4.252c-.543 1.412-.2 2.455-.097 2.714-.639.718-1.03 1.632-1.03 2.752 0 3.928 2.335 4.808 4.556 5.067-.286.256-.545.708-.635 1.37-.57.263-2.018.716-2.91-.85 0 0-.529-.986-1.533-1.058 0 0-.975-.013-.068.623 0 0 .655.315 1.11 1.5 0 0 .587 1.83 3.369 1.21.005.857.014 1.665.014 1.909 0 .27-.184.588-.683.493C2.865 18.627 0 14.782 0 10.252 0 4.59 4.478 0 10 0Z"/></svg>
+                  
+                </span>
+              </a>
+            
+          
+        </div>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/benchmarks">BENCHMARKS</a></h4>
+        <ul>
+          <li><a href="/benchmarks/finbench/">Financial Benchmark</a></li>
+          <li><a href="/benchmarks/graphalytics/">Graphalytics Benchmark</a></li>
+          <li><a href="/benchmarks/spb/">Semantic Publishing Benchmark</a></li>
+          <li><a href="/benchmarks/snb/">Social Network Benchmark</a></li>
+          <li><a href="/benchmarks/fair-use-policies/">Fair Use Policies</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-grid-column">
+        <h4><a href="/introduction">ORGANIZATION</a></h4>
+        <ul>
+          <li><a href="/organizational-members/">Members</a></li>
+          <li><a href="/leadership/">Leadership</a></li>
+          <li><a href="/contact-us/">Contact</a></li>
+        </ul>
+
+        <h4 class="mt-4"><a href="/organizational-documents/">ORGANIZATIONAL DOCUMENTS</a></h4>
+
+        <ul>
+          <li><a href="/docs/LDBC.Byelaws.1.5.ADOPTED.2024-01-12.pdf">Byelaws</a></li>
+          <li><a href="/docs/LDBC.Articles.of.Association.ADOPTED.2025-02-21.pdf">Articles of Association</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-grid-column">
+        <h4><a href="/gql-community/">LANGUAGES &amp; DATA MODELS</a></h4>
+        <ul>
+          <li><a href="/gql-community/text2gq/">Text2GraphQuery WG</a></li>
+          <li><a href="/gql-community/lex/">LEX (Extended GQL Schema) WG</a></li>
+          <li><a href="/gql-community/opengql-announce/">Open-Source GQL Tools</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="copyright">
+        <p>© Graph Data Council (GDC)</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+    
+    
+    <div id="cite-modal" class="cite-modal" style="display: none;">
+        <div class="cite-modal-content">
+            <div class="cite-modal-header">
+                <h3></h3>
+                <button class="cite-modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="cite-modal-body">
+                <pre id="cite-content" class="cite-bibtex"></pre>
+            </div>
+            <div class="cite-modal-footer">
+                <button id="cite-copy" class="button copy">Copy</button>
+                <button id="cite-download" class="button download">Download</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<script src="https://ldbcouncil.org/js/main.min.b94883609a8d2a09b9ee5b3cf945fa299b24aadf9d5d863b35d8d29d8b2450267a2ab3c2a6c9718625218a9a3a960d03c8374f04fc184603d42353d9c2dac3d5.js" integrity="sha512-uUiDYJqNKgm57ls8&#43;UX6KZskqt&#43;dXYY7NdjSnYskUCZ6KrPCpslxhiUhipo6lg0DyDdPBPwYRgPUI1PZwtrD1Q=="></script>
+
+
+<script src="https://ldbcouncil.org/js/isotope.pkgd.min.js"></script>
+
+
+</body>
+</html>
